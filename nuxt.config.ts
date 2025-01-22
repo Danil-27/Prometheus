@@ -20,4 +20,11 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/eslint',
   ],
+  css: ['~/assets/scss/app.scss'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 })
