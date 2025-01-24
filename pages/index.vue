@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <div class="pt-4 bg-www text-3xl font-bold underline">3322</div>
+  <div class="container">index 1</div>
+  <div class="container">
+    <div class="w-full h-[3000px]"></div>
   </div>
 </template>
 

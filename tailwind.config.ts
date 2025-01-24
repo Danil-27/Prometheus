@@ -2,8 +2,25 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    container: {
+      center: true,
+      padding: '1rem', // Установите желаемые отступы
+      screens: {
+        lg: '1024px',
+        xl: '1280px',
+      },
+    },
+    screen: {
+      xxs: '320px',
+      xs: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     colors: {
-      www: '#1fb6ff',
+      black: '#000000',
+      blue: '#1fb6ff',
       purple: '#7e5bef',
       pink: '#ff49db',
       orange: '#ff7849',

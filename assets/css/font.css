@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'geistMono';
+  src: url('~/assets/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'),
+    url('~/assets/fonts/geist-mono/GeistMono-Regular.woff') format('woff'),
+    url('~/assets/fonts/geist-mono/GeistMono-Regular.ttf') format('ttf'),
+    url('~/assets/fonts/geist-mono/GeistMono-Regular.otf') format('otf');
+  font-style: normal;
+}
