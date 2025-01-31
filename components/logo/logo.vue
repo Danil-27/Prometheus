@@ -1,10 +1,6 @@
 <template>
-  <div>
-    <img
-      class="max-h-[30px]"
-      src="../../assets/images/svg/logo/Logo.svg"
-      alt="Logo.svg"
-    />
+  <div class="text-black bg-[rgb(182,178,182,0.6)] p-2 rounded-xl">
+    PROMETNEUSE
   </div>
 </template>
 

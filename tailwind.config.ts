@@ -19,16 +19,9 @@ module.exports = {
       xl: '1280px',
     },
     colors: {
+      main: 'rgba(241, 218, 208, 0.5)',
+      white: '#FFFFFF',
       black: '#000000',
-      blue: '#1fb6ff',
-      purple: '#7e5bef',
-      pink: '#ff49db',
-      orange: '#ff7849',
-      green: '#13ce66',
-      yellow: '#ffc82c',
-      'gray-dark': '#273444',
-      gray: '#8492a6',
-      'gray-light': '#d3dce6',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

@@ -1,8 +1,6 @@
 <template>
-  <div class="container">index 1</div>
-  <div class="container">
-    <div class="w-full h-[3000px]"></div>
-  </div>
+  <SectionObverse></SectionObverse>
+  <SectionGods></SectionGods>
 </template>
 
 <script setup lang="ts"></script>
