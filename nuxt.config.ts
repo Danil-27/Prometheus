@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/eslint',
     'nuxt-intersection-observer',
+    'nuxt-swiper',
   ],
 
   i18n: {
