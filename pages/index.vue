@@ -1,6 +1,7 @@
 <template>
-  <SectionObverse></SectionObverse>
-  <SectionGods></SectionGods>
+  <!-- <SectionObverse></SectionObverse> -->
+  <!-- <SectionQuestions></SectionQuestions> -->
+  <!-- <SectionGods></SectionGods> -->
   <SectionSlider></SectionSlider>
 </template>
 
