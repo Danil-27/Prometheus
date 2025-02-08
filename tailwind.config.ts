@@ -15,7 +15,7 @@ module.exports = {
       xs: '480px',
       sm: '640px',
       md: '768px',
-      lg: '1024px',
+      lg: '992px',
       xl: '1280px',
     },
     colors: {
@@ -35,6 +35,10 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       },
+    },
+    boxShadow: {
+      'custom-shadow':
+        '0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2)',
     },
   },
 }
