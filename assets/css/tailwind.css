@@ -1,4 +1,4 @@
-@import 'imports.css';
+@import 'all.css';
 
 @tailwind base;
 @tailwind components;
@@ -8,20 +8,24 @@
 
 html,
 body {
+  @apply bg-grey;
 }
+
 
 .no-scroll {
   overflow: hidden;
 }
 
+
 /* tailwind */
+
 @layer base {
   h1 {
-    @apply text-2xl;
+    /* @apply */
   }
 
   h2 {
-    @apply text-xl;
+    /* @apply */
   }
 }
 
@@ -29,6 +33,7 @@ body {
   .card {
     border-radius: theme('borderRadius.lg');
     padding: theme('spacing.6');
-    box-shadow: theme('boxShadow.xl');
+    /* box-shadow: theme('boxShadow.xl'); */
   }
+
 }

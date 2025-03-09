@@ -1,7 +1,9 @@
 <template>
-  <div class="text-black bg-[rgb(182,178,182,0.6)] p-2 rounded-xl">
-    PROMETNEUSE
-  </div>
+  <nuxt-link to="/">
+    <p class="text-black font-jetExtraB text-[2rem] xl:text-[3rem]">
+      Promethus
+    </p>
+  </nuxt-link>
 </template>
 
 <script setup lang="ts"></script>

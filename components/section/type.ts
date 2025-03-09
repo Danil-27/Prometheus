@@ -1,27 +1,25 @@
-import godImage from '~/assets/images/svg/animation/god.svg'
+import GodImage from '~/assets/images/svg/animation/god.svg'
 
-interface img {
+interface Img {
   id: number
-  src: string
+  src: any
   alt: string
 }
 
-export const images: Array<img> = [
-  { id: 1, src: godImage, alt: 'god 3' },
-  { id: 2, src: godImage, alt: 'god 3' },
-  { id: 3, src: godImage, alt: 'god 3' },
-  { id: 4, src: godImage, alt: 'god 3' },
-  { id: 5, src: godImage, alt: 'god 3' },
+export const images: Array<Img> = [
+  { id: 1, src: GodImage, alt: 'god 3' },
+  { id: 2, src: GodImage, alt: 'god 3' },
+  { id: 3, src: GodImage, alt: 'god 3' },
 ]
 
 //SectionQuestions
-interface question {
+interface Question {
   id: number
   question: string
   answer: string
 }
 
-export const questions: Array<question> = [
+export const questions: Array<Question> = [
   {
     id: 1,
     question: 'Какие основные цели ухода за кожей?',

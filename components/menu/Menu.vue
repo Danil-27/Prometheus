@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ openMenu: !props.isMenu }"
-    class="menu absolute top-0 right-0 z-20 w-[50%] h-[100vh] p-7 bg-[rgb(182,178,182)] transition-all duration-300 ease-linear overflow-auto"
+    class="menu fixed top-0 right-0 z-20 w-[50%] h-[100vh] p-7 bg-[rgb(182,178,182)] transition-all duration-300 ease-linear overflow-y-auto"
   >
     <Nav @nav-click="toggleClickMenu" class="menu-nav" :links="links" />
   </div>

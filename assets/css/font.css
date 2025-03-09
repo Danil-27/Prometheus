@@ -1,8 +1,59 @@
+/* JetBrainsMono */
+
 @font-face {
-  font-family: 'geistMono';
-  src: url('~/assets/fonts/geist-mono/GeistMono-Regular.woff2') format('woff2'),
-    url('~/assets/fonts/geist-mono/GeistMono-Regular.woff') format('woff'),
-    url('~/assets/fonts/geist-mono/GeistMono-Regular.ttf') format('ttf'),
-    url('~/assets/fonts/geist-mono/GeistMono-Regular.otf') format('otf');
+  font-family: 'JetRegular';
   font-style: normal;
+  src:
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff'),
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBold';
+  font-style: normal;
+  src:
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff'),
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetExtraBold';
+  font-style: normal;
+  src:
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff') format('woff'),
+    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf') format('truetype');
+}
+
+/* Inter */
+
+@font-face {
+  font-family: 'InterRegular';
+  font-style: normal;
+  src:
+    url('~/assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('~/assets/fonts/Inter/Inter-Regular.woff') format('woff'),
+    url('~/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'InterLight';
+  font-style: normal;
+  src:
+    url('~/assets/fonts/Inter/Inter-LightBETA.woff2') format('woff2'),
+    url('~/assets/fonts/Inter/Inter-LightBETA.woff') format('woff'),
+    url('~/assets/fonts/Inter/Inter-LightBETA.ttf') format('truetype');
+}
+
+/* Sora */
+
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  src:
+    url('~/assets/fonts/Sora/Sora-SemiBold.woff2') format('woff2'),
+    url('~/assets/fonts/Sora/Sora-SemiBold.woff') format('woff'),
+    url('~/assets/fonts/Sora/Sora-SemiBold.ttf') format('truetype');
 }

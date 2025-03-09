@@ -1,11 +1,10 @@
 <template>
-  <img :src="props.imgSrc" :alt="props.imgAlt" />
+  <component :is="props.imgSvg" />
 </template>
 
 <script setup lang="ts">
 const props = defineProps<{
-  imgSrc: string
-  imgAlt: string
+  imgSvg: any
 }>()
 </script>
 

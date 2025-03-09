@@ -1,8 +1,6 @@
 <template>
-  <!-- <SectionObverse></SectionObverse> -->
-  <!-- <SectionQuestions></SectionQuestions> -->
-  <!-- <SectionGods></SectionGods> -->
-  <SectionSlider></SectionSlider>
+  <SectionAchievement></SectionAchievement>
+  <SectionObverse></SectionObverse>
 </template>
 
 <script setup lang="ts"></script>

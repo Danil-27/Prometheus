@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ openMenu: props.isMenu }"
-    class="burger flex decoration flex-col gap-1"
+    class="burger flex decoration flex-col gap-1 z-[1000]"
   >
     <div class="burger__lineTop flex">
       <div class="burger__lineTop_left h-0.5 w-3 bg-black rounded-l-lg"></div>
