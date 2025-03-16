@@ -6,6 +6,7 @@
   <SectionOffer></SectionOffer>
   <SectionPrice></SectionPrice>
   <SectionTopics></SectionTopics>
+  <SectionInput></SectionInput>
 </template>
 
 <script setup lang="ts"></script>

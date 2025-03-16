@@ -132,3 +132,9 @@ export const topics: Topic[] = [
     content: 'Контроль проекта дизайнером на протяжении всего производства работ',
   },
 ];
+
+// input
+
+import inputBackground from '~/assets/images/img/input/img-input.png';
+
+export const inputBg: string = inputBackground;
