@@ -1,6 +1,10 @@
 <template>
-  <SectionAchievement></SectionAchievement>
   <SectionObverse></SectionObverse>
+  <SectionAchievement></SectionAchievement>
+  <SectionMission></SectionMission>
+  <!-- <SectionProjects></SectionProjects> -->
+  <SectionOffer></SectionOffer>
+  <SectionPrice></SectionPrice>
 </template>
 
 <script setup lang="ts"></script>

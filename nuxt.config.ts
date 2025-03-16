@@ -1,10 +1,10 @@
-import svgLoader from 'vite-svg-loader'
+import svgLoader from 'vite-svg-loader';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   vite: {
     plugins: [svgLoader()],
@@ -18,21 +18,32 @@ export default defineNuxtConfig({
     },
   },
 
-  eslint: {
-    /* module options */
-  },
+  eslint: {},
 
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
-    'nuxt-viewport',
     '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxt/eslint',
+    'nuxt-viewport',
     'nuxt-intersection-observer',
     'nuxt-swiper',
   ],
-
+  image: {
+    // Настройки по умолчанию для оптимизации изображений
+    provider: 'static', // Используйте provider static для работы с локальными изображениями
+  },
+  app: {
+    head: {
+      title: 'Мое приложение',
+      meta: [
+        { name: 'description', content: 'Основное описание моего приложения' },
+        { property: 'og:title', content: 'Заголовок для Open Graph' },
+      ],
+      link: [{ rel: 'icon', href: '/favicon.ico' }],
+    },
+  },
   i18n: {
     locales: [
       {
@@ -59,4 +70,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-})
+});

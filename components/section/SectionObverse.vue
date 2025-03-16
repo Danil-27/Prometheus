@@ -9,7 +9,7 @@
         <p
           class="font-jetExtraB text-[2.8rem] xs:text-[4.5rem] sm:text-[6rem] lg:text-[8rem] xxl:text-[10rem] leading-[118%]"
         >
-          Promethus
+          Prometheus
         </p>
         <!-- нужно SEO H1 -->
         <div
