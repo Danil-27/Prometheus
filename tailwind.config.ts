@@ -27,11 +27,12 @@ module.exports = {
     },
     colors: {
       white: 'var(--white)',
-      lightGray: 'var(--lightGray)',
       black: 'var(--black)',
       grey: 'var(--grey)',
       yellow: 'var(--yellow)',
       green: 'var(--green)',
+      grayLight: 'var(--grayLight)',
+      greenSilver: 'var(--greySilver)',
     },
     fontFamily: {
       jetReg: ['JetRegular', 'sans-serif'],
@@ -55,4 +56,4 @@ module.exports = {
       buttom: ' 0px 0px 10px 1px rgba(241, 218, 208, 0.9)',
     },
   },
-}
+};

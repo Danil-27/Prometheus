@@ -7,6 +7,8 @@
   <SectionPrice></SectionPrice>
   <SectionTopics></SectionTopics>
   <SectionInput></SectionInput>
+
+  <SectionQuestion></SectionQuestion>
 </template>
 
 <script setup lang="ts"></script>
