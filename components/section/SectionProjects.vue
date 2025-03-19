@@ -2,12 +2,15 @@
   <section class="container section-margin-top">
     <div class="flex flex-wrap gap-10 justify-between items-center">
       <h2 class="font-jetBold text-[60px] lg:text-[80px] xl:text-[100px] leading-[100%]">Наши проекты</h2>
-      <nuxt-link to="/projects">
-        <button class="flex items-center gap-[70px] bg-black text-white px-7 py-3">
-          <span class="text-primary">Смотреть все</span>
-          <IconBtn />
-        </button>
-      </nuxt-link>
+      <nuxt-link to="/projects"></nuxt-link>
+      <BtnSecondary
+        :isCheckSecondaryProject="checkSecondaryBtn"
+        @click="toggleSecondary()"
+        class="flex items-center gap-[70px] px-7 py-3"
+      >
+        <template v-slot:text>Смотреть все</template>
+        <template v-slot:icon><IconBtn /></template>
+      </BtnSecondary>
     </div>
     <article class="flex justify-center flex-wrap xl:flex-nowrap gap-5 mt-[60px] xl:h-[600px]">
       <div
@@ -30,7 +33,7 @@
           <div>
             <p v-html="card.content" class="font-jetBold text-[30px] max-[570px]:text-[25px]"></p>
             <nuxt-link to="/projects">
-              <BtnBase @click="checkContent(index)" :checkProject="buttonCheck[index]">
+              <BtnBase @click="toggleBase(index)" :isCheckBaseProject="checkBaseBtn[index]">
                 <template v-slot:text>
                   <div>Изучить</div>
                 </template>
@@ -53,7 +56,8 @@ import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
 import { cards } from './type';
 
 let isHover = ref<boolean[]>(new Array(cards.length).fill(false));
-let buttonCheck = ref<boolean[]>(new Array(cards.length).fill(false));
+let checkBaseBtn = ref<boolean[]>(new Array(cards.length).fill(false));
+let checkSecondaryBtn = ref<boolean>(false);
 
 function handleMouseOver(index: number) {
   isHover.value[index] = true;
@@ -63,13 +67,19 @@ function handleMouseLeave() {
   isHover.value.fill(false);
 }
 
-function checkContent(index: number) {
-  buttonCheck.value[index] = true;
-  sessionStorage.setItem('buttonCheck', JSON.stringify(buttonCheck.value));
+function toggleSecondary() {
+  checkSecondaryBtn.value = true;
+  sessionStorage.setItem('checkSecondaryProject', JSON.stringify(checkSecondaryBtn.value));
+}
+
+function toggleBase(index: number) {
+  checkBaseBtn.value[index] = true;
+  sessionStorage.setItem('checkBaseBtn', JSON.stringify(checkBaseBtn.value));
 }
 
 onMounted(() => {
-  useStorageCheckContent('buttonCheck', buttonCheck);
+  useStorageCheckContent('checkBaseBtn', checkBaseBtn);
+  useStorageCheckContent('checkSecondaryProject', checkSecondaryBtn);
 });
 </script>
 

@@ -15,7 +15,7 @@
           </p>
         </div>
         <nuxt-link to="#"></nuxt-link>
-        <BtnBase @click="checkContent(0)" :checkPrice="checkPrice[0]">
+        <BtnBase @click="checkContent(0)" :isCheckBasePrice="checkSecondaryBtn[0]">
           <template v-slot:text>
             <div>Изучить</div>
           </template>
@@ -35,7 +35,7 @@
           </p>
         </div>
         <nuxt-link to="#"></nuxt-link>
-        <BtnBase @click="checkContent(1)" :checkPrice="checkPrice[1]">
+        <BtnBase @click="checkContent(1)" :isCheckBasePrice="checkSecondaryBtn[1]">
           <template v-slot:text>
             <div>Изучить</div>
           </template>
@@ -56,7 +56,7 @@
         </div>
 
         <nuxt-link to="#"></nuxt-link>
-        <BtnBase @click="checkContent(2)" :checkPrice="checkPrice[2]">
+        <BtnBase @click="checkContent(2)" :isCheckBasePrice="checkSecondaryBtn[2]">
           <template v-slot:text>
             <div>Изучить</div>
           </template>
@@ -72,7 +72,7 @@
         <h3 class="font-jetBold text-[20px] lg:text-[30px]">Опциональные улуги</h3>
         <nuxt-link to="#"></nuxt-link>
 
-        <BtnBase @click="checkContent(3)" :checkPrice="checkPrice[3]">
+        <BtnBase @click="checkContent(3)" :isCheckBasePrice="checkSecondaryBtn[3]">
           <template v-slot:text>
             <div>Изучить</div>
           </template>
@@ -90,15 +90,15 @@ import IconCard from '@/assets/images/svg/arrow/arrow-card.svg';
 import { imagesPrice } from './type';
 import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
 
-const checkPrice = ref([false, false, false, false]);
+const checkSecondaryBtn = ref([false, false, false, false]);
 
 function checkContent(indexElem: number) {
-  checkPrice.value[indexElem] = true;
-  sessionStorage.setItem('checkPrice', JSON.stringify(checkPrice.value));
+  checkSecondaryBtn.value[indexElem] = true;
+  sessionStorage.setItem('checkSecondaryPrice', JSON.stringify(checkSecondaryBtn.value));
 }
 
 onMounted(() => {
-  useStorageCheckContent('checkPrice', checkPrice);
+  useStorageCheckContent('checkSecondaryPrice', checkSecondaryBtn);
 });
 </script>
 

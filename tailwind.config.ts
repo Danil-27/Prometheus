@@ -27,8 +27,11 @@ module.exports = {
     },
     colors: {
       white: 'var(--white)',
-      'white-80': 'rgba(255, 255, 255, 0.8)',
+      'white-80': 'var(--white-80)',
+      'white-25': 'var(--white-25)',
       black: 'var(--black)',
+      Carbonic: 'var(--Carbonic)',
+      Onyx: 'var(--Onyx)',
       grey: 'var(--grey)',
       yellow: 'var(--yellow)',
       green: 'var(--green)',
@@ -53,6 +56,8 @@ module.exports = {
       },
     },
     boxShadow: {
+      'custom-white-btn': '0 4px 4px rgba(0,0,0,0.25), inset 0 4px 4px rgba(0,0,0,0.25)',
+      'custom-black-btn': '0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 5px 9px 12px 0 var(--white-25)',
       image: '0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2)',
       buttom: ' 0px 0px 10px 1px rgba(241, 218, 208, 0.9)',
     },
