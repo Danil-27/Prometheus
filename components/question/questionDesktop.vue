@@ -1,5 +1,5 @@
 <template>
-  <section class="container section-margin-top mb-[408px]">
+  <section class="container section-margin-top">
     <h1 class="font-jetBold text-[40px] md:text-[60px] xl:text-[100px] leading-[100%]">Популярные вопросы</h1>
     <div class="relative flex max-lg:justify-center gap-[20px] mt-[90px]">
       <div class="lg:w-4/12 flex flex-col gap-[20px]">

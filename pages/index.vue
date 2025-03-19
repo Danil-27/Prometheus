@@ -2,7 +2,7 @@
   <SectionObverse></SectionObverse>
   <SectionAchievement></SectionAchievement>
   <SectionMission></SectionMission>
-  <!-- <SectionProjects></SectionProjects> -->
+  <SectionProjects></SectionProjects>
   <SectionOffer></SectionOffer>
   <SectionPrice></SectionPrice>
   <SectionTopics></SectionTopics>

@@ -1,5 +1,5 @@
 <template>
-  <section class="container section-margin-top mb-[408px]">
+  <section class="container section-margin-top">
     <QuestionDesktop class="max-lg:hidden" :questions="questions"></QuestionDesktop>
     <QuestionMobile class="lg:hidden" :questions="questions"></QuestionMobile>
   </section>
