@@ -1,17 +1,10 @@
 <template>
   <div class="relative container mt-[20px] xxl:mt-[35px]">
-    <div
-      class="relative bg-white rounded-base flex items-center h-[5rem] xxl:h-[6.25rem] z-10"
-    >
-      <div
-        class="flex justify-between items-center w-full px-[50px] xl:px-[100px]"
-      >
+    <div class="relative bg-white rounded-base flex items-center h-[5rem] xxl:h-[6.25rem] z-10">
+      <div class="flex justify-between items-center w-full px-[50px] xl:px-[100px]">
         <Logo class="logo" />
         <div class="flex">
-          <Nav
-            :links="links"
-            class="header-nav hidden lg:block xxl:text-xs font-jetReg"
-          />
+          <Nav :links="links" class="header-nav hidden lg:block xxl:text-xs font-jetReg" />
         </div>
       </div>
     </div>
@@ -25,31 +18,29 @@
 </template>
 
 <script setup lang="ts">
-import { links } from './type'
+import { links } from './type';
 
-let isMenu = ref<boolean>(false)
+let isMenu = ref<boolean>(false);
 
 function toggleBurger() {
-  isMenu.value = !isMenu.value
-  toggleClassNoScrooll()
+  isMenu.value = !isMenu.value;
+  toggleClassNoScrooll();
 }
 
 function toggleLink() {
-  isMenu.value = !isMenu.value
-  toggleClassNoScrooll()
+  isMenu.value = !isMenu.value;
+  toggleClassNoScrooll();
 }
 
 function toggleClassNoScrooll() {
-  const element = document.querySelector('html')
-  isMenu.value
+  const element = document.querySelector('html');
+  isMenu.value;
   if (isMenu.value) {
-    element?.classList.add('no-scroll')
+    element?.classList.add('no-scroll');
   } else {
-    element?.classList.remove('no-scroll')
+    element?.classList.remove('no-scroll');
   }
 }
-
-//
 
 // const IsHidenHeader = ref<boolean>(true)
 
@@ -126,7 +117,7 @@ function toggleClassNoScrooll() {
 @media screen and (min-width: 992px) {
   .header-nav :deep(.nav__block .nav__item:last-child .nav__link) {
     background-color: var(--black);
-    color: var(--lightGray);
+    color: var(--white);
     border-radius: 50px;
     padding: 10px 35px;
   }

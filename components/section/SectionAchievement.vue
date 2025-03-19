@@ -1,12 +1,10 @@
 <template>
-  <section
-    class="section container flex gap-5 flex-wrap lg:flex-nowrap justify-center items-center mt-[3.125rem]"
-  >
+  <section class="section container flex gap-5 flex-wrap lg:flex-nowrap justify-center items-center mt-[3.125rem]">
     <Achievement
-      class="achieve w-[80%] lg:w-4/12"
+      class="achieve max-xs:w-[90%] lg:w-4/12"
       :class="{
-        'xs:isButton ': achieve.id == 3,
         'xs:w-[calc(50%-10px)] ': achieve.id <= 2,
+        'max-sm:w-[55%] sm:w-[50%] ': achieve.id == 3,
         'bg-green': achieve.id % 2 === 0,
         'bg-yellow': achieve.id % 2 !== 0,
       }"
@@ -14,10 +12,7 @@
       :key="achieve.id"
     >
       <template v-slot:content>
-        <p
-          class="font-jetBold lg:text-[16px] xxl:text-xs uppercase"
-          v-html="achieve.content"
-        ></p>
+        <p class="font-jetBold lg:text-[16px] xxl:text-xs uppercase" v-html="achieve.content"></p>
       </template>
       <template v-slot:number>
         <p
@@ -31,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { achievements } from './type'
+import { achievements } from './type';
 </script>
 
 <style scoped lang="scss"></style>

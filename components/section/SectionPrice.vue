@@ -8,26 +8,22 @@
         :style="{ backgroundImage: `url(${imagesPrice[2].url})` }"
         class="relative lg:col-span-2 xl:col-span-2 xl:order-4 flex flex-col justify-between rounded-base text-[30px] px-[24px] py-[20px] md:px-[25px] md:pt-[25px] md:pb-[38px] bg-cover bg-center bg-no-repeat"
       >
-        <!-- <div
-          :style="{ backgroundImage: `url(${imagesPrice[2].url})` }"
-          class="absolute top-0 left-0 w-full h-full z-[-0] bg-left bg-s bg-no-repeat"
-        > -->
         <div class="max-w-[370px]">
           <h3 class="font-jetBold text-[20px] lg:text-[30px]">Тариф базовый</h3>
           <p class="font-interReg text-[16px] lg:text-[24px]">
             Дизайн проект с основными чертежами, без визуализации1200руб.м²
           </p>
         </div>
-        <nuxt-link to="#">
-          <button
-            class="w-full flex items-center justify-between font-jetReg text-primary py-[15px] px-[20px] text-black bg-white rounded-base mt-[30px]"
-          >
-            <span class="text-primary">Подробнее</span>
-            <IconCard class="w-[30px] h-[30px] rotate-[45deg]" />
-          </button>
-        </nuxt-link>
+        <nuxt-link to="#"></nuxt-link>
+        <BtnBase @click="checkContent(0)" :checkPrice="checkPrice[0]">
+          <template v-slot:text>
+            <div>Изучить</div>
+          </template>
+          <template v-slot:icon>
+            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
-      <!-- </div> -->
       <div
         class="lg:col-span-2 xl:col-span-2 xl:order-2 flex flex-col justify-between bg-green rounded-base text-[30px] px-[24px] py-[20px] md:px-[25px] md:pt-[25px] md:pb-[38px] bg-cover bg-center bg-no-repeat"
         :style="{ backgroundImage: `url(${imagesPrice[3].url})` }"
@@ -38,14 +34,15 @@
             Дизайн проект с основными чертежами и визуализацией2200руб.м²
           </p>
         </div>
-        <nuxt-link to="#">
-          <button
-            class="w-full flex items-center justify-between font-jetReg text-primary py-[15px] px-[20px] text-black bg-white rounded-base mt-[30px]"
-          >
-            <span class="text-primary">Подробнее</span>
-            <IconCard class="w-[30px] h-[30px] rotate-[45deg]" />
-          </button>
-        </nuxt-link>
+        <nuxt-link to="#"></nuxt-link>
+        <BtnBase @click="checkContent(1)" :checkPrice="checkPrice[1]">
+          <template v-slot:text>
+            <div>Изучить</div>
+          </template>
+          <template v-slot:icon>
+            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
       <div
         class="lg:col-span-3 xl:row-span-2 xl:col-span-1 xl:order-1 flex flex-col justify-between xl:flex-col-reverse bg-green rounded-base text-[30px] px-[24px] py-[20px] md:px-[25px] md:pt-[25px] md:pb-[38px] bg-cover bg-center bg-no-repeat"
@@ -58,28 +55,31 @@
           </p>
         </div>
 
-        <nuxt-link to="#">
-          <button
-            class="w-full flex items-center justify-between font-jetReg text-primary py-[15px] px-[20px] text-black bg-white rounded-base mt-[30px]"
-          >
-            <span class="text-primary">Подробнее</span>
-            <IconCard class="w-[30px] h-[30px] rotate-[45deg]" />
-          </button>
-        </nuxt-link>
+        <nuxt-link to="#"></nuxt-link>
+        <BtnBase @click="checkContent(2)" :checkPrice="checkPrice[2]">
+          <template v-slot:text>
+            <div>Изучить</div>
+          </template>
+          <template v-slot:icon>
+            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
       <div
         class="lg:col-span-1 xl:row-span-2 xl:order-3 flex flex-col justify-between bg-green rounded-base text-[30px] px-[24px] py-[20px] md:px-[25px] md:pt-[25px] md:pb-[38px] bg-cover bg-center bg-no-repeat"
         :style="{ backgroundImage: `url(${imagesPrice[5].url})` }"
       >
         <h3 class="font-jetBold text-[20px] lg:text-[30px]">Опциональные улуги</h3>
-        <nuxt-link to="#">
-          <button
-            class="w-full flex items-center justify-between font-jetReg text-primary py-[15px] px-[20px] text-black bg-white rounded-base mt-[30px]"
-          >
-            <span class="text-primary">Подробнее</span>
-            <IconCard class="w-[30px] h-[30px] rotate-[45deg]" />
-          </button>
-        </nuxt-link>
+        <nuxt-link to="#"></nuxt-link>
+
+        <BtnBase @click="checkContent(3)" :checkPrice="checkPrice[3]">
+          <template v-slot:text>
+            <div>Изучить</div>
+          </template>
+          <template v-slot:icon>
+            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
     </div>
   </section>
@@ -88,6 +88,18 @@
 <script setup lang="ts">
 import IconCard from '@/assets/images/svg/arrow/arrow-card.svg';
 import { imagesPrice } from './type';
+import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
+
+const checkPrice = ref([false, false, false, false]);
+
+function checkContent(indexElem: number) {
+  checkPrice.value[indexElem] = true;
+  sessionStorage.setItem('checkPrice', JSON.stringify(checkPrice.value));
+}
+
+onMounted(() => {
+  useStorageCheckContent('checkPrice', checkPrice);
+});
 </script>
 
 <style scoped lang="scss"></style>

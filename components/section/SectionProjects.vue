@@ -25,25 +25,19 @@
         <div class="absolute inset-0 bg-[rgba(0,0,0,0.4)]"></div>
         <div class="relative h-full flex flex-col justify-between z-10 text-white">
           <nuxt-link to="/projects">
-            <button
-              class="plate absolute right-0 w-[80px] h-[80px] ml-auto rounded-[100%]"
-              :class="{
-                'bg-[var(--yellow)]': isHover[index],
-                'bg-[var(--white)]': !isHover[index],
-              }"
-            >
-              <IconCard class="absolute w-[70px] h-[70px] top-[50%] translate-x-[-50%] left-[50%] translate-y-[-50%]" />
-            </button>
+            <BtnArrow :isHover="isHover[index]" :index="index" />
           </nuxt-link>
           <div>
             <p v-html="card.content" class="font-jetBold text-[30px] max-[570px]:text-[25px]"></p>
             <nuxt-link to="/projects">
-              <button
-                class="w-full flex items-center justify-between font-jetReg text-primary py-[15px] px-[20px] text-black bg-white rounded-base mt-[30px]"
-              >
-                <span class="text-primary">Изучить</span>
-                <IconCard class="w-[30px] h-[30px] rotate-[45deg]" />
-              </button>
+              <BtnBase @click="checkContent(index)" :checkProject="buttonCheck[index]">
+                <template v-slot:text>
+                  <div>Изучить</div>
+                </template>
+                <template v-slot:icon>
+                  <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+                </template>
+              </BtnBase>
             </nuxt-link>
           </div>
         </div>
@@ -55,9 +49,11 @@
 <script setup lang="ts">
 import IconBtn from '@/assets/images/svg/arrow/arrow-right-btn.svg';
 import IconCard from '@/assets/images/svg/arrow/arrow-card.svg';
+import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
 import { cards } from './type';
 
 let isHover = ref<boolean[]>(new Array(cards.length).fill(false));
+let buttonCheck = ref<boolean[]>(new Array(cards.length).fill(false));
 
 function handleMouseOver(index: number) {
   isHover.value[index] = true;
@@ -66,6 +62,15 @@ function handleMouseOver(index: number) {
 function handleMouseLeave() {
   isHover.value.fill(false);
 }
+
+function checkContent(index: number) {
+  buttonCheck.value[index] = true;
+  sessionStorage.setItem('buttonCheck', JSON.stringify(buttonCheck.value));
+}
+
+onMounted(() => {
+  useStorageCheckContent('buttonCheck', buttonCheck);
+});
 </script>
 
 <style scoped lang="scss"></style>

@@ -27,6 +27,7 @@ module.exports = {
     },
     colors: {
       white: 'var(--white)',
+      'white-80': 'rgba(255, 255, 255, 0.8)',
       black: 'var(--black)',
       grey: 'var(--grey)',
       yellow: 'var(--yellow)',
