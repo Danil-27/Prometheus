@@ -30,6 +30,7 @@ module.exports = {
       'white-80': 'var(--white-80)',
       'white-25': 'var(--white-25)',
       black: 'var(--black)',
+      'black-40': 'var(--black-40)',
       Carbonic: 'var(--Carbonic)',
       Onyx: 'var(--Onyx)',
       grey: 'var(--grey)',

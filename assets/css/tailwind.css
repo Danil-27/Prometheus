@@ -22,6 +22,10 @@ body {
     @apply rounded-base;
   }
 
+  .text-ptice {
+    @apply text-[16px] min-[880px]:text-[18px]  lg:text-[22px] xl:text-[24px];
+  }
+
   .text-primary {
     @apply text-[1.125rem] xl:text-[1.25rem] xxl:text-[1.5rem];
   }
@@ -35,6 +39,5 @@ body {
   .card {
     border-radius: theme('borderRadius.lg');
     padding: theme('spacing.6');
-    /* box-shadow: theme('boxShadow.xl'); */
   }
 }

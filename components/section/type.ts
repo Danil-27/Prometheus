@@ -49,29 +49,6 @@ export const cards: Card[] = [
   },
 ];
 
-// price
-
-import price from '~/assets/images/img/price/edge.png';
-import background from '~/assets/images/img/price/background.png';
-import x from '~/assets/images/img/price/x.png';
-import y from '~/assets/images/img/price/y.png';
-import v from '~/assets/images/img/price/home-mobule.png';
-import m from '~/assets/images/img/price/m.png';
-
-interface ImgPrice {
-  url: string;
-  alt: string;
-}
-
-export const imagesPrice: ImgPrice[] = [
-  { url: background, alt: '123' },
-  { url: price, alt: '123' },
-  { url: x, alt: '123' },
-  { url: y, alt: '123' },
-  { url: v, alt: '123' },
-  { url: m, alt: '123' },
-];
-
 // stages
 
 export interface Topic {

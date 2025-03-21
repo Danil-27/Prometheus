@@ -7,7 +7,6 @@
   <SectionPrice></SectionPrice>
   <SectionTopics></SectionTopics>
   <SectionInput></SectionInput>
-
   <SectionQuestion></SectionQuestion>
 </template>
 

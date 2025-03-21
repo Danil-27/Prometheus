@@ -25,7 +25,7 @@
         @mouseleave="handleMouseLeave"
         :style="{ backgroundImage: `url(${card.src})` }"
       >
-        <div class="absolute inset-0 bg-[rgba(0,0,0,0.4)]"></div>
+        <div class="absolute inset-0 bg-black-40"></div>
         <div class="relative h-full flex flex-col justify-between z-10 text-white">
           <nuxt-link to="/projects">
             <BtnArrow :isHover="isHover[index]" :index="index" />
@@ -33,7 +33,11 @@
           <div>
             <p v-html="card.content" class="font-jetBold text-[30px] max-[570px]:text-[25px]"></p>
             <nuxt-link to="/projects">
-              <BtnBase @click="toggleBase(index)" :isCheckBaseProject="checkBaseBtn[index]">
+              <BtnBase
+                class="w-full flex items-center justify-between py-[15px] px-[20px] mt-[30px]"
+                @click="toggleBase(index)"
+                :isCheckBaseProject="checkBaseBtn[index]"
+              >
                 <template v-slot:text>
                   <div>Изучить</div>
                 </template>
