@@ -15,19 +15,20 @@
             1200руб.м²
           </p>
         </div>
-        <nuxt-link to="#"></nuxt-link>
-        <BtnBase
-          class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
-          @click="checkContent(0)"
-          :isCheckBasePrice="checkSecondaryBtn[0]"
-        >
-          <template v-slot:text>
-            <div>Подробнее</div>
-          </template>
-          <template v-slot:icon>
-            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
-          </template>
-        </BtnBase>
+        <nuxt-link class="ml-auto" to="#">
+          <BtnBase
+            class="max-w-[250px] inline-flex gap-[50px] items-center justify-between py-[12px] px-[20px]"
+            @click="checkContent(0)"
+            :isCheckBasePrice="checkSecondaryBtn[0]"
+          >
+            <template v-slot:text>
+              <div>Подробнее</div>
+            </template>
+            <template v-slot:icon>
+              <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+            </template>
+          </BtnBase>
+        </nuxt-link>
       </div>
 
       <div
@@ -41,19 +42,20 @@
             визуализацией 2200руб.м²
           </p>
         </div>
-        <nuxt-link to="#"></nuxt-link>
-        <BtnBase
-          class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
-          @click="checkContent(1)"
-          :isCheckBasePrice="checkSecondaryBtn[1]"
-        >
-          <template v-slot:text>
-            <div>Подробнее</div>
-          </template>
-          <template v-slot:icon>
-            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
-          </template>
-        </BtnBase>
+        <nuxt-link class="ml-auto" to="#">
+          <BtnBase
+            class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
+            @click="checkContent(1)"
+            :isCheckBasePrice="checkSecondaryBtn[1]"
+          >
+            <template v-slot:text>
+              <div>Подробнее</div>
+            </template>
+            <template v-slot:icon>
+              <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+            </template>
+          </BtnBase>
+        </nuxt-link>
       </div>
 
       <div
@@ -68,38 +70,39 @@
           </p>
         </div>
 
-        <nuxt-link to="#"></nuxt-link>
-        <BtnBase
-          class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
-          @click="checkContent(2)"
-          :isCheckBasePrice="checkSecondaryBtn[2]"
-        >
-          <template v-slot:text>
-            <div>Подробнее</div>
-          </template>
-          <template v-slot:icon>
-            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
-          </template>
-        </BtnBase>
+        <nuxt-link class="ml-auto" to="#">
+          <BtnBase
+            class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
+            @click="checkContent(2)"
+            :isCheckBasePrice="checkSecondaryBtn[2]"
+          >
+            <template v-slot:text>
+              <div>Подробнее</div>
+            </template>
+            <template v-slot:icon>
+              <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+            </template>
+          </BtnBase>
+        </nuxt-link>
       </div>
       <div
         class="lg:col-span-1 xl:row-span-2 xl:order-3 flex flex-col justify-between xl:justify-end rounded-base text-[30px] p-[15px] xs:p-[20px] md:p-[30px] bg-cover bg-no-repeat bg-[position:65px_center,0_0] min-[410px]:bg-[70%,cover] min-[410px]:bg-[position:100px_-60px,0_0] min-[495px]:bg-[position:100px_-120px,0_0] sm:bg-[position:100px_-60px,0_0] sm:bg-[80%,cover] min-[800px]:bg-[position:100px_-100px,0_0] lg:bg-[cover,cover] lg:bg-[position:130px_-40px,0_0] bg-[url('~/assets/images/img/price/lamp.png'),url('~/assets/images/img/price/background.png')] xl:bg-[position:center] xl:bg-[url('~/assets/images/img/price/lamp_and_bg.png')]"
       >
         <h3 class="uppercase max-w-[160px] font-jetBold text-[20px] lg:text-[30px]">Опциональные улуги</h3>
-        <nuxt-link to="#"></nuxt-link>
-
-        <BtnBase
-          class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px] xl:mt-[30px]"
-          @click="checkContent(3)"
-          :isCheckBasePrice="checkSecondaryBtn[3]"
-        >
-          <template v-slot:text>
-            <div>Подробнее</div>
-          </template>
-          <template v-slot:icon>
-            <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
-          </template>
-        </BtnBase>
+        <nuxt-link class="ml-auto lg:mx-auto" to="#">
+          <BtnBase
+            class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px] xl:mt-[30px]"
+            @click="checkContent(3)"
+            :isCheckBasePrice="checkSecondaryBtn[3]"
+          >
+            <template v-slot:text>
+              <div>Подробнее</div>
+            </template>
+            <template v-slot:icon>
+              <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
+            </template>
+          </BtnBase>
+        </nuxt-link>
       </div>
     </div>
   </section>

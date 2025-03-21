@@ -8,7 +8,7 @@
       :class="{
         'bg-white': !isCheck[index],
         'bg-grayLight': isCheck[index],
-        '!bg-green': index == itemQuestion,
+        '!bg-green': isAnswer[index],
       }"
     >
       <h3 class="relative font-jetBold text-[18px] xs:text-[22px] mr-[45px] max-[370px]:mr-[25px]">
@@ -45,12 +45,15 @@ let itemQuestion = ref<number | null>(null);
 let isCheck = ref<boolean[]>(new Array(props.questions.length).fill(false));
 
 function toggleAnswer(index: number) {
+  isAnswer.value.fill(false);
   isAnswer.value[index] = !isAnswer.value[index];
   isCheck.value[index] = true;
   itemQuestion.value = index;
+  sessionStorage.setItem('CheckQuestionMobile', JSON.stringify(isCheck.value));
 }
 
 onMounted(() => {
+  useStorageCheckContent('CheckQuestionMobile', isCheck);
   props.questions.forEach((el, index) => {
     const contentElement = document.querySelectorAll('.accordion-content')[index];
     contentHeight.value[index] = contentElement ? contentElement.scrollHeight : 0;
