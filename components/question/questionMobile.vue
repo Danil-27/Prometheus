@@ -1,15 +1,15 @@
 <template>
   <div class="flex justify-center flex-col gap-[20px]">
     <div
-      class="rounded-3xl py-[10px] px-[16px]"
       v-for="(question, index) in questions"
       :key="question.id"
-      @click="toggleAnswer(index)"
+      class="rounded-3xl py-[10px] px-[16px]"
       :class="{
         'bg-white': !isCheck[index],
         'bg-grayLight': isCheck[index],
-        '!bg-green': isAnswer[index],
+        '!bg-green': isAnswer[index]
       }"
+      @click="toggleAnswer(index)"
     >
       <h3 class="relative font-jetBold text-[18px] xs:text-[22px] mr-[45px] max-[370px]:mr-[25px]">
         {{ question.question }}
@@ -33,32 +33,32 @@
 </template>
 
 <script setup lang="ts">
-import IconCross from '~/assets/images/svg/cross/cross.svg';
+  import IconCross from '~/assets/images/svg/cross/cross.svg';
 
-const props = defineProps<{
-  questions: { id: number; question: string; answer: string }[];
-}>();
+  const props = defineProps<{
+    questions: { id: number; question: string; answer: string }[];
+  }>();
 
-let isAnswer = ref<boolean[]>(Array(props.questions.length).fill(false));
-let contentHeight = ref<number[]>(Array(props.questions.length).fill(0));
-let itemQuestion = ref<number | null>(null);
-let isCheck = ref<boolean[]>(new Array(props.questions.length).fill(false));
+  const isAnswer = ref<boolean[]>(Array(props.questions.length).fill(false));
+  const contentHeight = ref<number[]>(Array(props.questions.length).fill(0));
+  const itemQuestion = ref<number | null>(null);
+  const isCheck = ref<boolean[]>(new Array(props.questions.length).fill(false));
 
-function toggleAnswer(index: number) {
-  isAnswer.value.fill(false);
-  isAnswer.value[index] = !isAnswer.value[index];
-  isCheck.value[index] = true;
-  itemQuestion.value = index;
-  sessionStorage.setItem('CheckQuestionMobile', JSON.stringify(isCheck.value));
-}
+  function toggleAnswer(index: number) {
+    isAnswer.value.fill(false);
+    isAnswer.value[index] = !isAnswer.value[index];
+    isCheck.value[index] = true;
+    itemQuestion.value = index;
+    sessionStorage.setItem('CheckQuestionMobile', JSON.stringify(isCheck.value));
+  }
 
-onMounted(() => {
-  useStorageCheckContent('CheckQuestionMobile', isCheck);
-  props.questions.forEach((el, index) => {
-    const contentElement = document.querySelectorAll('.accordion-content')[index];
-    contentHeight.value[index] = contentElement ? contentElement.scrollHeight : 0;
+  onMounted(() => {
+    useStorageCheckContent('CheckQuestionMobile', isCheck);
+    props.questions.forEach((el, index) => {
+      const contentElement = document.querySelectorAll('.accordion-content')[index];
+      contentHeight.value[index] = contentElement ? contentElement.scrollHeight : 0;
+    });
   });
-});
 </script>
 
 <style scoped lang="scss"></style>

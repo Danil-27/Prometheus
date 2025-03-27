@@ -12,9 +12,7 @@
           Prometheus
         </p>
         <!-- нужно SEO H1 -->
-        <div
-          class="text-[1.5rem] sm:text-[2rem] xl:text-[3rem] xxl:text-[3.75rem] leading-[110%]"
-        >
+        <div class="text-[1.5rem] sm:text-[2rem] xl:text-[3rem] xxl:text-[3.75rem] leading-[110%]">
           <p>Несем свет</p>
           <p>Создаем эстетику</p>
           <p>Вдыхаем уют</p>
@@ -27,16 +25,12 @@
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-.obverse-bg {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.69) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-color: rgba(0, 0, 0, 0.36);
-}
+  .obverse-bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.69) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: rgba(0, 0, 0, 0.36);
+  }
 </style>

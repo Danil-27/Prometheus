@@ -15,13 +15,13 @@
         Бесплатный чертеж планировки-Ваш надежный фундамент для идеального ремонта. Оставьте заявку для использования
         специального предожения
       </p>
-      <nuxt-link to="#"></nuxt-link>
+      <nuxt-link to="#" />
       <BtnSecondary
-        :isCheckSecondaryOffer="checkSecondaryBtn"
-        @click="toggleSecondary()"
+        :is-check-secondary-offer="checkSecondaryBtn"
         class="flex items-center mx-auto lg:mx-0 mt-[50px] gap-[70px] px-7 py-3"
+        @click="toggleSecondary()"
       >
-        <template v-slot:text>Смотреть все</template>
+        <template #text>Смотреть все</template>
       </BtnSecondary>
     </div>
     <div class="lg:w-4/12">
@@ -31,16 +31,16 @@
 </template>
 
 <script setup lang="ts">
-let checkSecondaryBtn = ref<boolean>(false);
+  const checkSecondaryBtn = ref<boolean>(false);
 
-function toggleSecondary() {
-  checkSecondaryBtn.value = true;
-  sessionStorage.setItem('checkSecondaryOffer', JSON.stringify(checkSecondaryBtn.value));
-}
+  function toggleSecondary() {
+    checkSecondaryBtn.value = true;
+    sessionStorage.setItem('checkSecondaryOffer', JSON.stringify(checkSecondaryBtn.value));
+  }
 
-onMounted(() => {
-  useStorageCheckContent('checkSecondaryOffer', checkSecondaryBtn);
-});
+  onMounted(() => {
+    useStorageCheckContent('checkSecondaryOffer', checkSecondaryBtn);
+  });
 </script>
 
 <style scoped lang="scss"></style>

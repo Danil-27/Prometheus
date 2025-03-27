@@ -18,13 +18,13 @@
         <nuxt-link class="ml-auto" to="#">
           <BtnBase
             class="max-w-[250px] inline-flex gap-[50px] items-center justify-between py-[12px] px-[20px]"
+            :is-check-base-price="checkSecondaryBtn[0]"
             @click="checkContent(0)"
-            :isCheckBasePrice="checkSecondaryBtn[0]"
           >
-            <template v-slot:text>
+            <template #text>
               <div>Подробнее</div>
             </template>
-            <template v-slot:icon>
+            <template #icon>
               <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
             </template>
           </BtnBase>
@@ -45,13 +45,13 @@
         <nuxt-link class="ml-auto" to="#">
           <BtnBase
             class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
+            :is-check-base-price="checkSecondaryBtn[1]"
             @click="checkContent(1)"
-            :isCheckBasePrice="checkSecondaryBtn[1]"
           >
-            <template v-slot:text>
+            <template #text>
               <div>Подробнее</div>
             </template>
-            <template v-slot:icon>
+            <template #icon>
               <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
             </template>
           </BtnBase>
@@ -73,13 +73,13 @@
         <nuxt-link class="ml-auto" to="#">
           <BtnBase
             class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
+            :is-check-base-price="checkSecondaryBtn[2]"
             @click="checkContent(2)"
-            :isCheckBasePrice="checkSecondaryBtn[2]"
           >
-            <template v-slot:text>
+            <template #text>
               <div>Подробнее</div>
             </template>
-            <template v-slot:icon>
+            <template #icon>
               <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
             </template>
           </BtnBase>
@@ -92,13 +92,13 @@
         <nuxt-link class="ml-auto lg:mx-auto" to="#">
           <BtnBase
             class="max-w-[250px] inline-flex gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px] xl:mt-[30px]"
+            :is-check-base-price="checkSecondaryBtn[3]"
             @click="checkContent(3)"
-            :isCheckBasePrice="checkSecondaryBtn[3]"
           >
-            <template v-slot:text>
+            <template #text>
               <div>Подробнее</div>
             </template>
-            <template v-slot:icon>
+            <template #icon>
               <IconCard class="flex w-[30px] h-[30px] rotate-[45deg]" />
             </template>
           </BtnBase>
@@ -109,19 +109,19 @@
 </template>
 
 <script setup lang="ts">
-import IconCard from '@/assets/images/svg/arrow/arrow-card.svg';
-import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
+  import IconCard from '@/assets/images/svg/arrow/arrow-card.svg';
+  import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
 
-const checkSecondaryBtn = ref([false, false, false, false]);
+  const checkSecondaryBtn = ref([false, false, false, false]);
 
-function checkContent(indexElem: number) {
-  checkSecondaryBtn.value[indexElem] = true;
-  sessionStorage.setItem('checkSecondaryPrice', JSON.stringify(checkSecondaryBtn.value));
-}
+  function checkContent(indexElem: number) {
+    checkSecondaryBtn.value[indexElem] = true;
+    sessionStorage.setItem('checkSecondaryPrice', JSON.stringify(checkSecondaryBtn.value));
+  }
 
-onMounted(() => {
-  useStorageCheckContent('checkSecondaryPrice', checkSecondaryBtn);
-});
+  onMounted(() => {
+    useStorageCheckContent('checkSecondaryPrice', checkSecondaryBtn);
+  });
 </script>
 
 <style scoped lang="scss"></style>

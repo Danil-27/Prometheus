@@ -38,8 +38,8 @@
 </template>
 
 <script setup lang="ts">
-import MissionIcon from '@/assets/images/svg/mission/mission.svg';
-import missionArrow from '@/assets/images/svg/mission/arrow-mission.svg';
+  import MissionIcon from '@/assets/images/svg/mission/mission.svg';
+  import missionArrow from '@/assets/images/svg/mission/arrow-mission.svg';
 </script>
 
 <style scoped lang="scss"></style>

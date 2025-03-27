@@ -16,9 +16,9 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  topics: { index: number; title: string; content: string }[];
-}>();
+  defineProps<{
+    topics: { index: number; title: string; content: string }[];
+  }>();
 </script>
 
 <style scoped lang="scss"></style>

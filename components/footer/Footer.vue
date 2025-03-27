@@ -32,7 +32,7 @@
           Время работы
           <span class="max-md:hidden">:</span>
         </p>
-        <p class="mt-[4px]">Будни, с 09:00 до 21:00</p>
+        <p class="mt-[4px]">Будни, с 09:00 до 21:00</p>
       </div>
     </div>
     <p
@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import { rulePicture } from './type';
+  import { rulePicture } from './type';
 </script>
 
 <style scoped lang="scss"></style>

@@ -1,13 +1,15 @@
 <template>
-  <SectionObverse></SectionObverse>
-  <SectionAchievement></SectionAchievement>
-  <SectionMission></SectionMission>
-  <SectionProjects></SectionProjects>
-  <SectionOffer></SectionOffer>
-  <SectionPrice></SectionPrice>
-  <SectionTopics></SectionTopics>
-  <SectionInput></SectionInput>
-  <SectionQuestion></SectionQuestion>
+  <div>
+    <SectionObverse />
+    <SectionAchievement />
+    <SectionMission />
+    <SectionProjects />
+    <SectionOffer />
+    <SectionPrice />
+    <SectionTopics />
+    <SectionInput />
+    <SectionQuestion />
+  </div>
 </template>
 
 <script setup lang="ts"></script>

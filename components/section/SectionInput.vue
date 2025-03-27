@@ -23,8 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { inputBg } from './type';
-//  :class="{ backgroundImage: `url(${inputBg})` }"
+  //  :class="{ backgroundImage: `url(${inputBg})` }"
 </script>
 
 <style scoped lang="scss"></style>

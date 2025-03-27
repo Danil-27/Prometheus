@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { topics } from './type';
+  import { topics } from './type';
 </script>
 
 <style scoped lang="scss"></style>
