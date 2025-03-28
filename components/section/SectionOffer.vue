@@ -25,7 +25,7 @@
       </BtnSecondary>
     </div>
     <div class="lg:w-4/12">
-      <img class="h-[400px] lg:h-auto" src="@/assets/images/img/offer/furniture.png" alt="furniture" />
+      <img class="h-[400px] lg:h-auto" src="@/assets/images/offer/furniture.png" alt="furniture" />
     </div>
   </section>
 </template>

@@ -4,7 +4,6 @@
 </template>
 
 <script setup lang="ts">
-  // import ClouseSvg from '~/assets/images/svg/x/cross.svg'
   const indexSlide = ref<number | null>();
 
   function handleUpdate(index: number) {

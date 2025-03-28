@@ -44,9 +44,9 @@
 </template>
 
 <script setup lang="ts">
-  import ArrowDetailsSvg from '~/assets/images/svg/arrow/arrowDetailsSvg.svg';
-  import ArrowRightSvg from '~/assets/images/svg/arrow/right-swiper.svg';
-  import ArrowLeftSvg from '~/assets/images/svg/arrow/left-swiper.svg';
+  import ArrowDetailsSvg from '~/assets/svg/arrow/arrowDetailsSvg.svg';
+  import ArrowRightSvg from '~/assets/svg/arrow/right-swiper.svg';
+  import ArrowLeftSvg from '~/assets/svg/arrow/left-swiper.svg';
   import { images } from './type';
   const isOpen = ref(false); // изначально false
   const slides = ref(images);

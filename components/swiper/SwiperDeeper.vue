@@ -22,8 +22,8 @@
 </template>
 
 <script setup lang="ts">
-  import ArrowRightSvg from '~/assets/images/svg/arrow/right-swiper.svg';
-  import ArrowLeftSvg from '~/assets/images/svg/arrow/left-swiper.svg';
+  import ArrowRightSvg from '~/assets/svg/arrow/right-swiper.svg';
+  import ArrowLeftSvg from '~/assets/svg/arrow/left-swiper.svg';
   import { images } from './type';
   import { ref, onMounted } from 'vue';
 

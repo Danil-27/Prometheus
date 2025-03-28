@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-  import IconCross from '~/assets/images/svg/cross/cross.svg';
+  import IconCross from '~/assets/svg/cross/cross.svg';
 
   const props = defineProps<{
     questions: { id: number; question: string; answer: string }[];

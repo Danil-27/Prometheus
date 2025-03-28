@@ -1,10 +1,10 @@
 <template>
   <section class="container section-margin-top flex justify-center gap-[20px]">
     <div class="hidden lg:block w-5/12 rounded-base">
-      <img class="h-full" src="~/assets/images/img/input/img-input.png" alt="img-input" />
+      <img class="h-full" src="~/assets/images/input/img-input.png" alt="img-input" />
     </div>
     <div
-      class="relative w-full md:w-10/12 lg:w-7/12 lg:bg-yellow px-[10px] xs:px-[30px] xl:px-[60px] pt-[78px] pb-[150px] bg-[url('~/assets/images/img/input/img-input.png')] lg:bg-none rounded-base bg-cover bg-center"
+      class="relative w-full md:w-10/12 lg:w-7/12 lg:bg-yellow px-[10px] xs:px-[30px] xl:px-[60px] pt-[78px] pb-[150px] bg-[url('~/assets/images/input/img-input.png')] lg:bg-none rounded-base bg-cover bg-center"
     >
       <div class="lg:hidden absolute bg-[rgba(0,0,0,0.4)] inset-0 z-[0] rounded-base"></div>
       <h2

@@ -54,8 +54,8 @@
 </template>
 
 <script setup lang="ts">
-  import IconBtn from '@/assets/images/svg/arrow/arrow-right-btn.svg';
-  import IconCard from '@/assets/images/svg/arrow/arrow-card.svg';
+  import IconBtn from '@/assets/svg/arrow/arrow-right-btn.svg';
+  import IconCard from '@/assets/svg/arrow/arrow-card.svg';
   import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
   import { cards } from './type';
 

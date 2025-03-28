@@ -1,13 +1,13 @@
-import oneImage from '~/assets/images/img/slider/1.jpg'
-import twoImage from '~/assets/images/img/slider/2.jpg'
-import threeImage from '~/assets/images/img/slider/3.jpg'
-import fourImage from '~/assets/images/img/slider/4.jpg'
-import fiveImage from '~/assets/images/img/slider/5.jpg'
+import oneImage from '~/assets/images/slider/1.jpg';
+import twoImage from '~/assets/images/slider/2.jpg';
+import threeImage from '~/assets/images/slider/3.jpg';
+import fourImage from '~/assets/images/slider/4.jpg';
+import fiveImage from '~/assets/images/slider/5.jpg';
 
 interface img {
-  id: number
-  src: string
-  alt: string
+  id: number;
+  src: string;
+  alt: string;
 }
 
 export const images: Array<img> = [
@@ -20,5 +20,5 @@ export const images: Array<img> = [
   { id: 7, src: twoImage, alt: '7' },
   { id: 8, src: threeImage, alt: '8' },
   { id: 9, src: fourImage, alt: '9' },
-  { id: 10, src: fiveImage, alt: '10' },
-]
+  { id: 10, src: fiveImage, alt: '10' }
+];
