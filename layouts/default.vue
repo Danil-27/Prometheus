@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col min-h-[100vh]">
     <Header />
-    <main>
+    <main class="flex-1">
       <NuxtPage />
     </main>
     <Footer />

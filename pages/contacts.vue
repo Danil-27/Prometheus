@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container">contacts</div>
-    <div class="container">
+    <div class="custom-container">contacts</div>
+    <div class="">
       <div class="w-full h-[3000px]"></div>
     </div>
   </div>

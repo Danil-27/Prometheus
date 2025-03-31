@@ -1,7 +1,7 @@
 <template>
-  <section class="container section-margin-top">
-    <div class="flex flex-wrap gap-10 justify-between items-center">
-      <h2 class="font-jetBold text-[60px] lg:text-[80px] xl:text-[100px] leading-[100%]">Наши проекты</h2>
+  <section class="custom-container section-margin-top">
+    <div class="flex flex-wrap gap-y-10 xs:gap-10 xs:justify-between items-center">
+      <h2 class="font-jetBold text-[40px] lg:text-[80px] xl:text-[100px] leading-[100%]">Наши проекты</h2>
       <nuxt-link to="/projects" />
       <BtnSecondary
         :is-check-secondary-project="checkSecondaryBtn"
@@ -12,7 +12,7 @@
         <template #icon><IconBtn /></template>
       </BtnSecondary>
     </div>
-    <article class="flex justify-center flex-wrap xl:flex-nowrap gap-5 mt-[60px] xl:h-[600px]">
+    <article class="flex justify-center flex-wrap xl:flex-nowrap gap-5 mt-[60px] lg:h-[460px] xxl:h-[600px]">
       <div
         v-for="(card, index) in cards"
         :key="card.id"

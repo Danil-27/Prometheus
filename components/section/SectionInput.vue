@@ -1,5 +1,5 @@
 <template>
-  <section class="container section-margin-top flex justify-center gap-[20px]">
+  <section class="custom-container section-margin-top flex justify-center gap-[20px]">
     <div class="hidden lg:block w-5/12 rounded-base">
       <img class="h-full" src="~/assets/images/input/img-input.png" alt="img-input" />
     </div>

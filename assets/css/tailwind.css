@@ -9,6 +9,7 @@
 html,
 body {
   @apply bg-grey;
+  height: 100%;
 }
 
 .no-scroll {
@@ -39,5 +40,37 @@ body {
   .card {
     border-radius: theme('borderRadius.lg');
     padding: theme('spacing.6');
+  }
+}
+
+/* container */
+
+.custom-container {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .custom-container {
+    max-width: 1200px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .custom-container {
+    max-width: 1600px;
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container">services</div>
-    <div class="container">
+    <div class="custom-container">services</div>
+    <div class="custom-container">
       <div class="w-full h-[3000px]"></div>
     </div>
   </div>

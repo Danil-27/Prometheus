@@ -1,8 +1,6 @@
 <template>
   <nuxt-link to="/">
-    <p class="text-black font-jetExtraB text-[2rem] xl:text-[3rem]">
-      Prometheus
-    </p>
+    <p class="text-black font-jetExtraB lg:text-[clamp(2.1875rem,2.8vw,3rem)]">Prometheus</p>
   </nuxt-link>
 </template>
 

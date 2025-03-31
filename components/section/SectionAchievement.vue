@@ -1,5 +1,7 @@
 <template>
-  <section class="section container flex gap-5 flex-wrap lg:flex-nowrap justify-center items-center mt-[3.125rem]">
+  <section
+    class="section custom-container flex gap-5 flex-wrap lg:flex-nowrap justify-center items-center mt-[3.125rem]"
+  >
     <Achievement
       v-for="achieve in achievements"
       :key="achieve.id"

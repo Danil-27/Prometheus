@@ -1,5 +1,5 @@
 <template>
-  <section class="container section-margin-top">
+  <section class="custom-container section-margin-top">
     <h1 class="font-jetBold text-[40px] md:text-[60px] xl:text-[100px] leading-[100%]">Популярные вопросы</h1>
     <div class="relative flex max-lg:justify-center gap-[20px] mt-[90px]">
       <div class="flex flex-col w-full gap-[20px]">
@@ -46,6 +46,7 @@
   onMounted(() => {
     useStorageCheckContent('CheckQuestionDesctop', isCheck);
     numElement(0);
+    console.log(window.innerWidth);
   });
 
   function numElement(index: number): void {

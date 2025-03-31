@@ -1,5 +1,5 @@
 <template>
-  <section class="container section-margin-top">
+  <section class="custom-container section-margin-top">
     <div
       class="grid grid-cols-1 grid-rows-[auto,auto,auto,auto] min-[505px]:grid-cols-2 min-[505px]:grid-rows-[auto,auto,auto] lg:grid-cols-[40%_1fr_1fr] lg:grid-rows-2 gap-[1.125rem]"
     >

@@ -1,5 +1,5 @@
 <template>
-  <section class="container flex flex-col lg:flex-row justify-between items-center gap-5 section-margin-top">
+  <section class="custom-container flex flex-col lg:flex-row justify-between items-center gap-5 section-margin-top">
     <div class="lg:w-8/12">
       <h4 class="font-interReg text-primary">Специальное предложение</h4>
       <div class="w-6/12 h-[3px] mt-[10px] bg-gradient-to-r from-black to-transparent"></div>
