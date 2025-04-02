@@ -1,25 +1,27 @@
 <template>
   <section class="custom-container section-margin-top">
-    <div class="flex flex-wrap gap-y-10 xs:gap-10 xs:justify-between items-center">
-      <h2 class="font-jetBold text-[40px] lg:text-[80px] xl:text-[100px] leading-[100%]">Наши проекты</h2>
+    <div class="lg:flex flex-wrap gap-y-10 lg:gap-10 justify-center items-center lg:justify-between">
+      <h2 class="font-jetBold text-heading">Наши проекты</h2>
       <nuxt-link to="/projects" />
       <BtnSecondary
         :is-check-secondary-project="checkSecondaryBtn"
-        class="flex items-center gap-[70px] px-7 py-3"
+        class="flex items-center gap-[70px] px-7 py-3 max-lg:mx-auto max-lg:mt-[30px]"
         @click="toggleSecondary()"
       >
         <template #text>Смотреть все</template>
         <template #icon><IconBtn /></template>
       </BtnSecondary>
     </div>
-    <article class="flex justify-center flex-wrap xl:flex-nowrap gap-5 mt-[60px] lg:h-[460px] xxl:h-[600px]">
+    <article
+      class="flex justify-center flex-wrap lg:flex-nowrap gap-[1rem] xxl:gap-5 mt-[60px] lg:h-[460px] xxl:h-[600px]"
+    >
       <div
         v-for="(card, index) in cards"
         :key="card.id"
-        class="relative w-full min-h-[350px] sm:w-[calc(50%-20px)] p-[15px] md:px-[25px] md:pt-[25px] md:pb-[38px] rounded-base overflow-hidden bg-auto bg-center bg-no-repeat xl:transition-all duration-300"
+        class="relative w-full min-h-[350px] sm:w-[calc(50%-20px)] p-[16px] md:pb-[36px] xxl:px-[25px] md:pt-[25px] rounded-base overflow-hidden bg-auto bg-center bg-no-repeat xl:transition-all duration-300"
         :class="{
-          'xl:w-[100%]': isHover[index],
-          'xl:w-[50%]': !isHover[index]
+          'lg:w-[100%]': isHover[index],
+          'lg:w-[50%]': !isHover[index]
         }"
         :style="{ backgroundImage: `url(${card.src})` }"
         @mouseover="handleMouseOver(index)"
@@ -31,10 +33,13 @@
             <BtnArrow :is-hover="isHover[index]" :index="index" />
           </nuxt-link>
           <div>
-            <p class="font-jetBold text-[30px] max-[570px]:text-[25px]" v-html="card.content"></p>
+            <p
+              class="font-jetBold text-[21px] lg:text-[clamp(16px,1.72vw,21px)] xxl:text-[30px] max-[570px]:text-[25px]"
+              v-html="card.content"
+            ></p>
             <nuxt-link to="/projects">
               <BtnBase
-                class="w-full flex items-center justify-between py-[15px] px-[20px] mt-[30px]"
+                class="w-full flex items-center justify-between py-[11px] px-[20px] xxl:py-[15px] mt-[30px]"
                 :is-check-base-project="checkBaseBtn[index]"
                 @click="toggleBase(index)"
               >

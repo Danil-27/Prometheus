@@ -23,16 +23,23 @@ body {
     @apply rounded-base;
   }
 
+  .text-heading {
+    @apply text-[40px] xs:text-[60px] lg:text-[80px] max-lg:text-center xxl:text-[100px] leading-[100%];
+  }
   .text-ptice {
-    @apply text-[16px] min-[880px]:text-[18px]  lg:text-[22px] xl:text-[24px];
+    @apply text-[16px] min-[880px]:text-[18px]  lg:text-[18px] xxl:text-[24px];
   }
 
   .text-primary {
-    @apply text-[1.125rem] xl:text-[1.25rem] xxl:text-[1.5rem];
+    @apply text-[1.125rem] xxl:text-[1.5rem];
   }
 
   .section-margin-top {
     @apply mt-[80px] lg:mt-[100px] xl:mt-[120px] xxl:mt-[140px];
+  }
+
+  .mail-svg {
+    @apply bg-[url(~/assets/svg/input/mail.svg)] bg-no-repeat bg-[center_right_26px];
   }
 }
 

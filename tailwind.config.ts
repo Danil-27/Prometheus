@@ -29,7 +29,8 @@ module.exports = {
       yellow: 'var(--yellow)',
       green: 'var(--green)',
       grayLight: 'var(--grayLight)',
-      greenSilver: 'var(--greySilver)'
+      greenSilver: 'var(--greySilver)',
+      dimGray: 'var(--dimGray)'
     },
     fontFamily: {
       jetReg: ['JetRegular', 'sans-serif'],
@@ -45,6 +46,7 @@ module.exports = {
         '9xl': '128rem'
       },
       borderRadius: {
+        xs: '30px',
         base: '50px'
       }
     },

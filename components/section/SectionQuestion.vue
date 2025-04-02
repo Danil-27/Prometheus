@@ -1,7 +1,8 @@
 <template>
   <section class="custom-container section-margin-top">
-    <QuestionDesktop class="max-lg:hidden" :questions="questions" />
-    <QuestionMobile class="lg:hidden" :questions="questions" />
+    <h2 class="font-jetBold text-heading">Популярные вопросы</h2>
+    <QuestionDesktop class="max-lg:hidden section-margin-top" :questions="questions" />
+    <QuestionMobile class="lg:hidden section-margin-top" :questions="questions" />
   </section>
 </template>
 

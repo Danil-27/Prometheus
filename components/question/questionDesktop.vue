@@ -1,6 +1,5 @@
 <template>
-  <section class="custom-container section-margin-top">
-    <h1 class="font-jetBold text-[40px] md:text-[60px] xl:text-[100px] leading-[100%]">Популярные вопросы</h1>
+  <section class="custom-container">
     <div class="relative flex max-lg:justify-center gap-[20px] mt-[90px]">
       <div class="flex flex-col w-full gap-[20px]">
         <div v-for="(question, index) in questions" ref="questionsElement" :key="question.id" class="relative question">
@@ -25,7 +24,7 @@
               }"
               class="absolute lg:w-[calc(66.666667%-20px)] right-[0] top-0 rounded-3xl bg-white py-[25px] px-[35px]"
             >
-              <h3 class="font-jetBold text-[30px]">{{ question.question }}</h3>
+              <h3 class="font-jetBold text-[26px]">{{ question.question }}</h3>
               <p class="font-jetReg text-primary mt-[40px]">{{ question.answer }}</p>
             </div>
           </TransitionGroup>
