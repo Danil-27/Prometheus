@@ -20,8 +20,6 @@
 </template>
 
 <script setup lang="ts">
-  import { ref } from 'vue';
-
   const props = defineProps<{
     cards: {
       id: number;
@@ -31,7 +29,6 @@
     }[];
   }>();
 
-  // Создаем массив состояний для ховера, длина массива соответствует количеству карточек
   const hover = ref<boolean[]>(new Array(props.cards.length).fill(false));
 </script>
 

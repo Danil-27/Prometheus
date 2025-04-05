@@ -4,7 +4,7 @@
       <h2 class="font-jetBold text-heading">Наши проекты</h2>
       <nuxt-link to="/projects" />
       <BtnSecondary
-        :is-check-secondary-project="checkSecondaryBtn"
+        :isCheckSecondaryProject="checkSecondaryBtn"
         class="flex items-center gap-[70px] px-7 py-3 max-lg:mx-auto max-lg:mt-[30px]"
         @click="toggleSecondary()"
       >
@@ -18,7 +18,7 @@
       <div
         v-for="(card, index) in cards"
         :key="card.id"
-        class="relative w-full min-h-[350px] sm:w-[calc(50%-20px)] p-[16px] md:pb-[36px] xxl:px-[25px] md:pt-[25px] rounded-base overflow-hidden bg-auto bg-center bg-no-repeat xl:transition-all duration-300"
+        class="relative w-full min-h-[350px] sm:w-[calc(50%-20px)] p-[16px] md:pb-[36px] xxl:px-[25px] md:pt-[25px] rounded-base overflow-hidden bg-center bg-cover bg-no-repeat xl:transition-all duration-300"
         :class="{
           'lg:w-[100%]': isHover[index],
           'lg:w-[50%]': !isHover[index]
@@ -34,13 +34,14 @@
           </nuxt-link>
           <div>
             <p
-              class="font-jetBold text-[21px] lg:text-[clamp(16px,1.72vw,21px)] xxl:text-[30px] max-[570px]:text-[25px]"
-              v-html="card.content"
-            ></p>
+              class="font-jetBold text-[21px] lg:text-[clamp(16px,1.72vw,21px)] xxl:text-[30px] max-[570px]:text-[25px] whitespace-pre-line"
+            >
+              {{ card.content }}
+            </p>
             <nuxt-link to="/projects">
               <BtnBase
                 class="w-full flex items-center justify-between py-[11px] px-[20px] xxl:py-[15px] mt-[30px]"
-                :is-check-base-project="checkBaseBtn[index]"
+                :isCheckBaseProject="checkBaseBtn[index]"
                 @click="toggleBase(index)"
               >
                 <template #text>

@@ -1,3 +1,11 @@
+// input
+import inputBackground from '~/assets/images/input/img-input.png';
+// card
+import projectOne from '~/assets/images/cards/project-1.jpg';
+import projectTwo from '~/assets/images/cards/project-2.jpg';
+import projectThree from '~/assets/images/cards/project-3.jpg';
+import projectFour from '~/assets/images/cards/project-4.jpg';
+
 // Achievement
 
 interface Achievement {
@@ -7,13 +15,12 @@ interface Achievement {
 }
 
 export const achievements: Achievement[] = [
-  { id: 1, content: 'городов <br> и стран ', number: '14+' },
-  { id: 2, content: 'лет опыта <br> работы', number: '5+' },
-  { id: 3, content: 'реализованно <br> проектов', number: '50+' }
+  { id: 1, content: 'городов\nи стран ', number: '14+' },
+  { id: 2, content: 'лет опыта\nработы', number: '5+' },
+  { id: 3, content: 'реализованно\nпроектов', number: '50+' }
 ];
 
 // cards
-import project from '~/assets/images/cards/project-1.png';
 
 interface Card {
   id: number;
@@ -25,27 +32,27 @@ interface Card {
 export const cards: Card[] = [
   {
     id: 1,
-    src: project,
+    src: projectOne,
     alt: 'ss',
-    content: 'Апартаменты <br> в ЖК "Элегант"'
+    content: 'ЖК\n"Элегант"'
   },
   {
     id: 2,
-    src: project,
+    src: projectTwo,
     alt: 'ss',
-    content: 'Апартаменты <br> в ЖК "Элегант"'
+    content: 'ЖК\n"Утес"'
   },
   {
     id: 3,
-    src: project,
+    src: projectThree,
     alt: 'ss',
-    content: 'Апартаменты <br> в ЖК "Элегант"'
+    content: 'ЖК\n"Элегант"'
   },
   {
     id: 4,
-    src: project,
+    src: projectFour,
     alt: 'ss',
-    content: 'Апартаменты <br> в ЖК "Элегант"'
+    content: 'Комплекс\n“SUNFITINO”'
   }
 ];
 
@@ -83,8 +90,6 @@ export const topics: Topic[] = [
 ];
 
 // input
-
-import inputBackground from '~/assets/images/input/img-input.png';
 
 export const inputBg: string = inputBackground;
 

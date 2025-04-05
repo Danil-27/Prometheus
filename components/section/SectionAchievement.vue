@@ -14,7 +14,7 @@
       }"
     >
       <template #content>
-        <p class="font-jetBold lg:text-[16px] xxl:text-xs uppercase" v-html="achieve.content"></p>
+        <p class="font-jetBold lg:text-[16px] xxl:text-xs uppercase whitespace-pre-line">{{ achieve.content }}</p>
       </template>
       <template #number>
         <p

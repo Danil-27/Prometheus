@@ -1,6 +1,6 @@
 <template>
-  <section class="custom-container">
-    <div class="relative flex max-lg:justify-center gap-[20px] mt-[90px]">
+  <article class="custom-container">
+    <div class="relative flex max-lg:justify-center gap-[20px]">
       <div class="flex flex-col w-full gap-[20px]">
         <div v-for="(question, index) in questions" ref="questionsElement" :key="question.id" class="relative question">
           <div
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
 </template>
 
 <script setup lang="ts">

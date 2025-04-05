@@ -1,5 +1,5 @@
 <template>
-  <section class="custom-container section-margin-top">
+  <article id="form" class="custom-container section-margin-top scroll-m-[20px]">
     <div class="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-[20px] lg:rounded-base">
       <div class="w-full max-lg:hidden lg:content-center">
         <img class="h-full" src="~/assets/images/input/img-input.png" alt="img-input" />
@@ -16,7 +16,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </article>
 </template>
 
 <script setup lang="ts"></script>

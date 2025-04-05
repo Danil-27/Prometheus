@@ -25,6 +25,7 @@ module.exports = {
       'black-40': 'var(--black-40)',
       Carbonic: 'var(--Carbonic)',
       Onyx: 'var(--Onyx)',
+      anthracite: 'var(--anthracite)',
       grey: 'var(--grey)',
       yellow: 'var(--yellow)',
       green: 'var(--green)',

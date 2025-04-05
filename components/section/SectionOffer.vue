@@ -18,10 +18,11 @@
         Бесплатный чертеж планировки - Ваш надежный фундамент для идеального ремонта. Оставьте заявку и воспользуйтесь
         специальным предложением
       </p>
-      <nuxt-link to="#" />
+
       <BtnSecondary
+        onclick="location.href='#form'"
         :is-check-secondary-offer="checkSecondaryBtn"
-        class="flex items-center mx-auto lg:mx-0 mt-[35px] md:mt-[46px] px-[40px] py-[6px] xxl:px-[36px] xxl:py-[8px] xxl:mt-[60px]"
+        class="flex items-center mx-auto lg:mx-0 mt-[35px] md:mt-[46px] px-9 py-3 xxl:mt-[60px]"
         @click="toggleSecondary()"
       >
         <template #text>Заказать</template>

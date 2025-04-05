@@ -7,7 +7,7 @@
     <SectionOffer />
     <SectionPrice />
     <SectionTopics />
-    <SectionInput />
+    <SectionForm />
     <SectionQuestion />
   </div>
 </template>
