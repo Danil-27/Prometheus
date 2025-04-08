@@ -103,31 +103,29 @@
   </section>
 
   <Modal
-    :modelValue="isTrue"
+    :modelValue="isOpenModal"
     transitionValue="modal"
-    customClassWrapp="flex flex-col bg-[url('~/assets/images/modal/bacground-modal-price.png')] bg-no-repeat bg-cover rounded-base max-w-[600px]  px-[50px] pt-[20px] pb-[20px]"
-    customClassClose="bottom-[20px] right-[20px] mt-[40px] inline-block self-end"
+    customClassWrapp="flex flex-col bg-[url('~/assets/images/modal/bacground-modal-price.png')] bg-no-repeat bg-cover rounded-[20px] max-xs:bg-center xs:rounded-base max-w-[600px] px-[10px] py-[16px] xs:p-[20px] sm:p-[30px] xl:px-[50px] xl:pt-[20px] xl:pb-[20px]"
+    customClassClose="bottom-[20px] right-[20px] mt-[20px] xs:mt-[40px] inline-block self-end"
     @update:modelValue="handleModalMessage"
   >
     <template #content>
-      <p v-if="numOpneContent == 0" class="text-primary">
+      <p v-if="numOpneContent == 0" class="text-[1rem] xs:text-[1.125rem] xxl:text-[1.5rem]">
         <span class="font-InterBold block">
-          <br />
           -Основные чертежи
           <br />
           -3 планировочных решения
           <br />
           -3D планировка (не визуализация)
         </span>
-        <span class="block mt-[40px]">
+        <span class="block mt-[20px] xs::mt-[40px]">
           *В планировку входит: Розетки, осветительное оборудование, расстановка мебели, со всеми размерами, сантехника,
           полы и теплый пол при необходимости.
         </span>
         <span class="font-InterBold block mt-[20px]">1200руб.м²</span>
       </p>
-      <p v-if="numOpneContent == 1" class="text-primary">
+      <p v-if="numOpneContent == 1" class="text-[1rem] xs:text-[1.125rem] xxl:text-[1.5rem]">
         <span class="font-InterBold block">
-          <br />
           -Основные чертежи
           <br />
           -3 планировочных решения
@@ -136,15 +134,14 @@
           <br />
           -Визуализация
         </span>
-        <span class="block mt-[40px]">
+        <span class="block mt-[20px] xs:mt-[40px]">
           *В планировку входит: Розетки, осветительное оборудование, расстановка мебели, со всеми размерами, сантехника,
           полы и теплый пол при необходимости.
         </span>
         <span class="font-InterBold block mt-[20px]">2200руб.м²</span>
       </p>
-      <p v-if="numOpneContent == 2" class="text-primary">
+      <p v-if="numOpneContent == 2" class="text-[1rem] xs:text-[1.125rem] xxl:text-[1.5rem]">
         <span class="font-InterBold block">
-          <br />
           -Чертежи
           <br />
           -3 планировочных решения
@@ -155,7 +152,7 @@
           <br />
           -Развертки по стенам и комплектация
         </span>
-        <span class="block mt-[40px]">
+        <span class="block mt-[20px] xs:mt-[40px]">
           *В планировку входит: Розетки, осветительное оборудование, расстановка мебели, со всеми размерами, сантехника,
           полы и теплый пол при необходимости.
         </span>
@@ -165,21 +162,23 @@
         <span class="font-InterBold block mt-[20px]">2800руб.м²</span>
       </p>
       <p v-if="numOpneContent == 3" class="">
-        <span class="block text-[22px] xxl:text-[24px]">Большие коммерческие помещения</span>
-        <span class="font-InterBold block text-[18px]">-стоимость обсуждается индивидуально</span>
-        <span class="block h-[2px] w-full bg-black mt-[20px]"></span>
-        <span class="block text-[22px] xxl:text-[24px] mt-[30px]">Авторский надзор</span>
-        <span class="font-InterBold block text-[18px]">-стоимость обсуждается индивидуально</span>
-        <span class="block h-[2px] w-full bg-black mt-[20px]"></span>
+        <span class="block text-[18px] xs:text-[22px] xxl:text-[24px]">Большие коммерческие помещения</span>
+        <span class="font-InterBold block text-[16px] xs:text-[18px]">-стоимость обсуждается индивидуально</span>
+        <span class="block h-[2px] w-full bg-black mt-[10px] xs:mt-[20px]"></span>
+        <span class="block mt-[10px] xs:mt-[30px] text-[18px] xs:text-[22px] xxl:text-[24px]">Авторский надзор</span>
+        <span class="font-InterBold block text-[16px] xs:text-[18px]">-стоимость обсуждается индивидуально</span>
+        <span class="block h-[2px] w-full bg-black mt-[10px] xs:mt-[20px]"></span>
 
-        <span class="block text-[22px] xxl:text-[24px] mt-[30px]">Консультация с выездом по городу</span>
-        <span class="font-InterBold block text-[22px] xxl:text-[24px]">-5000руб.</span>
-        <span class="block h-[2px] w-full bg-black mt-[20px]"></span>
+        <span class="block mt-[10px] xs:mt-[30px] text-[18px] xs:text-[22px] xxl:text-[24px]">
+          Консультация с выездом по городу
+        </span>
+        <span class="font-InterBold block text-[20px] xs:text-[22px] xxl:text-[24px]">-5000руб.</span>
+        <span class="block h-[2px] w-full bg-black mt-[10px] xs:mt-[20px]"></span>
 
-        <span class="block text-[22px] xxl:text-[24px] mt-[30px]">
+        <span class="block mt-[10px] xs:mt-[30px] text-[18px] xs:text-[22px] xxl:text-[24px]">
           3D визуализация + план расстановки мебели, без чертежей
         </span>
-        <span class="font-InterBold block text-[22px] xxl:text-[24px]">-1000руб.м²</span>
+        <span class="font-InterBold block text-[20px] xs:text-[22px] xxl:text-[24px]">-1000руб.м²</span>
       </p>
     </template>
     <template #close>
@@ -201,21 +200,19 @@
   import IconCard from '@/assets/svg/arrow/arrow-card.svg';
   import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
 
-  const isTrue = ref(false);
+  const isOpenModal = ref(false);
   const numOpneContent = ref(1);
-  console.log(isTrue.value);
-
   const checkSecondaryBtn = ref([false, false, false, false]);
 
   function checkContent(indexElem: number) {
     checkSecondaryBtn.value[indexElem] = true;
     sessionStorage.setItem('checkSecondaryPrice', JSON.stringify(checkSecondaryBtn.value));
-    isTrue.value = true;
+    isOpenModal.value = true;
     numOpneContent.value = indexElem;
   }
 
   function handleModalMessage(value: boolean) {
-    isTrue.value = value;
+    isOpenModal.value = value;
   }
 
   onMounted(() => {

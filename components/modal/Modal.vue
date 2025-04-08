@@ -33,7 +33,6 @@
 
   const close = () => {
     emit('update:modelValue', false);
-    console.log('emit');
   };
 
   watch(
