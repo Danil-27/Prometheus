@@ -37,6 +37,7 @@ module.exports = {
       jetReg: ['JetRegular', 'sans-serif'],
       jetBold: ['JetBold', 'sans-serif'],
       jetExtraB: ['JetExtraBold', 'sans-serif'],
+      InterBold: ['InterBold', 'sans-serif'],
       interReg: ['InterRegular', 'sans-serif'],
       intertLight: ['InterRegular', 'sans-serif'],
       sora: ['Sora', 'sans-serif']

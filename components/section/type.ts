@@ -131,3 +131,19 @@ export const questions: Question[] = [
     answer: 'Да, мы работаем удалённо по всему миру.'
   }
 ];
+
+// Price - model
+
+interface ModelContent {
+  text: string;
+  bold: boolean;
+}
+
+export const modelContents: ModelContent[] = [
+  {
+    text: '-Чертежи\n- 3 планировочных решения -3D планировка (не визуализация) -Визуализация -Развертки по стенам и комплектация',
+    bold: true
+  },
+  { text: 'rre', bold: true },
+  { text: 'rre', bold: false }
+];

@@ -15,20 +15,19 @@
             1200руб.м²
           </p>
         </div>
-        <nuxt-link class="ml-auto" to="#">
-          <BtnBase
-            class="max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between py-[12px] px-[20px]"
-            :is-check-base-price="checkSecondaryBtn[0]"
-            @click="checkContent(0)"
-          >
-            <template #text>
-              <div>Подробнее</div>
-            </template>
-            <template #icon>
-              <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
-            </template>
-          </BtnBase>
-        </nuxt-link>
+
+        <BtnBase
+          class="ml-auto max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between py-[12px] px-[20px]"
+          :isCheckBasePrice="checkSecondaryBtn[0]"
+          @click="checkContent(0)"
+        >
+          <template #text>
+            <div>Подробнее</div>
+          </template>
+          <template #icon>
+            <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
 
       <div
@@ -42,20 +41,19 @@
             визуализацией 2200руб.м²
           </p>
         </div>
-        <nuxt-link class="ml-auto" to="#">
-          <BtnBase
-            class="max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
-            :is-check-base-price="checkSecondaryBtn[1]"
-            @click="checkContent(1)"
-          >
-            <template #text>
-              <div>Подробнее</div>
-            </template>
-            <template #icon>
-              <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
-            </template>
-          </BtnBase>
-        </nuxt-link>
+
+        <BtnBase
+          class="max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
+          :isCheckBasePrice="checkSecondaryBtn[1]"
+          @click="checkContent(1)"
+        >
+          <template #text>
+            <div>Подробнее</div>
+          </template>
+          <template #icon>
+            <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
 
       <div
@@ -70,53 +68,154 @@
           </p>
         </div>
 
-        <nuxt-link class="ml-auto" to="#">
-          <BtnBase
-            class="max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
-            :is-check-base-price="checkSecondaryBtn[2]"
-            @click="checkContent(2)"
-          >
-            <template #text>
-              <div>Подробнее</div>
-            </template>
-            <template #icon>
-              <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
-            </template>
-          </BtnBase>
-        </nuxt-link>
+        <BtnBase
+          class="max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
+          :isCheckBasePrice="checkSecondaryBtn[2]"
+          @click="checkContent(2)"
+        >
+          <template #text>
+            <div>Подробнее</div>
+          </template>
+          <template #icon>
+            <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
       <div
-        class="lg:col-span-1 xl:row-span-2 xl:order-3 flex flex-col justify-between xl:justify-end rounded-base text-[30px] p-[15px] min-[350px]:p-[20px] md:p-[30px] bg-cover bg-no-repeat bg-[position:65px_center,0_0] min-[410px]:bg-[70%,cover] min-[410px]:bg-[position:100px_-60px,0_0] min-[495px]:bg-[position:100px_-120px,0_0] sm:bg-[position:100px_-60px,0_0] sm:bg-[80%,cover] min-[800px]:bg-[position:100px_-100px,0_0] lg:bg-[cover,cover] lg:bg-[position:130px_-40px,0_0] bg-[url('~/assets/images/price/lamp.png'),url('~/assets/images/price/background.png')] xl:bg-[position:center] xl:bg-[url('~/assets/images/price/lamp_and_bg.png')]"
+        class="lg:col-span-1 xl:row-span-2 xl:order-3 flex flex-col justify-between xl:justify-end rounded-base text-[30px] p-[15px] min-[350px]:p-[20px] md:p-[30px] xl:p-[20px] xxl:p-[30px] bg-cover bg-no-repeat bg-[position:65px_center,0_0] min-[410px]:bg-[70%,cover] min-[410px]:bg-[position:100px_-60px,0_0] min-[495px]:bg-[position:100px_-120px,0_0] sm:bg-[position:100px_-60px,0_0] sm:bg-[80%,cover] min-[800px]:bg-[position:100px_-100px,0_0] lg:bg-[cover,cover] lg:bg-[position:130px_-40px,0_0] bg-[url('~/assets/images/price/lamp.png'),url('~/assets/images/price/background.png')] xl:bg-[position:center] xl:bg-[url('~/assets/images/price/lamp_and_bg.png')]"
       >
         <h3 class="uppercase max-w-[160px] font-jetBold text-[21px] xxl:text-[30px]">Опциональные улуги</h3>
-        <nuxt-link class="ml-auto lg:mx-auto" to="#">
-          <BtnBase
-            class="max-w-[250px] inline-flex gap-[40px] xl:gap-[20px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px] xl:mt-[20px] xxl:mt-[30px]"
-            :is-check-base-price="checkSecondaryBtn[3]"
-            @click="checkContent(3)"
-          >
-            <template #text>
-              <div>Подробнее</div>
-            </template>
-            <template #icon>
-              <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
-            </template>
-          </BtnBase>
-        </nuxt-link>
+
+        <BtnBase
+          class="lg:mx-auto max-w-[250px] inline-flex gap-[40px] xl:gap-[20px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px] xl:mt-[20px] xxl:mt-[30px]"
+          :isCheckBasePrice="checkSecondaryBtn[3]"
+          @click="checkContent(3)"
+        >
+          <template #text>
+            <div>Подробнее</div>
+          </template>
+          <template #icon>
+            <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[45deg]" />
+          </template>
+        </BtnBase>
       </div>
     </div>
   </section>
+
+  <Modal
+    :modelValue="isTrue"
+    transitionValue="modal"
+    customClassWrapp="flex flex-col bg-[url('~/assets/images/modal/bacground-modal-price.png')] bg-no-repeat bg-cover rounded-base max-w-[600px]  px-[50px] pt-[20px] pb-[20px]"
+    customClassClose="bottom-[20px] right-[20px] mt-[40px] inline-block self-end"
+    @update:modelValue="handleModalMessage"
+  >
+    <template #content>
+      <p v-if="numOpneContent == 0" class="text-primary">
+        <span class="font-InterBold block">
+          <br />
+          -Основные чертежи
+          <br />
+          -3 планировочных решения
+          <br />
+          -3D планировка (не визуализация)
+        </span>
+        <span class="block mt-[40px]">
+          *В планировку входит: Розетки, осветительное оборудование, расстановка мебели, со всеми размерами, сантехника,
+          полы и теплый пол при необходимости.
+        </span>
+        <span class="font-InterBold block mt-[20px]">1200руб.м²</span>
+      </p>
+      <p v-if="numOpneContent == 1" class="text-primary">
+        <span class="font-InterBold block">
+          <br />
+          -Основные чертежи
+          <br />
+          -3 планировочных решения
+          <br />
+          -3D планировка (не визуализация)
+          <br />
+          -Визуализация
+        </span>
+        <span class="block mt-[40px]">
+          *В планировку входит: Розетки, осветительное оборудование, расстановка мебели, со всеми размерами, сантехника,
+          полы и теплый пол при необходимости.
+        </span>
+        <span class="font-InterBold block mt-[20px]">2200руб.м²</span>
+      </p>
+      <p v-if="numOpneContent == 2" class="text-primary">
+        <span class="font-InterBold block">
+          <br />
+          -Чертежи
+          <br />
+          -3 планировочных решения
+          <br />
+          -3D планировка (не визуализация)
+          <br />
+          -Визуализация
+          <br />
+          -Развертки по стенам и комплектация
+        </span>
+        <span class="block mt-[40px]">
+          *В планировку входит: Розетки, осветительное оборудование, расстановка мебели, со всеми размерами, сантехника,
+          полы и теплый пол при необходимости.
+        </span>
+        <span class="block mt-[20px]">
+          *В комплектацию входит: Ведомости отделочных материалов, свет оборудования, мебели.
+        </span>
+        <span class="font-InterBold block mt-[20px]">2800руб.м²</span>
+      </p>
+      <p v-if="numOpneContent == 3" class="">
+        <span class="block text-[22px] xxl:text-[24px]">Большие коммерческие помещения</span>
+        <span class="font-InterBold block text-[18px]">-стоимость обсуждается индивидуально</span>
+        <span class="block h-[2px] w-full bg-black mt-[20px]"></span>
+        <span class="block text-[22px] xxl:text-[24px] mt-[30px]">Авторский надзор</span>
+        <span class="font-InterBold block text-[18px]">-стоимость обсуждается индивидуально</span>
+        <span class="block h-[2px] w-full bg-black mt-[20px]"></span>
+
+        <span class="block text-[22px] xxl:text-[24px] mt-[30px]">Консультация с выездом по городу</span>
+        <span class="font-InterBold block text-[22px] xxl:text-[24px]">-5000руб.</span>
+        <span class="block h-[2px] w-full bg-black mt-[20px]"></span>
+
+        <span class="block text-[22px] xxl:text-[24px] mt-[30px]">
+          3D визуализация + план расстановки мебели, без чертежей
+        </span>
+        <span class="font-InterBold block text-[22px] xxl:text-[24px]">-1000руб.м²</span>
+      </p>
+    </template>
+    <template #close>
+      <BtnBase
+        class="max-w-[250px] inline-flex flex-row-reverse gap-[40px] xl:gap-[20px] xxl:gap-[50px] items-center justify-between py-[12px] px-[20px]"
+      >
+        <template #icon>
+          <IconCard class="flex w-[25px] h-[25px] xxl:w-[30px] xxl:h-[30px] rotate-[-135deg]" />
+        </template>
+        <template #text>
+          <div>Вернуться</div>
+        </template>
+      </BtnBase>
+    </template>
+  </Modal>
 </template>
 
 <script setup lang="ts">
   import IconCard from '@/assets/svg/arrow/arrow-card.svg';
   import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
 
+  const isTrue = ref(false);
+  const numOpneContent = ref(1);
+  console.log(isTrue.value);
+
   const checkSecondaryBtn = ref([false, false, false, false]);
 
   function checkContent(indexElem: number) {
     checkSecondaryBtn.value[indexElem] = true;
     sessionStorage.setItem('checkSecondaryPrice', JSON.stringify(checkSecondaryBtn.value));
+    isTrue.value = true;
+    numOpneContent.value = indexElem;
+  }
+
+  function handleModalMessage(value: boolean) {
+    isTrue.value = value;
   }
 
   onMounted(() => {

@@ -30,6 +30,15 @@
 /* Inter */
 
 @font-face {
+  font-family: 'InterBold';
+  font-style: normal;
+  src:
+    url('~/assets/fonts/Inter/Inter-Bold.woff2') format('woff2'),
+    url('~/assets/fonts/Inter/Inter-Bold.woff') format('woff'),
+    url('~/assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'InterRegular';
   font-style: normal;
   src:

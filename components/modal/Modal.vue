@@ -1,23 +1,20 @@
 <template>
   <Teleport to="body">
-    <Transition name="fade">
+    <Transition :name="transitionValue">
       <div
         v-if="modelValue"
-        :class="['modal-overlay', customClass]"
-        class="fixed top-0 left-0 w-[100vw] h-[100vh] z-10 bg-fill flex justify-center items-center"
+        class="fixed top-0 left-0 flex justify-center items-center w-full h-full z-10 bg-[rgba(0,0,0,0.4)] backdrop-blur-lg"
         @click="close"
       >
-        <div class="modal-content overflow-y-auto bg-white p-[20px] rounded-[8px] relative min-w-[300px]" @click.stop>
-          <button
-            class="modal-close absolute top-[10px] right-[10px] border-none text-[100px] bg-main cursor-pointer z-20"
-            @click="close"
-          >
-            X
-          </button>
-
-          <slot name="content">content</slot>
-
-          <slot></slot>
+        <div
+          :class="[customClassWrapp]"
+          class="relative max-w-[90vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[50vw] xl:max-w-[40vw] max-h-[90vh] overflow-y-auto"
+          @click.stop
+        >
+          <slot name="content">Default content</slot>
+          <div :class="[customClassClose]" class="cursor-pointer z-20" @click="close">
+            <slot name="close">X</slot>
+          </div>
         </div>
       </div>
     </Transition>
@@ -25,25 +22,47 @@
 </template>
 
 <script setup lang="ts">
-  const props = defineProps<{ modelValue: boolean; customClass: string }>();
+  const props = defineProps<{
+    modelValue: boolean;
+    customClassWrapp: string;
+    customClassClose: string;
+    transitionValue: string;
+  }>();
+
   const emit = defineEmits(['update:modelValue']);
 
   const close = () => {
     emit('update:modelValue', false);
+    console.log('emit');
   };
 
   watch(
     () => props.modelValue,
     (newValue) => {
-      const element = document.querySelector('html');
+      const htmlElement = document.documentElement;
+      const bodyElement = document.body;
+      const scrollWidth = `${window.innerWidth - document.documentElement.clientWidth}px`;
       if (newValue) {
-        element?.classList.add('no-scroll');
+        bodyElement.style.marginRight = scrollWidth;
+        htmlElement.style.overflow = 'hidden';
       } else {
-        element?.classList.remove('no-scroll');
+        setTimeout(() => {
+          htmlElement.style.overflow = '';
+          bodyElement.style.marginRight = '';
+        }, 300);
       }
-      console.log('Статус модалки:', newValue);
     }
   );
 </script>
 
-<style scoped></style>
+<style scoped>
+  .modal-enter-active,
+  .modal-leave-active {
+    transition: opacity 0.4s ease;
+  }
+
+  .modal-enter-from,
+  .modal-leave-to {
+    opacity: 0;
+  }
+</style>
