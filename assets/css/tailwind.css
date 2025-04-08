@@ -13,10 +13,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 /* tailwind */
 
 @layer base {
@@ -38,7 +34,9 @@ body {
   .section-margin-top {
     @apply mt-[80px] lg:mt-[100px] xl:mt-[120px] xxl:mt-[140px];
   }
-
+  .section-scroll-mt {
+    @apply scroll-mt-[40px];
+  }
   .mail-svg {
     @apply bg-[url(~/assets/svg/input/mail.svg)] bg-no-repeat bg-[center_right_26px];
   }

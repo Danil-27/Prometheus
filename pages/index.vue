@@ -1,14 +1,14 @@
 <template>
   <div>
-    <!-- <SectionObverse />
+    <SectionObverse />
     <SectionAchievement />
     <SectionMission />
     <SectionProjects />
-    <SectionOffer /> -->
+    <SectionOffer />
     <SectionPrice />
-    <!-- <SectionTopics />
+    <SectionTopics />
     <SectionForm />
-    <SectionQuestion /> -->
+    <SectionQuestion />
   </div>
 </template>
 

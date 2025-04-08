@@ -33,14 +33,14 @@
       <span class="border-b-[1px]">правилами обработки персональных данных</span>
     </p>
 
-    <BtnInput
+    <BtnForm
       :isCheckConsent="isCheckConsent"
       class="flex justify-between items-center md:gap-[70px] px-7 py-3 md:w-[400px] md:mx-auto lg:w-[auto] lg:mx-[0] max-lg:mt-[18px]"
       type="submit"
     >
       <template #text>Отправить заявку</template>
       <template #icon><IconBtn /></template>
-    </BtnInput>
+    </BtnForm>
   </form>
 </template>
 

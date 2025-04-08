@@ -2,15 +2,16 @@
   <section class="custom-container section-margin-top">
     <div class="lg:flex flex-wrap gap-y-10 lg:gap-10 justify-center items-center lg:justify-between">
       <h2 class="font-jetBold text-heading">Наши проекты</h2>
-      <nuxt-link to="/projects" />
-      <BtnSecondary
-        :isCheckSecondaryProject="checkSecondaryBtn"
-        class="flex items-center gap-[70px] px-7 py-3 max-lg:mx-auto max-lg:mt-[30px]"
-        @click="toggleSecondary()"
-      >
-        <template #text>Смотреть все</template>
-        <template #icon><IconBtn /></template>
-      </BtnSecondary>
+      <nuxt-link to="/projects">
+        <BtnSecondary
+          :isCheckSecondaryProject="checkSecondaryBtn"
+          class="flex items-center gap-[70px] px-7 py-3 max-lg:mx-auto max-lg:mt-[30px]"
+          @click="toggleSecondary()"
+        >
+          <template #text>Смотреть все</template>
+          <template #icon><IconBtn /></template>
+        </BtnSecondary>
+      </nuxt-link>
     </div>
     <article
       class="flex justify-center flex-wrap lg:flex-nowrap gap-[1rem] xxl:gap-5 mt-[60px] lg:h-[460px] xxl:h-[600px]"
@@ -28,7 +29,7 @@
         @mouseleave="handleMouseLeave"
       >
         <div class="absolute inset-0 bg-black-40"></div>
-        <div class="relative h-full flex flex-col justify-between z-10 text-white">
+        <div class="relative h-full flex flex-col justify-between text-white">
           <nuxt-link to="/projects">
             <BtnArrow :is-hover="isHover[index]" :index="index" />
           </nuxt-link>

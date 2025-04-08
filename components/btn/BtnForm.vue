@@ -10,7 +10,6 @@
       <slot name="text">text</slot>
     </p>
     <slot name="icon"></slot>
-    {{ isCheckConsent }}
   </button>
 </template>
 <script setup lang="ts">
