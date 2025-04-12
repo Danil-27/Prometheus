@@ -7,15 +7,15 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   vite: {
-    plugins: [svgLoader()],
+    plugins: [svgLoader()]
   },
 
   typescript: {
     tsConfig: {
       compilerOptions: {
-        module: 'ESNext',
-      },
-    },
+        module: 'ESNext'
+      }
+    }
   },
 
   eslint: {},
@@ -28,21 +28,23 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-viewport',
     'nuxt-intersection-observer',
-    'nuxt-swiper',
+    'nuxt-swiper'
   ],
   image: {
-    // Настройки по умолчанию для оптимизации изображений
-    provider: 'static', // Используйте provider static для работы с локальными изображениями
+    provider: 'ipx',
+    domains: [],
+    dir: 'public',
+    format: ['webp']
   },
   app: {
     head: {
       title: 'Мое приложение',
       meta: [
         { name: 'description', content: 'Основное описание моего приложения' },
-        { property: 'og:title', content: 'Заголовок для Open Graph' },
+        { property: 'og:title', content: 'Заголовок для Open Graph' }
       ],
-      link: [{ rel: 'icon', href: '/favicon.ico' }],
-    },
+      link: [{ rel: 'icon', href: '/favicon.ico' }]
+    }
   },
   i18n: {
     locales: [
@@ -50,24 +52,24 @@ export default defineNuxtConfig({
         code: 'ru',
         iso: 'ru-RU',
         name: 'Русский',
-        dir: 'ltr',
+        dir: 'ltr'
       },
       {
         code: 'en',
         iso: 'en-US',
         name: 'English',
-        dir: 'ltr',
-      },
+        dir: 'ltr'
+      }
     ],
     defaultLocale: 'ru', // Основной язык русский
-    strategy: 'prefix_except_default', // Стратегия маршрутизации
+    strategy: 'prefix_except_default' // Стратегия маршрутизации
   },
 
   css: ['~/assets/scss/app.scss'],
   postcss: {
     plugins: {
       tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+      autoprefixer: {}
+    }
+  }
 });
