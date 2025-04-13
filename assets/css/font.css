@@ -4,27 +4,27 @@
   font-family: 'JetRegular';
   font-style: normal;
   src:
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff'),
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('truetype');
+    url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'JetBold';
   font-style: normal;
   src:
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff'),
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf') format('truetype');
+    url('/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'JetExtraBold';
   font-style: normal;
   src:
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2'),
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff') format('woff'),
-    url('~/assets/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf') format('truetype');
+    url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff') format('woff'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf') format('truetype');
 }
 
 /* Inter */
@@ -33,27 +33,27 @@
   font-family: 'InterBold';
   font-style: normal;
   src:
-    url('~/assets/fonts/Inter/Inter-Bold.woff2') format('woff2'),
-    url('~/assets/fonts/Inter/Inter-Bold.woff') format('woff'),
-    url('~/assets/fonts/Inter/Inter-Bold.ttf') format('truetype');
+    url('/fonts/Inter/Inter-Bold.woff2') format('woff2'),
+    url('/fonts/Inter/Inter-Bold.woff') format('woff'),
+    url('/fonts/Inter/Inter-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'InterRegular';
   font-style: normal;
   src:
-    url('~/assets/fonts/Inter/Inter-Regular.woff2') format('woff2'),
-    url('~/assets/fonts/Inter/Inter-Regular.woff') format('woff'),
-    url('~/assets/fonts/Inter/Inter-Regular.ttf') format('truetype');
+    url('/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('/fonts/Inter/Inter-Regular.woff') format('woff'),
+    url('/fonts/Inter/Inter-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'InterLight';
   font-style: normal;
   src:
-    url('~/assets/fonts/Inter/InterDisplay-Light.woff2 ') format('woff2'),
-    url('~/assets/fonts/Inter/InterDisplay-Light.woff') format('woff'),
-    url('~/assets/fonts/Inter/InterDisplay-Light.ttf') format('truetype');
+    url('/fonts/Inter/InterDisplay-Light.woff2') format('woff2'),
+    url('/fonts/Inter/InterDisplay-Light.otf') format('opentype'),
+    url('/fonts/Inter/InterDisplay-Light.ttf') format('truetype');
 }
 
 /* Sora */
@@ -62,7 +62,7 @@
   font-family: 'Sora';
   font-style: normal;
   src:
-    url('~/assets/fonts/Sora/Sora-SemiBold.woff2') format('woff2'),
-    url('~/assets/fonts/Sora/Sora-SemiBold.woff') format('woff'),
-    url('~/assets/fonts/Sora/Sora-SemiBold.ttf') format('truetype');
+    url('/fonts/Sora/Sora-SemiBold.woff2') format('woff2'),
+    url('/fonts/Sora/Sora-SemiBold.woff') format('woff'),
+    url('/fonts/Sora/Sora-SemiBold.ttf') format('truetype');
 }
