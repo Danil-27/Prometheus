@@ -10,7 +10,7 @@
           class="max-md:hidden absolute w-[95px] h-[95px] lg:w-[100px] lg:h-[100px] xl:w-[90px] xl:h-[90px] xxl:w-[125px] xxl:h-[125px] bottom-[0px] right-[0px] lg:bottom-[-6px] lg:right-[-6px] xl:bottom-[0px] xl:right-[0px] xxl:bottom-[-10px] xxl:right-[-0px]"
         />
         <h2 class="relative inline-block font-jetExtraB mb-5 text-[28px] md:text-[40px] xl:text-[3.4375rem]">
-          Prometheus
+          Прометей
           <MissionIcon
             class="absolute top-[36px] right-[-15px] md:top-[50px] md:right-[-20px] xl:top-[66px] xl:right-[-25px] w-[80px] md:w-[100px] xl:w-[130px]"
           />
@@ -23,7 +23,7 @@
       <div
         class="w-full justify-self-center content-center min-[505px]:col-span-2 lg:col-span-1 lg:row-span-2 lg:order-1"
       >
-        <img class="h-full rounded-base" src="@/assets/images/mission/apartment.jpg" alt="" />
+        <img class="h-full rounded-base" src="@/assets/images/mission/apartment.jpg" alt="apartment" />
       </div>
       <div class="text-center bg-white rounded-base p-[15px] md:py-[30px] md:px-[16px] xxl:p-[30px] lg:order-3">
         <h3 class="font-jetExtraB text-[28px] xl:text-[2.5rem] xxl:text-[3rem] mb-[0.625rem]">Наша миссия</h3>

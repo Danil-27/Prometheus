@@ -40,7 +40,7 @@
       <p
         class="text-center font-jetExtraB uppercase max-lg:mt-[20px] text-[clamp(52px,16vw,100px)] sm:text-[clamp(110px,16vw,200px)] md:text-[clamp(138px,18vw,300px)] xxl:text-[clamp(286px,17vw,342px)] leading-[1]"
       >
-        Promethus
+        Прометей
       </p>
     </div>
   </footer>

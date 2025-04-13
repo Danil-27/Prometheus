@@ -1,10 +1,16 @@
 <template>
   <div class="custom-container">
-    <div v-for="(item, index) in items" :key="index" :class="{ 'lg:mt-[100px]': index !== 0 }">
-      <ProjectSectionAbout :num="item" :img="imagesAbout" :contents="contentAbout" />
-      <projectSectionDescription :num="item" :img="imagesDescription" :contents="contentDescription" />
-      <ProjectSectionDetailed :num="item" :images="imagesDetailed" :contents="contentDetailed" />
-      <ProjectSectionSwaiper :num="item" :images="imagesSwiper" :contents="contentSwiper" />
+    <div
+      v-for="(section, index) in sectionProjectNum"
+      :id="idLinkProject[index]"
+      :key="index"
+      :class="{ 'mt-[80px] lg:mt-[100px]': index !== 0 }"
+      class="project-scroll-mt"
+    >
+      <ProjectSectionAbout :num="section" :img="imagesAbout" :contents="contentAbout" />
+      <projectSectionDescription :num="section" :img="imagesDescription" :contents="contentDescription" />
+      <ProjectSectionDetailed :num="section" :images="imagesDetailed" :contents="contentDetailed" />
+      <ProjectSectionSwaiper :num="section" :images="imagesSwiper" :contents="contentSwiper" />
     </div>
   </div>
 </template>
@@ -20,7 +26,20 @@
     imagesSwiper,
     contentSwiper
   } from '~/types/projectPage/index';
-  const items = [0, 1, 2, 3];
+
+  onMounted(async () => {
+    const hash = window.location.hash;
+
+    if (hash) {
+      await nextTick(); // Ждём, пока компонент и DOM отрисуется
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+    }
+  });
 </script>
 
 <style scoped lang="scss"></style>

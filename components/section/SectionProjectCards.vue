@@ -30,7 +30,7 @@
       >
         <div class="absolute inset-0 bg-black-40"></div>
         <div class="relative h-full flex flex-col justify-between text-white">
-          <nuxt-link to="/projects">
+          <nuxt-link :to="`/projects#${idLinkProject[index]}`">
             <BtnArrow :is-hover="isHover[index]" :index="index" />
           </nuxt-link>
           <div>
@@ -39,7 +39,7 @@
             >
               {{ card.content }}
             </p>
-            <nuxt-link to="/projects">
+            <nuxt-link :to="`/projects#${idLinkProject[index]}`">
               <BtnBase
                 class="w-full flex items-center justify-between py-[11px] px-[20px] xxl:py-[15px] mt-[30px]"
                 :isCheckBaseProject="checkBaseBtn[index]"
@@ -65,6 +65,7 @@
   import IconCard from '@/assets/svg/arrow/arrow-card.svg';
   import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
   import { cards } from './type';
+  import { idLinkProject } from '~/utils/constants';
 
   const isHover = ref<boolean[]>(new Array(cards.length).fill(false));
   const checkBaseBtn = ref<boolean[]>(new Array(cards.length).fill(false));

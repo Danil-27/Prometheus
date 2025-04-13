@@ -38,6 +38,9 @@ body {
   .section-scroll-mt {
     @apply scroll-mt-[40px];
   }
+  .project-scroll-mt {
+    @apply scroll-mt-[20px] lg:scroll-mt-[40px];
+  }
   .mail-svg {
     @apply bg-[url(~/assets/svg/input/mail.svg)] bg-no-repeat bg-[center_right_26px];
   }

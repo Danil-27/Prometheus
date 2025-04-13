@@ -3,7 +3,7 @@
     <SectionObverse />
     <SectionAchievement />
     <SectionMission />
-    <SectionProjects />
+    <SectionProjectCards />
     <SectionOffer />
     <SectionPrice />
     <SectionTopics />

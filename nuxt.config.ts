@@ -3,7 +3,6 @@ import svgLoader from 'vite-svg-loader';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-
   devtools: { enabled: false },
 
   vite: {
@@ -37,6 +36,8 @@ export default defineNuxtConfig({
     format: ['webp']
   },
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+
     head: {
       title: 'Мое приложение',
       meta: [

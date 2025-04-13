@@ -51,9 +51,9 @@
   font-family: 'InterLight';
   font-style: normal;
   src:
-    url('~/assets/fonts/Inter/Inter-LightBETA.woff2') format('woff2'),
-    url('~/assets/fonts/Inter/Inter-LightBETA.woff') format('woff'),
-    url('~/assets/fonts/Inter/Inter-LightBETA.ttf') format('truetype');
+    url('~/assets/fonts/Inter/InterDisplay-Light.woff2 ') format('woff2'),
+    url('~/assets/fonts/Inter/InterDisplay-Light.woff') format('woff'),
+    url('~/assets/fonts/Inter/InterDisplay-Light.ttf') format('truetype');
 }
 
 /* Sora */
