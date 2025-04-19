@@ -3,7 +3,7 @@
     <Transition :name="transitionValue">
       <div
         v-if="modelValue"
-        class="fixed top-0 left-0 flex justify-center items-center w-full h-full z-10 bg-[rgba(0,0,0,0.4)] backdrop-blur-lg"
+        class="fixed top-0 left-0 flex justify-center items-center w-full h-full z-[100] bg-[rgba(0,0,0,0.4)] backdrop-blur-lg"
         @click="close"
       >
         <div

@@ -1,5 +1,5 @@
 <template>
-  <article id="form" class="custom-container section-margin-top scroll-m-[20px]">
+  <article id="form" class="custom-container section-margin-top scroll-m-[30px] lg:scroll-m-[60px]">
     <div class="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-[20px] lg:rounded-base">
       <div class="w-full max-lg:hidden lg:content-center">
         <img class="h-full" src="~/assets/images/input/img-input.png" alt="img-input" />

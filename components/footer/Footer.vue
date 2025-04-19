@@ -1,7 +1,7 @@
 <template>
   <footer
     id="footer"
-    class="mt-[100px] lg:mt-[140px] rounded-t-[50px] lg:rounded-t-[100px] bg-yellow pt-[40px] xxl:pt-[94px] pb-[40px] md:pb-[70px] bg-[length:100%_15px] md:bg-[length:100%_auto] bg-no-repeat bg-bottom"
+    class="mt-[100px] lg:mt-[140px] rounded-t-[50px] lg:rounded-t-[100px] bg-yellow pt-[40px] xxl:pt-[94px] lg:pb-[40px] max-lg:pb-[80px] bg-[length:100%_15px] md:bg-[length:100%_auto] bg-no-repeat bg-bottom"
     :style="{ backgroundImage: `url(${rulePicture})` }"
   >
     <div
