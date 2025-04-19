@@ -6,7 +6,7 @@
       'bg-Carbonic lg:hover:shadow-custom-black-btn': isCheckConsent
     }"
   >
-    <p class="text-[18px] md:text-[21px] xxl:text-[24px]">
+    <p class="text-[16px] xs:text-[18px] md:text-[21px] xxl:text-[24px]">
       <slot name="text">text</slot>
     </p>
     <slot name="icon"></slot>

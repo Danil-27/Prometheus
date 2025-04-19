@@ -22,23 +22,26 @@
     />
 
     <p
-      class="relative select-none mt-[22px] pl-[30px] xs:pl-[52px] max-lg:mx-auto lg:max-w-[370px] text-[18px]"
+      class="relative select-none mt-[22px] pl-[50px] pr-[20px] max-lg:mx-auto text-[16px] xs:text-[18px]"
       @click="toggleCheck"
     >
       <span
         :class="{ 'bg-black': isCheckConsent, 'bg-white': !isCheckConsent }"
-        class="absolute w-[26px] h-[26px] top-0 translate-y-2/4 left-[10px] rounded-[5px] bg-[url(~/assets/svg/arrow/consent.svg)] bg-no-repeat bg-[center] transition-all duration-500"
+        class="absolute w-[26px] h-[26px] top-[6px] xs:top-[50%] xs:-translate-y-2/4 left-[10px] rounded-[5px] bg-[url(~/assets/svg/arrow/consent.svg)] bg-no-repeat bg-[center] transition-all duration-500"
       ></span>
-      <span class="text-[dimGray]">Соглашаюсь с&nbsp;</span>
+      <span class="text-dimGray">Соглашаюсь с&nbsp;</span>
       <span class="border-b-[1px]">правилами обработки персональных данных</span>
     </p>
 
     <BtnForm
       :isCheckConsent="isCheckConsent"
-      class="flex justify-between items-center md:gap-[70px] px-7 py-3 md:w-[400px] md:mx-auto lg:w-[auto] lg:mx-[0] max-lg:mt-[18px]"
+      class="flex gap-[10px] justify-between items-center md:gap-[70px] px-7 py-3 xs:w-[400px] xs:mx-auto lg:w-[auto] lg:mx-[0] max-lg:mt-[18px]"
       type="submit"
     >
-      <template #text>Отправить заявку</template>
+      <template #text>
+        Отправить
+        <span class="max-[350px]:hidden">заявку</span>
+      </template>
       <template #icon><IconBtn /></template>
     </BtnForm>
   </form>
