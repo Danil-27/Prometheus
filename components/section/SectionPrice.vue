@@ -62,7 +62,7 @@
         <div class="max-w-[220px] min-[880px]:max-w-[250px] lg:max-w-[340px] xl:max-w-[515px]">
           <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">Тариф полный</h3>
           <p class="text-ptice max-lg:max-w-[310px] font-interReg mt-[8px]">
-            <span class="lg:block">Дизайн проект со всеми чертежами,</span>
+            <span class="lg:block">Дизайн проект со всеми чертежами,&nbsp;</span>
             <span class="lg:block">документацией и визуализацей</span>
             2800руб.м²
           </p>
