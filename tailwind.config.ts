@@ -29,6 +29,9 @@ module.exports = {
       grey: 'var(--grey)',
       yellow: 'var(--yellow)',
       green: 'var(--green)',
+      springGreen: 'var(--springGreen)',
+      crimson: 'var(--crimson )',
+      mistyrose: 'var(--mistyrose )',
       grayLight: 'var(--grayLight)',
       greenSilver: 'var(--greySilver)',
       dimGray: 'var(--dimGray)'

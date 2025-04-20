@@ -1,9 +1,9 @@
 <template>
   <button
-    class="text-white transition-[box-shadow,transform] duration-[600ms,100ms] active:scale-95 max-lg:shadow-custom-black-btn"
+    class="text-white transition-[box-shadow,transform] duration-[600ms,100ms] max-lg:shadow-custom-black-btn"
     :class="{
       'bg-anthracite ': !isCheckConsent,
-      'bg-Carbonic lg:hover:shadow-custom-black-btn': isCheckConsent
+      'bg-Carbonic lg:hover:shadow-custom-black-btn active:scale-95 ': isCheckConsent
     }"
   >
     <p class="text-[16px] xs:text-[18px] md:text-[21px] xxl:text-[24px]">
