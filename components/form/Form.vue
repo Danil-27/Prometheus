@@ -187,7 +187,7 @@
       return;
     }
 
-    const message = `Имя: ${name.value}\nТелефон: ${number.value}`;
+    const message = `Имя: ${name.value}\nТелефон: ${number.value.replace(/[()\s]/g, '')}`;
 
     if (numberError.value === 'Успешно' && nameError.value === 'Успешно' && isCheckConsent.value) {
       try {
