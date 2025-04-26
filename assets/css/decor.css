@@ -6,29 +6,29 @@
   background-repeat: no-repeat;
 }
 .bg-circle-1 {
-  background-image: url('~/assets/svg/decor-bg/mission.svg');
+  background-image: url('~/assets/svg/decor-bg/decor.svg');
   background-position: -200px 200px;
   background-size: 2000px 2000px;
 }
 
 .bg-circle-2 {
-  background-image: url('~/assets/svg/decor-bg/mission-2.svg');
+  background-image: url('~/assets/svg/decor-bg/decor-2.svg');
   background-position: -300px 700px;
   background-size: 700px 1600px;
 }
 .bg-circle-3 {
-  background-image: url('~/assets/svg/decor-bg/mission-3.svg');
+  background-image: url('~/assets/svg/decor-bg/decor-3.svg');
   background-position: center bottom -140px;
   background-size: 450px 750px;
 }
 .bg-circle-4 {
-  background-image: url('~/assets/svg/decor-bg/mission-4.svg');
+  background-image: url('~/assets/svg/decor-bg/decor-4.svg');
   background-position: center top 800px;
   background-size: 1000px 1000px;
 }
 
 .bg-circle-5 {
-  background-image: url('~/assets/svg/decor-bg/mission-5.svg');
+  background-image: url('~/assets/svg/decor-bg/decor-5.svg');
   background-size: 800px;
   background-position: left bottom -20px;
 }

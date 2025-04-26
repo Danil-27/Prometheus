@@ -1,11 +1,11 @@
 <template>
-  <div class="custom-container">
+  <div class="">
     <div
       v-for="(section, index) in sectionProjectNum"
       :id="idLinkProject[index]"
       :key="index"
       :class="{ 'mt-[80px] lg:mt-[100px]': index !== 0 }"
-      class="section-scroll-mt"
+      class="custom-container section-scroll-mt"
     >
       <ProjectSectionAbout :num="section" :img="imagesAbout" :contents="contentAbout" />
       <projectSectionDescription :num="section" :img="imagesDescription" :contents="contentDescription" />
