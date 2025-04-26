@@ -1,0 +1,88 @@
+.bg-circle-1,
+.bg-circle-2,
+.bg-circle-3 {
+  background-repeat: no-repeat;
+}
+.bg-circle-1 {
+  background-image: url('~/assets/svg/decor-bg/mission.svg');
+  background-position: -200px 200px;
+  background-size: 2000px 2000px;
+}
+
+.bg-circle-2 {
+  background-image: url('~/assets/svg/decor-bg/mission-2.svg');
+  background-position: -300px 700px;
+  background-size: 700px 1600px;
+}
+.bg-circle-3 {
+  background-image: url('~/assets/svg/decor-bg/mission-3.svg');
+  background-position: center bottom -140px;
+  background-size: 450px 750px;
+}
+@media (min-width: 480px) {
+  .bg-circle-1 {
+    background-position: -250px 0px;
+  }
+}
+
+@media (min-width: 640px) {
+  .bg-circle-2 {
+    background-position: -300px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bg-circle-1 {
+    background-position: 100px 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-circle-1 {
+    background-position: 240px 350px;
+    background-size: 1400px 1400px;
+  }
+  .bg-circle-2 {
+    background-position: -300px -300px;
+  }
+  .bg-circle-3 {
+    background-position: right bottom 30px;
+    background-size: 600px 700px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bg-circle-1 {
+    background-position: 340px 350px;
+  }
+  .bg-circle-2 {
+    background-position: -300px -300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bg-circle-1 {
+    background-position: 500px 350px;
+  }
+  .bg-circle-2 {
+    background-position: -200px -320px;
+    background-size: 700px 1600px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .bg-circle-1 {
+    background-position: 820px 650px;
+  }
+  .bg-circle-2 {
+    background-position: -0px -140px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .decor-container {
+    max-width: 2200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

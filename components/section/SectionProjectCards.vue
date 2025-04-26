@@ -1,6 +1,6 @@
 <template>
-  <section class="custom-container section-margin-top">
-    <div class="lg:flex flex-wrap gap-y-10 lg:gap-10 justify-center items-center lg:justify-between">
+  <section class="section-margin-top">
+    <div class="custom-container lg:flex flex-wrap gap-y-10 lg:gap-10 justify-center items-center lg:justify-between">
       <h2 class="font-jetBold text-heading">Наши проекты</h2>
       <nuxt-link to="/projects">
         <BtnSecondary
@@ -14,7 +14,7 @@
       </nuxt-link>
     </div>
     <article
-      class="flex justify-center flex-wrap lg:flex-nowrap gap-[1rem] xxl:gap-5 mt-[60px] lg:h-[460px] xxl:h-[600px]"
+      class="custom-container flex justify-center flex-wrap lg:flex-nowrap gap-[1rem] xxl:gap-5 mt-[60px] lg:h-[460px] xxl:h-[600px]"
     >
       <div
         v-for="(card, index) in cards"

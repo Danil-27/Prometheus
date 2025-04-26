@@ -1,5 +1,5 @@
 <template>
-  <section id="price" class="custom-container section-margin-top section-scroll-mt">
+  <section id="price" class="custom-container section-scroll-mt">
     <h2 class="font-jetBold text-heading">Наши услуги</h2>
     <div
       class="grid gap-5 grid-rows-[repeat(4,300px)] sm:grid-rows-[repeat(2,300px)] lg:grid-rows-[repeat(2,300px)] sm:grid-cols-[repeat(2,1fr)] lg:grid-cols-[repeat(4,1fr)] xl:grid-cols-[460px,1fr,1fr,1fr] xl:grid-rows-[260px,260px] xxl:grid-cols-[630px,1fr,1fr,300px] mt-[64px] xxl:grid-rows-[340px,340px]"

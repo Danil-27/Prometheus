@@ -1,10 +1,14 @@
 <template>
   <div>
-    <SectionObverse />
-    <SectionAchievement />
-    <SectionMission />
-    <SectionProjectCards />
-    <SectionOffer />
+    <div class="decor-container bg-circle-1">
+      <SectionObverse />
+      <SectionAchievement />
+      <SectionMission />
+      <div class="bg-circle-2">
+        <SectionProjectCards />
+        <SectionOffer />
+      </div>
+    </div>
     <SectionPrice />
     <SectionTopics />
     <SectionForm />

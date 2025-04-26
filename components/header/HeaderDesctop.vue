@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto custom-container">
     <div
-      class="flex justify-between bg-white items-center h-[5rem] xxl:h-[6.25rem] z-10 px-[50px] xl:px-[60px] xxl:px-[88px ] rounded-base"
+      class="flex justify-between bg-white items-center h-[5rem] xxl:h-[6.25rem] z-10 px-[50px] xl:px-[60px] xxl:px-[88px ] rounded-b-base"
     >
       <Logo class="logo" />
       <div class="flex">
