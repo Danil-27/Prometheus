@@ -4,7 +4,7 @@
     class="sm:flex sm:flex-col lg:flex-row-reverse sm:items-center sm:justify-end gap-x-[10px] sm:gap-x-[20px] mt-[50px] md:mt-[100px] xxl:mt-[150px]"
   >
     <div
-      class="grid max-[360px]:mx-auto max-[360px]:grid-rows-[170px,170px] min-[360px]:grid-rows-1 min-[360px]:grid-cols-3 max-[360px]:grid-cols-2 gap-[10px] sm:gap-[20px]"
+      class="grid max-[360px]:mx-auto max-[360px]:grid-rows-[170px,170px] min-[360px]:grid-cols-3 max-[360px]:grid-cols-2 gap-[10px] sm:gap-[20px]"
     >
       <picture
         v-for="(img, index) in images[num]"
