@@ -105,7 +105,7 @@
   <Modal
     :modelValue="isOpenModal"
     transitionValue="modal"
-    customClassWrapp="flex flex-col bg-[url('~/assets/images/modal/bacground-modal-price.png')] bg-no-repeat bg-cover rounded-[20px] max-xs:bg-center xs:rounded-base max-w-[600px] px-[10px] py-[16px] xs:p-[20px] sm:p-[30px] xl:px-[50px] xl:pt-[20px] xl:pb-[20px]"
+    customClassWrapp="flex flex-col bg-bgModal rounded-[20px] max-xs:bg-center xs:rounded-base max-w-[600px] px-[10px] py-[16px] xs:p-[20px] sm:p-[30px] xl:px-[50px] xl:pt-[20px] xl:pb-[20px]"
     customClassClose="bottom-[20px] right-[20px] mt-[20px] xs:mt-[40px] inline-block self-end"
     @update:modelValue="handleModalMessage"
   >

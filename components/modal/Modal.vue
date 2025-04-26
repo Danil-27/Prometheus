@@ -57,11 +57,11 @@
 <style scoped lang="scss">
   .modal-enter-active,
   .modal-leave-active {
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease;
     & .modal-block {
       transition:
-        scale 0.4s ease,
-        translate 0.4s ease;
+        scale 0.3s ease,
+        translate 0.3s ease;
       translate: 0% 0%;
       scale: 1;
     }

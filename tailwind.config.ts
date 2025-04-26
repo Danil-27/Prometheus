@@ -34,7 +34,8 @@ module.exports = {
       mistyrose: 'var(--mistyrose )',
       grayLight: 'var(--grayLight)',
       greenSilver: 'var(--greySilver)',
-      dimGray: 'var(--dimGray)'
+      dimGray: 'var(--dimGray)',
+      bgModal: 'var(--bg-modal)'
     },
     fontFamily: {
       jetReg: ['JetRegular', 'sans-serif'],
