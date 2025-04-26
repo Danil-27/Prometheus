@@ -1,6 +1,8 @@
 .bg-circle-1,
 .bg-circle-2,
-.bg-circle-3 {
+.bg-circle-3,
+.bg-circle-4,
+.bg-circle-5 {
   background-repeat: no-repeat;
 }
 .bg-circle-1 {
@@ -19,21 +21,53 @@
   background-position: center bottom -140px;
   background-size: 450px 750px;
 }
+.bg-circle-4 {
+  background-image: url('~/assets/svg/decor-bg/mission-4.svg');
+  background-position: center top 800px;
+  background-size: 1000px 1000px;
+}
+
+.bg-circle-5 {
+  background-image: url('~/assets/svg/decor-bg/mission-5.svg');
+  background-size: 800px;
+  background-position: left bottom -20px;
+}
+
 @media (min-width: 480px) {
   .bg-circle-1 {
     background-position: -250px 0px;
   }
+  .bg-circle-4 {
+    background-position: center top 150px;
+  }
 }
 
+@media (min-width: 520px) {
+  .bg-circle-5 {
+    background-position: left 100px bottom -50px;
+  }
+}
 @media (min-width: 640px) {
   .bg-circle-2 {
     background-position: -300px 0px;
+  }
+  .bg-circle-5 {
+    background-position: left 200px bottom -50px;
+  }
+}
+@media (min-width: 661px) {
+  .bg-circle-4 {
+    background-position: center top 150px;
+    background-size: 1300px 1000px;
   }
 }
 
 @media (min-width: 768px) {
   .bg-circle-1 {
     background-position: 100px 0px;
+  }
+  .bg-circle-5 {
+    background-position: left 400px bottom -50px;
   }
 }
 
@@ -49,6 +83,14 @@
     background-position: right bottom 30px;
     background-size: 600px 700px;
   }
+  .bg-circle-4 {
+    background-position: center top 170px;
+    background-size: 1500px 1000px;
+  }
+  .bg-circle-5 {
+    background-size: 1100px;
+    background-position: right -200px bottom 0px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -57,6 +99,9 @@
   }
   .bg-circle-2 {
     background-position: -300px -300px;
+  }
+  .bg-circle-4 {
+    background-size: 1800px 1000px;
   }
 }
 
@@ -68,21 +113,29 @@
     background-position: -200px -320px;
     background-size: 700px 1600px;
   }
+  .bg-circle-4 {
+    background-position: center top 250px;
+  }
 }
 
 @media (min-width: 1920px) {
+  .decor-container {
+    max-width: 2200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .bg-circle-1 {
     background-position: 820px 650px;
   }
   .bg-circle-2 {
     background-position: -0px -140px;
   }
-}
-
-@media screen and (min-width: 1920px) {
-  .decor-container {
-    max-width: 2200px;
-    margin-left: auto;
-    margin-right: auto;
+  .bg-circle-3 {
+    background-position: right bottom -50px;
+    background-size: 800px 1000px;
+  }
+  .bg-circle-5 {
+    background-position: right bottom;
+    background-size: 1300px;
   }
 }

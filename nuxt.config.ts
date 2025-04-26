@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     plugins: [svgLoader()]
   },
 
-  plugins: ['~/plugins/vue-the-mask.client.ts'],
+  plugins: ['~/plugins/v-mask.client.ts'],
 
   typescript: {
     tsConfig: {

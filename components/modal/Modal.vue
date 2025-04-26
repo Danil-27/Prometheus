@@ -3,12 +3,12 @@
     <Transition :name="transitionValue">
       <div
         v-if="modelValue"
-        class="fixed top-0 left-0 flex justify-center items-center w-full h-full z-[100] bg-[rgba(0,0,0,0.4)] backdrop-blur-lg"
+        class="fixed top-0 left-0 flex justify-center items-center w-full h-full z-[100] bg-[rgba(0,0,0,0.4)]"
         @click="close"
       >
         <div
           :class="[customClassWrapp]"
-          class="relative max-w-[90vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[50vw] xl:max-w-[40vw] max-h-[90vh] overflow-y-auto"
+          class="modal-block relative max-w-[90vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[50vw] xl:max-w-[40vw] max-h-[90vh] overflow-y-auto"
           @click.stop
         >
           <slot name="content">Default content</slot>
@@ -54,14 +54,25 @@
   );
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .modal-enter-active,
   .modal-leave-active {
     transition: opacity 0.4s ease;
+    & .modal-block {
+      transition:
+        scale 0.4s ease,
+        translate 0.4s ease;
+      translate: 0% 0%;
+      scale: 1;
+    }
   }
 
   .modal-enter-from,
   .modal-leave-to {
     opacity: 0;
+    & .modal-block {
+      translate: 0% 100%;
+      scale: 0;
+    }
   }
 </style>

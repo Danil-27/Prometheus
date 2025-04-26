@@ -5,7 +5,7 @@
       :id="idLinkProject[index]"
       :key="index"
       :class="{ 'mt-[80px] lg:mt-[100px]': index !== 0 }"
-      class="project-scroll-mt"
+      class="section-scroll-mt"
     >
       <ProjectSectionAbout :num="section" :img="imagesAbout" :contents="contentAbout" />
       <projectSectionDescription :num="section" :img="imagesDescription" :contents="contentDescription" />

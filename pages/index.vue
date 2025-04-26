@@ -9,10 +9,14 @@
         <SectionOffer />
       </div>
     </div>
-    <SectionPrice />
-    <SectionTopics />
-    <SectionForm />
-    <SectionQuestion />
+    <div class="bg-circle-4">
+      <SectionPrice />
+      <SectionTopics />
+    </div>
+    <div class="decor-container bg-circle-5">
+      <SectionForm />
+      <SectionQuestion />
+    </div>
   </div>
 </template>
 
