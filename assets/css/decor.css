@@ -2,7 +2,8 @@
 .bg-circle-2,
 .bg-circle-3,
 .bg-circle-4,
-.bg-circle-5 {
+.bg-circle-5,
+.bg-circles-prject {
   background-repeat: no-repeat;
 }
 .bg-circle-1 {
@@ -33,12 +34,28 @@
   background-position: left bottom -20px;
 }
 
+.bg-circles-prject {
+  background-image: url('@/assets/svg/decor-bg/project-decor-2.svg'), url('@/assets/svg/decor-bg/project-decor-3.svg');
+  background-size:
+    500px 600px,
+    500px 600px;
+  background-position:
+    top 300px left 100px,
+    top 1050px left 100px;
+}
+
 @media (min-width: 480px) {
   .bg-circle-1 {
     background-position: -250px 0px;
   }
   .bg-circle-4 {
     background-position: center top 150px;
+  }
+  .bg-circles-prject {
+    background-size: 600px 700px;
+    background-position:
+      top 380px left 60px,
+      top 1150px left 200px;
   }
 }
 
@@ -54,11 +71,24 @@
   .bg-circle-5 {
     background-position: left 200px bottom -50px;
   }
+  .bg-circles-prject {
+    background-position:
+      top -150px right -200px,
+      top 1050px right 440px;
+  }
 }
 @media (min-width: 661px) {
   .bg-circle-4 {
     background-position: center top 150px;
     background-size: 1300px 1000px;
+  }
+}
+
+@media (min-width: 700px) {
+  .bg-circles-prject {
+    background-position:
+      top -150px right -200px,
+      top 1050px right 500px;
   }
 }
 
@@ -69,8 +99,22 @@
   .bg-circle-5 {
     background-position: left 400px bottom -50px;
   }
+  .bg-circles-prject {
+    background-size: 1000px 1000px;
+    background-position:
+      top -300px right -300px,
+      top 1050px right 440px;
+  }
 }
 
+@media (min-width: 830px) {
+  .bg-circles-prject {
+    background-size: 1000px 1000px;
+    background-position:
+      top -300px right -300px,
+      top 1150px right 520px;
+  }
+}
 @media (min-width: 992px) {
   .bg-circle-1 {
     background-position: 240px 350px;
@@ -91,6 +135,14 @@
     background-size: 1100px;
     background-position: right -200px bottom 0px;
   }
+  .bg-circles-prject {
+    background-size:
+      1300px 1400px,
+      1100px 1800px;
+    background-position:
+      top -200px right -300px,
+      top 750px right 700px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -102,6 +154,14 @@
   }
   .bg-circle-4 {
     background-size: 1800px 1000px;
+  }
+  .bg-circles-prject {
+    background-size:
+      1300px 1400px,
+      1100px 1800px;
+    background-position:
+      top -200px right -300px,
+      top 950px right 900px;
   }
 }
 
@@ -124,6 +184,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .decor-progect-container {
+    max-width: 3000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .bg-circle-1 {
     background-position: 820px 650px;
   }
@@ -137,5 +202,11 @@
   .bg-circle-5 {
     background-position: right bottom;
     background-size: 1300px;
+  }
+  .bg-circles-prject {
+    background-size: auto;
+    background-position:
+      top -300px right 100px,
+      top 1850px right 1500px;
   }
 }

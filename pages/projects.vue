@@ -1,5 +1,7 @@
 <template>
-  <div class="">
+  <div
+    class="decor-progect-container mt-[-24px] pt-[24px] lg:mt-[-104px] lg:pt-[104px] xxl:mt-[-124px] xxl:pt-[124px] bg-circles-prject"
+  >
     <div
       v-for="(section, index) in sectionProjectNum"
       :id="idLinkProject[index]"
@@ -31,7 +33,7 @@
     const hash = window.location.hash;
 
     if (hash) {
-      await nextTick(); // Ждём, пока компонент и DOM отрисуется
+      await nextTick();
       setTimeout(() => {
         const el = document.querySelector(hash);
         if (el) {
