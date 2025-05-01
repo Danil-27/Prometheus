@@ -35,15 +35,36 @@
 }
 
 .bg-circles-prject {
-  background-image: url('@/assets/svg/decor-bg/project-decor-2.svg'), url('@/assets/svg/decor-bg/project-decor-3.svg');
+  background-image:
+    url('@/assets/svg/decor-bg/project-decor-2.svg'), url('@/assets/svg/decor-bg/project-decor-3.svg'),
+    url('@/assets/svg/decor-bg/project-decor-2.svg');
   background-size:
+    500px 600px,
     500px 600px,
     500px 600px;
   background-position:
     top 300px left 100px,
-    top 1050px left 100px;
+    top 1050px right 200px,
+    top 1800px right -200px;
 }
 
+@media (min-width: 350px) {
+  .bg-circles-prject {
+    background-position:
+      top 300px left 100px,
+      top 1050px right 200px,
+      top 1600px right -200px;
+  }
+}
+
+@media (min-width: 400px) {
+  .bg-circles-prject {
+    background-position:
+      top 300px left 100px,
+      top 1050px right 200px,
+      top 1650px right -200px;
+  }
+}
 @media (min-width: 480px) {
   .bg-circle-1 {
     background-position: -250px 0px;
@@ -55,13 +76,20 @@
     background-size: 600px 700px;
     background-position:
       top 380px left 60px,
-      top 1150px left 200px;
+      top 1150px right 200px,
+      top 1800px right -200px;
   }
 }
 
 @media (min-width: 520px) {
   .bg-circle-5 {
     background-position: left 100px bottom -50px;
+  }
+  .bg-circles-prject {
+    background-position:
+      top 380px left 60px,
+      top 1150px right 200px,
+      top 1900px right -200px;
   }
 }
 @media (min-width: 640px) {
@@ -74,7 +102,8 @@
   .bg-circles-prject {
     background-position:
       top -150px right -200px,
-      top 1050px right 440px;
+      top 1050px right 440px,
+      top 1800px right -200px;
   }
 }
 @media (min-width: 661px) {
@@ -88,7 +117,8 @@
   .bg-circles-prject {
     background-position:
       top -150px right -200px,
-      top 1050px right 500px;
+      top 1050px right 500px,
+      top 1800px right -200px;
   }
 }
 
@@ -103,7 +133,8 @@
     background-size: 1000px 1000px;
     background-position:
       top -300px right -300px,
-      top 1050px right 440px;
+      top 1050px right 440px,
+      top 2000px right -450px;
   }
 }
 
@@ -112,7 +143,8 @@
     background-size: 1000px 1000px;
     background-position:
       top -300px right -300px,
-      top 1150px right 520px;
+      top 1150px right 520px,
+      top 2000px right -450px;
   }
 }
 @media (min-width: 992px) {
@@ -141,10 +173,21 @@
       1100px 1800px;
     background-position:
       top -200px right -300px,
-      top 750px right 700px;
+      top 750px right 700px,
+      top 2000px right -450px;
   }
 }
-
+@media (min-width: 1200px) {
+  .bg-circles-prject {
+    background-size:
+      1300px 1400px,
+      1100px 1800px;
+    background-position:
+      top -200px right -300px,
+      top 750px right 700px,
+      top 2200px right -450px;
+  }
+}
 @media (min-width: 1280px) {
   .bg-circle-1 {
     background-position: 340px 350px;
@@ -161,7 +204,8 @@
       1100px 1800px;
     background-position:
       top -200px right -300px,
-      top 950px right 900px;
+      top 950px right 900px,
+      top 2200px right -450px;
   }
 }
 
@@ -207,6 +251,7 @@
     background-size: auto;
     background-position:
       top -300px right 100px,
-      top 1850px right 1500px;
+      top 1850px right 1500px,
+      top 3000px right;
   }
 }
