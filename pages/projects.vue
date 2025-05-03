@@ -6,13 +6,13 @@
       v-for="(section, index) in sectionProjectNum"
       :id="idLinkProject[index]"
       :key="index"
-      :class="{ 'mt-[80px] lg:mt-[100px]': index !== 0 }"
+      :class="{ 'mt-[90px] md:mt-[150px]': index !== 0 }"
       class="custom-container section-scroll-mt"
     >
-      <ProjectSectionAbout :num="section" :img="imagesAbout" :contents="contentAbout" />
-      <projectSectionDescription :num="section" :img="imagesDescription" :contents="contentDescription" />
-      <ProjectSectionDetailed :num="section" :images="imagesDetailed" :contents="contentDetailed" />
-      <ProjectSectionSwaiper :num="section" :images="imagesSwiper" :contents="contentSwiper" />
+      <sectionProjectAbout :num="section" :img="imagesAbout" :header="headerAbout" :contents="contentAbout" />
+      <sectionProjectDescription :num="section" :img="imagesDescription" :contents="contentDescription" />
+      <sectionProjectDetailed :num="section" :images="imagesDetailed" :contents="contentDetailed" />
+      <sectionProjectSwaiper :num="section" :images="imagesSwiper" :contents="contentSwiper" />
     </div>
   </div>
 </template>
@@ -20,6 +20,7 @@
 <script setup lang="ts">
   import {
     imagesAbout,
+    headerAbout,
     contentAbout,
     imagesDescription,
     contentDescription,

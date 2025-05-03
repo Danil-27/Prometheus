@@ -14,6 +14,7 @@ import complexElegantXS from '~/assets/images/page_progect/mobile/complexElegant
 import synfitinoXL from '~/assets/images/page_progect/desctop/synfitino/about_Large.png';
 import synfitinoMD from '~/assets/images/page_progect/laptop/synfitino/about_Medium.png';
 import synfitinoXS from '~/assets/images/page_progect/mobile/synfitino/about_Small.png';
+import type Header from '~/components/header/Header.vue';
 
 interface Image {
   XL: string;
@@ -26,6 +27,17 @@ export const imagesAbout: Image[] = [
   { XL: cliffXL, MD: cliffMD, XS: cliffXS },
   { XL: complexElegantXL, MD: complexElegantMD, XS: complexElegantXS },
   { XL: synfitinoXL, MD: synfitinoMD, XS: synfitinoXS }
+];
+
+interface Header {
+  headerProject: string;
+}
+
+export const headerAbout: Header[] = [
+  { headerProject: 'Апартаменты в ЖК "Элегант"' },
+  { headerProject: 'г.Ялта, Крым' },
+  { headerProject: 'Апартаменты в  ЖК "Элегант"' },
+  { headerProject: 'Спортивный комплекс “SUNFITINO”' }
 ];
 
 interface Content {

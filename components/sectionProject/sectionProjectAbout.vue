@@ -1,6 +1,8 @@
 <template>
   <section class="mt-[24px]">
-    <div class="w-full aspect-auto">
+    <div class="w-full aspect-auto mt-[20px] rounded-base">
+      <div class="w-10/12 h-[3px] my-[10px] md:mb-[20px] bg-gradient-to-r from-black to-transparent"></div>
+      <h2 class="font-jetBold text-[26px] md:text-[40px] mb-[20px]">{{ header[num].headerProject }}</h2>
       <picture>
         <source :srcset="img[num]?.XL" media="(min-width: 1024px)" />
         <source :srcset="img[num]?.MD" media="(min-width: 640px)" />
@@ -35,6 +37,7 @@
     num: number;
     img: { XS: string; MD: string; XL: string }[];
     contents: { title: string; text: string }[][];
+    header: { headerProject: string }[];
   }>();
 </script>
 
