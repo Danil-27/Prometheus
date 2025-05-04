@@ -1,6 +1,6 @@
 <template>
   <section :class="{}" class="sm:flex sm:items-center sm:justify-end gap-x-[10px] sm:gap-x-[20px] mt-[50px] md:mt-[100px] xxl:mt-[150px]">
-    <div class="max-w-[230px] h-[150px] sm:h-[300px] sm:max-w-[100%] xxl:h-[auto]">
+    <div class="w-[250px] sm:w-[430px] xxl:w-[550px] aspect-[16/11] bg-bgPlugImg rounded-[40px]">
       <picture>
         <source :srcset="img[num]?.XL" media="(min-width: 1024px)" />
         <source :srcset="img[num]?.MD" media="(min-width: 480px)" />

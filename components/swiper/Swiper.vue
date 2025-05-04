@@ -7,7 +7,7 @@
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   }" :loop="true" :slidesPerView="1" :spaceBetween="10" :loopAdditionalSlides="1" class="my-swiper rounded-[20px]">
-    <SwiperSlide v-for="(img, index) in images" :key="index" class="aspect-[7/5] lg:aspect-[8/6]">
+    <SwiperSlide v-for="(img, index) in images" :key="index" class="bg-bgPlugImg aspect-[7/5] lg:aspect-[8/6]">
       <img :src="img.src" :alt="img.alt" class="w-full h-full object-cover swiper-lazy" />
     </SwiperSlide>
 
@@ -28,7 +28,6 @@ defineProps<{ images: { src: string; alt: string }[] }>();
 
 <style lang="scss">
 .swiper-slide {
-  background: #ddd;
   display: flex;
   align-items: center;
   justify-content: center;

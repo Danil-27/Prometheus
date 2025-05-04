@@ -35,7 +35,8 @@ module.exports = {
       grayLight: 'var(--grayLight)',
       greenSilver: 'var(--greySilver)',
       dimGray: 'var(--dimGray)',
-      bgModal: 'var(--bg-modal)'
+      bgModal: 'var(--bg-modal)',
+      bgPlugImg: 'var(--bg-plug-img)'
     },
     fontFamily: {
       jetReg: ['JetRegular', 'sans-serif'],
@@ -57,8 +58,10 @@ module.exports = {
       }
     },
     boxShadow: {
-      'custom-white-btn': '0 4px 4px rgba(0,0,0,0.25), inset 0 4px 4px rgba(0,0,0,0.25)',
-      'custom-black-btn': '0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 5px 9px 12px 0 var(--white-25)',
+      'custom-white-btn':
+        '0 4px 4px rgba(0,0,0,0.25), inset 0 4px 4px rgba(0,0,0,0.25)',
+      'custom-black-btn':
+        '0 4px 4px 0 rgba(0, 0, 0, 0.25), inset 5px 9px 12px 0 var(--white-25)',
       image: '0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2)',
       buttom: ' 0px 0px 10px 1px rgba(241, 218, 208, 0.9)'
     }

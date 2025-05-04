@@ -44,12 +44,23 @@ export default defineNuxtConfig({
       title: 'Прометей',
       meta: [
         {
+          charset: 'utf-8'
+        },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1'
+        },
+        {
           name: 'description',
           content:
             'Прометей — студия интерьерного дизайна с 14-летним опытом. Полный спектр услуг: от концепции до реализации с 3D-визуализацией и надзором.'
         },
 
         // Open Graph
+        // {
+        //   property: 'og:url',
+        //   content: 'http://localhost:3000/'
+        // },
         {
           property: 'og:type',
           content: 'website'
@@ -68,11 +79,6 @@ export default defineNuxtConfig({
           content:
             'Прометей — студия интерьерного дизайна с 14-летним опытом. Полный спектр услуг: от концепции до реализации с 3D-визуализацией и надзором.'
         },
-
-        // {
-        //   property: 'og:url',
-        //   content: 'http://localhost:3000/'
-        // },
         {
           property: 'og:locale',
           content: 'ru_RU'
@@ -84,11 +90,31 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image:width',
-          content: '968'
+          content: '1200'
         },
         {
           property: 'og:image:height',
-          content: '504'
+          content: '630'
+        },
+
+        // Twitter Card
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:title',
+          content: 'Прометей — студия интерьерного дизайна'
+        },
+        {
+          name: 'twitter:description',
+          content:
+            '14 лет опыта. Уникальные интерьеры. Концепция, визуализация, документация.'
+        },
+        {
+          name: 'twitter:image',
+          content:
+            'https://i0.wp.com/www.escapereview.be/wp-content/uploads/2022/01/2.jpg?fit=1200%2C630&ssl=1'
         }
       ],
       link: [

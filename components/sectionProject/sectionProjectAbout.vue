@@ -2,11 +2,12 @@
   <section class="mt-[24px]">
     <div class="w-10/12 h-[3px] my-[10px] md:mb-[20px] bg-gradient-to-r from-black to-transparent"></div>
     <h2 class="font-jetBold text-[26px] md:text-[40px] mb-[20px]">{{ header[num].headerProject }}</h2>
-    <div class="flex justify-center w-full aspect-[16/9] lg:aspect-[10/4.5] mt-[20px]">
+
+    <div class="bg-bgPlugImg rounded-[40px] w-full aspect-[16/9] lg:aspect-[10/4.8] mt-[20px]">
       <picture>
         <source :srcset="img[num]?.XL" media="(min-width: 1024px)" />
         <source :srcset="img[num]?.MD" media="(min-width: 640px)" />
-        <img :src="img[num]?.XS" class="rounded-[20px] max-w-full h-full object-cover" loading="lazy" />
+        <img :src="img[num]?.XS" class="mx-auto rounded-[20px] max-w-full h-full object-cover" loading="lazy" />
       </picture>
     </div>
     <p class="text-[14px] xs:text-[20px] lg:text-[24px] mt-[40px] md:mt-[50px] xxl:mt-[100px]">
@@ -28,12 +29,14 @@
 </template>
 
 <script setup lang="ts">
+
 defineProps<{
-  num: number;
-  img: { XS: string; MD: string; XL: string }[];
-  contents: { title: string; text: string }[][];
-  header: { headerProject: string }[];
-}>();
+  num: number
+  img: { XS: string; MD: string; XL: string }[]
+  contents: { title: string; text: string }[][]
+  header: { headerProject: string }[]
+}>()
+
 </script>
 
 <style scoped lang="scss"></style>
