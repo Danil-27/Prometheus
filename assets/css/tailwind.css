@@ -12,7 +12,6 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   font-family: 'JetRegular';
-  overflow-x: hidden;
 }
 
 /* tailwind */
@@ -41,7 +40,7 @@ body {
     @apply py-[80px] lg:py-[100px] xl:py-[120px] xxl:py-[140px];
   }
   .section-scroll-mt {
-    @apply scroll-mt-[20px] lg:scroll-mt-[160px];
+    @apply scroll-mt-[20px] lg:scroll-mt-[120px];
   }
 }
 
