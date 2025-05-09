@@ -11,9 +11,15 @@ pipeline {
                 bat 'npm install'  
             }
         }
-        stage('nuxt Build') {
+        // stage('nuxt Build') {
+        //     steps {
+        //          bat 'npx nuxt build'
+        //     }
+        // }
+           stage('Docker Build') {
             steps {
-                 bat 'npx nuxt build'
+                bat 'docker --version'
+                bat 'docker compose build'
             }
         }
     }
