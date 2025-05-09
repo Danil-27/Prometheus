@@ -6,7 +6,12 @@ pipeline {
               echo "${env.GIT_BRANCH}"
             }
         }
-        stage('Docker Build') {
+        stage('Install Dependencies') {
+            steps {
+                bat 'npm install'  
+            }
+        }
+        stage('nuxt Build') {
             steps {
                  bat 'nuxt build'
             }
