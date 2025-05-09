@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                 bat 'build'
+                 bat 'nuxt build'
             }
         }
     }
