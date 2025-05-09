@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                 bat 'docker compose build'
+                 bat 'build'
             }
         }
     }
