@@ -13,7 +13,7 @@ pipeline {
         }
         stage('nuxt Build') {
             steps {
-                 bat 'nuxt build'
+                 bat 'npx nuxt build'
             }
         }
     }
