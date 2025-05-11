@@ -1,20 +1,34 @@
 pipeline {
     agent any
+
+    environment {
+        NODE_ENV = 'production'
+    }
+
     stages {
-        stage('Verify Branch') {
+        stage('Install dependencies') {
             steps {
-                echo "${env.GIT_BRANCH}"
+                dir('Prometneus') {
+                    sh 'npm install'
+                }
             }
         }
-        stage('Install Dependencies') {
+
+        stage('Build project') {
             steps {
-                sh 'npm install'
+                dir('Prometneus') {
+                    sh 'npm run build'
+                }
             }
         }
-        stage('Docker Build') {
+
+        stage('Run app') {
             steps {
-                sh 'docker --version'
-                sh 'docker-compose build'
+                dir('Prometneus') {
+                    sh 'pm2 delete all || true'
+                    sh 'pm2 start npm --name "prometneus-app" -- run start'
+                    sh 'pm2 save'
+                }
             }
         }
     }
