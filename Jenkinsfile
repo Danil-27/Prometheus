@@ -3,23 +3,18 @@ pipeline {
     stages {
         stage('Verify Branch') {
             steps {
-              echo "${env.GIT_BRANCH}"
+                echo "${env.GIT_BRANCH}"
             }
         }
         stage('Install Dependencies') {
             steps {
-                bat 'npm install'  
+                sh 'npm install'
             }
         }
-        // stage('nuxt Build') {
-        //     steps {
-        //          bat 'npx nuxt build
-        //     }
-        // }
-           stage('Docker Build') {
+        stage('Docker Build') {
             steps {
-                bat 'docker --version'
-                bat 'docker compose build'
+                sh 'docker --version'
+                sh 'docker-compose build'
             }
         }
     }
