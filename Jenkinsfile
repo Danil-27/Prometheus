@@ -13,7 +13,7 @@ pipeline {
         }
         // stage('nuxt Build') {
         //     steps {
-        //          bat 'npx nuxt build'
+        //          bat 'npx nuxt build
         //     }
         // }
            stage('Docker Build') {
