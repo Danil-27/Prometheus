@@ -13,13 +13,16 @@
   "dependencies": {
     "@eslint/config-inspector": "^1.0.2",
     "@unhead/vue": "^2.0.0-rc.10",
+    "audit": "^0.0.6",
     "esbuild": "^0.25.1",
+    "npm": "^10.9.2",
     "nuxt": "^3.16.0",
     "nuxt-intersection-observer": "^1.0.1",
     "nuxt-swiper": "^2.0.0",
     "pinia": "^2.2.4",
     "typescript": "^5.8.2",
     "unhead": "^2.0.0-rc.10",
+    "vite-svg-loader": "^5.1.0",
     "vue": "^3.5.11",
     "vue-router": "latest",
     "vue-the-mask": "^0.11.1"
@@ -38,7 +41,6 @@
     "postcss": "^8.5.1",
     "prettier": "^3.5.3",
     "sass-embedded": "^1.83.4",
-    "tailwindcss": "^3.4.17",
-    "vite-svg-loader": "^5.1.0"
+    "tailwindcss": "^3.4.17"
   }
 }
