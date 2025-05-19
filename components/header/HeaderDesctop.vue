@@ -9,7 +9,6 @@
             <li v-for="link in linksDesctop" :key="link.id">
               <nuxt-link class="text-black p-[5px] lg:text-[18px] xxl:text-[24px]" :class="{ 'bg-black text-white rounded-base px-[35px] py-[8px] ': link.id == 5 }" :to="link.url">
                 {{ link.title }}
-                хуки наше все
               </nuxt-link>
             </li>
           </ul>

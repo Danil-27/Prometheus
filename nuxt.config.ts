@@ -24,7 +24,6 @@ export default defineNuxtConfig({
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n',
     '@nuxt/image',
     '@nuxt/eslint',
     'nuxt-viewport',
@@ -143,25 +142,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-  i18n: {
-    locales: [
-      {
-        code: 'ru',
-        iso: 'ru-RU',
-        name: 'Русский',
-        dir: 'ltr'
-      },
-      {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
-        dir: 'ltr'
-      }
-    ],
-    defaultLocale: 'ru', // Основной язык русский
-    strategy: 'prefix_except_default' // Стратегия маршрутизации
-  },
-
   css: ['~/assets/scss/app.scss'],
   postcss: {
     plugins: {

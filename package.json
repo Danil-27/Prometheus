@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@eslint/config-inspector": "^1.0.2",
+    "@nuxt/vite-builder": "^3.17.3",
     "@unhead/vue": "^2.0.0-rc.10",
     "audit": "^0.0.6",
     "esbuild": "^0.25.1",
@@ -31,7 +32,6 @@
     "@nuxt/eslint": "^1.2.0",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@9.2.1-29013776.4a8d7d5",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia/nuxt": "^0.5.5",
     "autoprefixer": "^10.4.20",
