@@ -34,7 +34,7 @@ jobs:
                 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
                 nvm use 22 || nvm install 22
 
-                cd /root/Prometneus
+                cd /root/Prometheus
                 echo "📥 Pulling latest code..."
                 git pull origin main
 
@@ -45,6 +45,6 @@ jobs:
                 npm run build
 
                 echo "🚀 Restarting with PM2..."
-                pm2 restart Prometneus || pm2 start .output/server/index.mjs --name Prometneus
+                pm2 restart Prometheus || pm2 start .output/server/index.mjs --name Prometheus
                 pm2 save
               '
