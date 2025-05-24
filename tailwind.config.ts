@@ -3,9 +3,9 @@ module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     fontSize: {
-      xs: '1.5rem', // 24px
-      sm: '1.875rem', // 30px
-      lg: '6.25rem' // 100px
+      xs: '1.5rem', //24px
+      sm: '1.875rem', //30px
+      lg: '6.25rem' //100px
     },
     container: false,
     screens: {
