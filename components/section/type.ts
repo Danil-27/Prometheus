@@ -169,14 +169,14 @@ interface SocialText {
 export const SocialContent: SocialText[] = [
   {
     socialText: 'What’sApp',
-    socialLink: ['https://wa.me/79186604787', 'https://wa.me/79186604933']
+    socialLink: ['https://wa.me/79186604933', 'https://wa.me/79186604787']
   },
   {
     socialText: 'Telegram',
-    socialLink: ['https://t.me/ChelickOdinDwa', 'https://t.me/juliett0503']
+    socialLink: ['https://t.me/juliett0503', 'https://t.me/ChelickOdinDwa']
   },
   {
     socialText: 'Позвонить',
-    socialLink: ['tel:+79186604787', 'tel:+79186604933']
+    socialLink: ['tel:+79186604933', 'tel:+79186604787']
   }
 ];
