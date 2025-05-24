@@ -7,24 +7,24 @@
           'absolute w-[170px] xs:w-[200px] min-[580px]:w-[250px] lg:w-[300px] min-[1100px]:w-[350px] xl:w-[410px] top-[-200px] xs:top-[-230px] min-[580px]:top-[-286px] lg:top-[26%] lg:-translate-y-1/2 left-[30%] min-[700px]:left-[36%]  lg:left-[30%] translate-x-[-50%] aspect-[1] rotate-[-5deg] transition-all duration-500 ease-in-out cursor-pointer',
           toggleLink === 1 ? 'z-[20] scale-[1.05]' : 'z-[10] scale-[0.95] opacity-70'
         ]" class="absolute w-[150px] top-[-170px] left-[30%] translate-x-[-50%] aspect-[1] rotate-[-5deg]">
-          <img :src="Julia" alt="Julia" class="relative z-[1] rounded-[35px]" />
-          <p class="absolute bottom-[10px] px-[20px] z-10 text-white font-interReg">
-            <span class="block font-InterBold md:text-[20px] xl:text-[34px] tracking-[2px]">Юлия</span>
-            <span class="block text-[10px] font-InterBold md:text-[14px] xl:text-[20px]">Генеральный дизайнер</span>
-            <span class="hidden min-[580px]:block mt-[4px] text-[12px] xl:text-[18px] font-interReg">План превращаю в ощущение жизни, уюта и смысла.</span>
+          <img :src="Daniil" alt="Daniil" class="relative z-[1] rounded-[35px]" />
+          <p class="absolute bottom-[10px] px-[20px] z-10 text-white">
+            <span class="block font-InterBold md:text-[20px] xl:text-[34px] tracking-[2px]">Даниил</span>
+            <span class="block text-[10px] font-InterBold md:text-[14px] xl:text-[20px]">Дизайнер</span>
+            <span class="hidden min-[580px]:block mt-[4px] text-[12px] xl:text-[19px]  font-interReg">Создаю пространства, где идеи встречаются с реальностью.</span>
           </p>
         </div>
         <div @click="toggleNum(0)" :class="[
           'absolute w-[170px] xs:w-[200px] min-[580px]:w-[250px] lg:w-[300px] min-[1100px]:w-[350px] xl:w-[410px] top-[-200px] xs:top-[-230px] min-[580px]:top-[-286px] lg:top-[70%] lg:-translate-y-1/2 left-[70%] min-[700px]:left-[64%] lg:left-[58%] translate-x-[-50%] aspect-[1] rotate-[4deg] transition-all duration-500 ease-in-out cursor-pointer',
           toggleLink === 0 ? 'z-[20] scale-[1.05]' : 'z-[10] scale-[0.95] opacity-70'
         ]" class="absolute w-[150px] top-[-170px] left-[70%] translate-x-[-50%] aspect-[1] rotate-[4deg]">
-          <img :src="Daniil" alt="Daniil" class="relative z-[1] rounded-[35px]" />
-          <p class="absolute bottom-[10px] px-[20px] z-10 text-white">
-            <span class="block font-InterBold md:text-[20px] xl:text-[34px] tracking-[2px]">Данил</span>
-            <span class="block text-[10px] font-InterBold md:text-[14px] xl:text-[20px]">Дизайнер</span>
-            <span class="hidden min-[580px]:block mt-[4px] text-[12px] xl:text-[19px]  font-interReg">Создаю пространства, где идеи встречаются с реальностью.</span>
-          </p>
+          <img :src="Julia" alt="Julia" class="relative z-[1] rounded-[35px]" />
 
+          <p class="absolute bottom-[10px] px-[20px] z-10 text-white font-interReg">
+            <span class="block font-InterBold md:text-[20px] xl:text-[34px] tracking-[2px]">Юлия</span>
+            <span class="block text-[10px] font-InterBold md:text-[14px] xl:text-[20px]">Генеральный дизайнер</span>
+            <span class="hidden min-[580px]:block mt-[4px] text-[12px] xl:text-[18px] font-interReg">План превращаю в ощущение жизни, уюта и смысла.</span>
+          </p>
         </div>
       </div>
       <div class="lg:w-6/12 xl:pl-[20px] xxl:pl-[0px] flex flex-col gap-y-[40px] pt-[20px] lg:gap-y-[70px] font-jetBold md:text-[30px] lg:text-[36px] text-[20px] xs:text-[26px] xl:text-[50px] ">
