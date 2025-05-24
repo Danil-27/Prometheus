@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo (для получения доступа к секретам и переменным)
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Setup SSH key
@@ -27,13 +27,24 @@ jobs:
               -i ~/.ssh/id_ed25519 \
               -p 22 ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} '
                 set -e
-                cd /root/Prometneus &&
-                echo "📥 Pulling latest code..." &&
-                git pull origin main &&
-                echo "📦 Installing dependencies..." &&
-                npm ci &&
-                echo "🔨 Building project..." &&
-                npm run build -- --verbose &&
-                echo "🚀 Restarting with PM2..." &&
-                pm2 restart Prometneus || pm2 start "npx serve -s dist -l tcp://0.0.0.0:3000 --no-clipboard" --name Prometneus
+
+                # Подключаем nvm и активируем Node.js
+                export NVM_DIR="$HOME/.nvm"
+                [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+                [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+                nvm use 22 || nvm install 22
+
+                cd /root/Prometneus
+                echo "📥 Pulling latest code..."
+                git pull origin main
+
+                echo "📦 Installing dependencies..."
+                npm ci
+
+                echo "🔨 Building project..."
+                npm run build
+
+                echo "🚀 Restarting with PM2..."
+                pm2 restart Prometneus || pm2 start .output/server/index.mjs --name Prometneus
+                pm2 save
               '
