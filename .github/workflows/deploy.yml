@@ -26,30 +26,25 @@ jobs:
               -o ServerAliveInterval=60 \
               -i ~/.ssh/id_ed25519 \
               -p 22 ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} '
-                set -xe
+                set -e
 
-                echo "👉 Настройка Node.js через nvm"
+                # Подключаем nvm и активируем Node.js
                 export NVM_DIR="$HOME/.nvm"
                 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
                 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-                nvm install 22 || true
-                nvm use 22
+                nvm use 22 || nvm install 22
 
-                echo "📁 Переход в папку проекта"
-                cd /root/Prometheus
-
-                echo "📥 Обновление кода"
+                cd /root/Prometneus
+                echo "📥 Pulling latest code..."
                 git pull origin main
 
-                echo "📦 Установка зависимостей"
-                npm ci || npm install
+                echo "📦 Installing dependencies..."
+                npm ci
 
-                echo "🔨 Сборка проекта"
+                echo "🔨 Building project..."
                 npm run build
 
-                echo "🚀 Перезапуск через PM2"
-                pm2 restart Prometheus || pm2 start .output/server/index.mjs --name Prometheus
+                echo "🚀 Restarting with PM2..."
+                pm2 restart Prometneus || pm2 start .output/server/index.mjs --name Prometneus
                 pm2 save
-
-                echo "✅ Деплой завершён"
               '
