@@ -3,6 +3,7 @@ import svgLoader from 'vite-svg-loader';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+
   devtools: { enabled: false },
 
   vite: {
@@ -19,8 +20,6 @@ export default defineNuxtConfig({
     }
   },
 
-  eslint: {},
-
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss',
@@ -30,12 +29,14 @@ export default defineNuxtConfig({
     'nuxt-intersection-observer',
     'nuxt-swiper'
   ],
+
   image: {
     provider: 'ipx',
     domains: [],
     dir: 'public',
     format: ['webp']
   },
+
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
 
@@ -52,14 +53,19 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Прометей — студия интерьерного дизайна с 14-летним опытом. Полный спектр услуг: от концепции до реализации с 3D-визуализацией и надзором.'
+            'Студия интерьерного дизайна с 14-летним опытом. Полный спектр услуг: от концепции до реализации с 3D-визуализацией и надзором.'
+        },
+        {
+          name: 'keywords',
+          content:
+            'Прометей студия дизайна ,дизайн интерьера, 3D визуализация, студия дизайна, интерьер под ключ, проектирование интерьера, планировка, интерьер дома, дизайнер интерьера, разработка интерьера, авторский надзор, современный интерьер, визуализация помещений, интерьер жилого дома, интерьер офиса, архитектурная визуализация'
         },
 
         // Open Graph
-        // {
-        //   property: 'og:url',
-        //   content: 'http://localhost:3000/'
-        // },
+        {
+          property: 'og:url',
+          content: 'https://prometheus-design.ru/'
+        },
         {
           property: 'og:type',
           content: 'website'
@@ -76,7 +82,7 @@ export default defineNuxtConfig({
         {
           property: 'og:description',
           content:
-            'Прометей — студия интерьерного дизайна с 14-летним опытом. Полный спектр услуг: от концепции до реализации с 3D-визуализацией и надзором.'
+            'Студия интерьерного дизайна с 14-летним опытом. Полный спектр услуг: от концепции до реализации с 3D-визуализацией и надзором.'
         },
         {
           property: 'og:locale',
@@ -84,8 +90,7 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:image',
-          content:
-            'https://i0.wp.com/www.escapereview.be/wp-content/uploads/2022/01/2.jpg?fit=1200%2C630&ssl=1'
+          content: 'https://prometheus-design.ru/seo/og-image.jpg'
         },
         {
           property: 'og:image:width',
@@ -112,10 +117,10 @@ export default defineNuxtConfig({
         },
         {
           name: 'twitter:image',
-          content:
-            'https://i0.wp.com/www.escapereview.be/wp-content/uploads/2022/01/2.jpg?fit=1200%2C630&ssl=1'
+          content: 'https://prometheus-design.ru/seo/og-image.jpg'
         }
       ],
+
       link: [
         { rel: 'icon', href: '/favicon/favicon.ico' },
         {
@@ -142,6 +147,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   css: ['~/assets/scss/app.scss'],
   postcss: {
     plugins: {
