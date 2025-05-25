@@ -21,7 +21,7 @@
       </div>
       <div class="text-center bg-white rounded-base p-[15px] md:py-[20px] md:px-[16px] xxl:p-[30px] lg:order-4">
         <h3 class="font-jetExtraB text-[28px] xl:text-[2.5rem] xxl:text-[3rem] mb-[0.625rem]">Наша цель</h3>
-        <p class="text-primary">Создавать интерьеры, в которых хочется жить, творить и возвращаться</p>
+        <p class="text-primary">Создавать интерьеры, в которых хочется жить и творить, и в которые хочется возвращаться</p>
       </div>
     </div>
   </section>

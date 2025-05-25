@@ -61,9 +61,21 @@ export const imagesDetailed: Image[][] = [
     { XL: cliffXLThree, MD: cliffMDThree, XS: cliffXSThree }
   ],
   [
-    { XL: complexElegantXLOne, MD: complexElegantMDOne, XS: complexElegantXSOne },
-    { XL: complexElegantXLTwo, MD: complexElegantMDTwo, XS: complexElegantXSTwo },
-    { XL: complexElegantXLThree, MD: complexElegantMDThree, XS: complexElegantXSThree }
+    {
+      XL: complexElegantXLOne,
+      MD: complexElegantMDOne,
+      XS: complexElegantXSOne
+    },
+    {
+      XL: complexElegantXLTwo,
+      MD: complexElegantMDTwo,
+      XS: complexElegantXSTwo
+    },
+    {
+      XL: complexElegantXLThree,
+      MD: complexElegantMDThree,
+      XS: complexElegantXSThree
+    }
   ],
   [
     { XL: synfitinoXLOne, MD: synfitinoMDOne, XS: synfitinoXSOne },
@@ -83,14 +95,14 @@ export const contentDetailed: Content[] = [
   },
   {
     description:
-      'Лоджию было решеносовместить с кухней-гостиной, данное решение позволяет раскрыть и интегрировать, живописные Крымские пейзажи, в повседневную рутину.'
+      'Лоджию было решено совместить с кухней-гостиной, что позволяет раскрыть и интегрировать живописные Крымские пейзажи в повседневную рутину.'
   },
   {
     description:
-      'Источникам света было уделено значительное внимание. Учитывая запросы клиента, освещение было органично встроено в каждую из комнат. Важно отметить, что оно удобно в эксплуатации благодаря сенсорным и проходным выключателям.'
+      'Источникам света уделено значительное внимание. Учитывая запросы клиента, освещение было органично встроено в каждую из комнат. Важно отметить, что это удобно в эксплуатации благодаря сенсорным и проходным выключателям.'
   },
   {
     description:
-      'Проект примечателен своими объемами и спецификой. Был разработан общий цветовой код и дизайн-стиль комплекса, в том числе рабочих помещений. Всё, от коридоров и кабинетов до тренажёрного зала было интегрировано в единое стилистическое полотно.'
+      'Проект примечателен своими объемами и спецификой. Был разработан общий цветовой код и дизайн-стиль комплекса, в том числе рабочих помещений. Всё: от коридоров и кабинетов до тренажёрного-зала было интегрировано в единое стилистическое полотно.'
   }
 ];

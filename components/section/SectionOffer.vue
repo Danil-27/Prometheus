@@ -5,7 +5,7 @@
       <div class="w-6/12 h-[3px] mt-[10px] bg-gradient-to-r from-black to-transparent"></div>
       <h2 class="font-jetReg text-center lg:text-start text-[25px] md:text-[40px] lg:text-[45px] xxl:text-[60px] mt-[30px] sm:mt-[60px] leading-[150%]">
         <span class="inline-block relative top-[-5px] left-2 md:top-[-4px] md:left-3 xl:top-[-2px] xl:left-3 w-[10px] h-[10px] md:w-[20px] md:h-[20px] xxl:w-[32px] xxl:h-[32px] bg-black rounded-[50%]"></span>
-        Закажи 3D-визуализацию интерьера и поучи чертеж планировки
+        Закажите 3D-визуализацию интерьера и получите чертеж планировки
         <span class="border-[3px] rounded-base px-[16px] py-[2px]">бесплатно</span>
       </h2>
       <p class="font-interReg text-center leading-[130%;] mt-[35px] md:mt-[46px] md:text-[21px] lg:text-start lg:max-w-[640px] xxl:max-w-[1000px] xxl:text-[30px] xxl:mt-[50px]">
