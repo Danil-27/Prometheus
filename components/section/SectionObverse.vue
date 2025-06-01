@@ -1,7 +1,7 @@
 <template>
   <section class="custom-container mt-[20px]">
     <div class="relative text-[white] rounded-base xl:bg-green min-h-[25rem] lg:min-h-[540px] xxl:min-h-[700px] 
-    bg-[url('~/assets/images/obverse/obverse-mini.jpg')] 
+    bg-[url('~/assets/images/obverse/obverse-mini.png')] 
     md:bg-[url('~/assets/images/obverse/obverse.jpg')]
      
      bg-cover bg-center bg-no-repeat">

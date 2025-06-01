@@ -15,12 +15,12 @@ export const linksDesctop: Array<link> = [
   { id: 2, title: 'о нас', url: '/#about' },
   { id: 3, title: 'проекты', url: '/projects' },
   { id: 4, title: 'услуги', url: '/#price' },
-  { id: 5, title: 'контакты', url: '#social' }
+  { id: 5, title: 'контакты', url: '/#social' }
 ];
 
 export const linksMobile: Array<link> = [
   { id: 1, title: 'главная', url: '/', svg: homeSvg },
   { id: 2, title: 'проекты', url: '/projects', svg: projectSvg },
   { id: 3, title: 'услуги', url: '/#price', svg: priceSvg },
-  { id: 4, title: 'контакты', url: '#social', svg: contactsSvg }
+  { id: 4, title: 'контакты', url: '/#social', svg: contactsSvg }
 ];

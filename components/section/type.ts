@@ -33,25 +33,25 @@ export const cards: Card[] = [
   {
     id: 1,
     src: projectOne,
-    alt: 'ss',
+    alt: 'Элегант',
     content: 'ЖК\n"Элегант"'
   },
   {
     id: 2,
     src: projectTwo,
-    alt: 'ss',
+    alt: 'Утес',
     content: 'ЖК\n"Утес"'
   },
   {
     id: 3,
     src: projectThree,
-    alt: 'ss',
+    alt: 'Элегант',
     content: 'ЖК\n"Элегант"'
   },
   {
     id: 4,
     src: projectFour,
-    alt: 'ss',
+    alt: 'SUNFITINO',
     content: 'Комплекс\n“SUNFITINO”'
   }
 ];
