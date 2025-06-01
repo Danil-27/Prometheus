@@ -19,10 +19,11 @@
         <div class="absolute inset-0 bg-black-40"></div>
         <div class="relative h-full flex flex-col justify-between text-white">
           <nuxt-link :to="`/projects#${idLinkProject[index]}`">
-            <BtnArrow :is-hover="isHover[index]" :index="index" />
-            <span v-show="false">
-              Изучить проект
-            </span>
+            <BtnArrow aria-label="Изучить проект" :is-hover="isHover[index]" :index="index">
+              <span class="sr-only">
+                Изучить проект
+              </span>
+            </BtnArrow>
           </nuxt-link>
           <div>
             <p class="font-jetBold text-[21px] lg:text-[clamp(16px,1.72vw,21px)] xxl:text-[30px] max-[570px]:text-[25px] whitespace-pre-line">
