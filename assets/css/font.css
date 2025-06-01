@@ -3,6 +3,7 @@
 @font-face {
   font-family: 'JetRegular';
   font-style: normal;
+  font-display: swap;
   src:
     url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
     url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff'),
@@ -12,6 +13,7 @@
 @font-face {
   font-family: 'JetBold';
   font-style: normal;
+  font-display: swap;
   src:
     url('/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
     url('/fonts/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff'),
@@ -21,6 +23,7 @@
 @font-face {
   font-family: 'JetExtraBold';
   font-style: normal;
+  font-display: swap;
   src:
     url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2'),
     url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff') format('woff'),
@@ -32,6 +35,7 @@
 @font-face {
   font-family: 'InterBold';
   font-style: normal;
+  font-display: swap;
   src:
     url('/fonts/Inter/Inter-Bold.woff2') format('woff2'),
     url('/fonts/Inter/Inter-Bold.woff') format('woff'),
@@ -41,6 +45,7 @@
 @font-face {
   font-family: 'InterRegular';
   font-style: normal;
+  font-display: swap;
   src:
     url('/fonts/Inter/Inter-Regular.woff2') format('woff2'),
     url('/fonts/Inter/Inter-Regular.woff') format('woff'),
@@ -50,6 +55,7 @@
 @font-face {
   font-family: 'InterLight';
   font-style: normal;
+  font-display: swap;
   src:
     url('/fonts/Inter/InterDisplay-Light.woff2') format('woff2'),
     url('/fonts/Inter/InterDisplay-Light.otf') format('opentype'),
@@ -61,6 +67,7 @@
 @font-face {
   font-family: 'Sora';
   font-style: normal;
+  font-display: swap;
   src:
     url('/fonts/Sora/Sora-SemiBold.woff2') format('woff2'),
     url('/fonts/Sora/Sora-SemiBold.woff') format('woff'),

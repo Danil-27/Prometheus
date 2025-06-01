@@ -22,7 +22,7 @@
         </BtnBase>
       </div>
 
-      <div class="lg:col-span-2 xl:col-span-2 xl:order-2 flex flex-col justify-between rounded-[30px] md:rounded-base p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] bg-cover bg-center bg-no-repeat bg-[url('~/assets/images/price/sofa.png')]">
+      <div class="lg:col-span-2 xl:col-span-2 xl:order-2 flex flex-col justify-between rounded-[30px] md:rounded-base p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] bg-cover bg-center bg-no-repeat bg-[url('~/assets/images/price/sofa.webp')]">
         <div>
           <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">Тариф Стандартный</h3>
           <p class="text-ptice font-interReg">
@@ -42,7 +42,7 @@
         </BtnBase>
       </div>
 
-      <div class="lg:col-span-3 xl:row-span-2 xl:col-span-1 xl:order-1 flex flex-col justify-between xl:flex-col-reverse rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] md:p-[30px] xl:pb-[0px] xl:pl-[0px] bg-no-repeat bg-cover bg-center bg-[url('~/assets/images/price/home_xxs.png'),url('~/assets/images/price/background.png')] xs:bg-[url('~/assets/images/price/home_xs.png'),url('~/assets/images/price/background.png')] sm:bg-[url('~/assets/images/price/home_xxs.png'),url('~/assets/images/price/background.png')] min-[790px]:bg-[url('~/assets/images/price/home_md.png'),url('~/assets/images/price/background.png')] lg:bg-[url('~/assets/images/price/home_lg.png'),url('~/assets/images/price/background.png')] xl:bg-[url('~/assets/images/price/home_xl.png')] xxl:bg-[url('~/assets/images/price/home_xxl.png')]">
+      <div class="lg:col-span-3 xl:row-span-2 xl:col-span-1 xl:order-1 flex flex-col justify-between xl:flex-col-reverse rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] md:p-[30px] xl:pb-[0px] xl:pl-[0px] bg-no-repeat bg-cover bg-center bg-[url('~/assets/images/price/home_xxs.png'),url('~/assets/images/price/background.png')] xs:bg-[url('~/assets/images/price/home_xs.png'),url('~/assets/images/price/background.png')] sm:bg-[url('~/assets/images/price/home_xxs.png'),url('~/assets/images/price/background.png')] min-[790px]:bg-[url('~/assets/images/price/home_md.png'),url('~/assets/images/price/background.png')] lg:bg-[url('~/assets/images/price/home_lg.png'),url('~/assets/images/price/background.png')] xl:bg-[url('~/assets/images/price/home_xl.webp')] xxl:bg-[url('~/assets/images/price/home_xxl.png')]">
         <div class="max-w-[220px] min-[880px]:max-w-[250px] lg:max-w-[340px] xl:max-w-[515px]">
           <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">Тариф полный</h3>
           <p class="text-ptice max-lg:max-w-[310px] font-interReg mt-[8px]">
