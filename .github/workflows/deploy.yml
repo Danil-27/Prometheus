@@ -36,6 +36,8 @@ jobs:
                 git pull origin main
                 echo "📦 Installing dependencies..."
                 npm ci
+                echo "Update dependencies..."
+                npm update
                 echo "🛠 Generating static site..."
                 npm run generate
                 echo "🚀 Restarting static server with PM2..."
