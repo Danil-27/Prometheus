@@ -19,5 +19,5 @@ defineProps<{
   num: number;
   img: { XS: string; MD: string; XL: string }[];
   contents: { description: string }[];
-}>();
+}>(); 
 </script>
