@@ -15,7 +15,7 @@ interface Achievement {
 }
 
 export const achievements: Achievement[] = [
-  { id: 1, content: 'городов\nи стран ', number: '14+' },
+  { id: 1, content: 'городов\nи странннн ', number: '14+' },
   { id: 2, content: 'лет опыта\nработы', number: '5+' },
   { id: 3, content: 'реализованно\nпроектов', number: '50+' }
 ];
