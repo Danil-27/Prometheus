@@ -46,15 +46,14 @@ jobs:
             echo "📦 Installing dependencies..."
             npm install
 
-
-            echo "🗂 Contents of .output/public:"
+            echo "🛠 Generating static site..."
+            npm run generate
+            
+            echo "🗂 Contents of .output/public after generate:"
             ls -l .output/public
             head -20 .output/public/index.html
             ls -la .output/public
 
-            echo "🛠 Generating static site..."
-            npm run generate
-            
             echo "🚀 Restarting static server with PM2..."
             pm2 delete Prometheus || true
             pm2 start "npx serve -s /var/www/html/Prometheus/.output/public -l tcp://0.0.0.0:3000 --no-clipboard" --name Prometheus

@@ -2,7 +2,13 @@ import svgLoader from 'vite-svg-loader';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
+  nitro: {
+    preset: 'static',
+    prerender: {
+      ignore: ['/__sitemap__/style.xsl']
+    }
+  },
   compatibilityDate: '2024-04-03',
 
   devtools: { enabled: false },
@@ -42,11 +48,6 @@ export default defineNuxtConfig({
     public: {
       siteUrl:
         process.env.NUXT_PUBLIC_SITE_URL || 'https://prometheus-design.ru'
-    }
-  },
-  nitro: {
-    prerender: {
-      ignore: ['/__sitemap__/style.xsl']
     }
   },
 
