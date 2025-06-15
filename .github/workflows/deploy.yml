@@ -19,7 +19,6 @@ jobs:
           echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -p 22 ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
-
       - name: Deploy & Generate on VPS
         run: |
           ssh -o StrictHostKeyChecking=no \
@@ -27,27 +26,28 @@ jobs:
               -i ~/.ssh/id_ed25519 \
               -p 22 ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} '
                 set -e
-                # Загрузка nvm
+                # Настройка Node.js через nvm
                 export NVM_DIR="$HOME/.nvm"
                 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
                 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-
                 nvm use 22 || nvm install 22
 
                 cd /var/www/html/Prometheus
-
+                
                 echo "📥 Pulling latest code..."
                 git reset --hard HEAD
                 git clean -fd
                 git pull origin main
-
+                
                 echo "📦 Installing dependencies..."
                 npm install
-                npm audit fix || true
-
+                npm audit fix || exit 0
+                
                 echo "🛠 Generating static site..."
                 npm run generate
-
-                echo "🔄 Reloading nginx..."
-                sudo systemctl reload nginx
+                
+                echo "🚀 Restarting static server with PM2..."
+                pm2 delete Prometheus || true
+                pm2 start "npx serve -s dist -l tcp://0.0.0.0:3000 --no-clipboard" --name Prometheus
+                pm2 save
               '
