@@ -22,36 +22,33 @@ jobs:
       - name: Deploy & Generate on VPS
         run: |
           ssh -o StrictHostKeyChecking=no \
-              -o ServerAliveInterval=60 \
-              -i ~/.ssh/id_ed25519 \
-              -p 22 ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} '
-                set -e
-                # Настройка Node.js через nvm
-                export NVM_DIR="$HOME/.nvm"
-                [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-                [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-                nvm use 22 || nvm install 22
+          -o ServerAliveInterval=60 \
+          -i ~/.ssh/id_ed25519 \
+          -p 22 ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} '
+            set -e
+            # Настройка Node.js через nvm
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            nvm use 22 || nvm install 22
 
-                cd /var/www/html/Prometheus
-                
-                echo "📥 Pulling latest code..."
-                git reset --hard HEAD
-                git clean -fd
-                git pull origin main
-                
-                echo "📦 Installing dependencies..."
-                npm install
-                npm audit fix || exit 0
-                
-                echo "📂 Removing old build..."
-                rm -rf .output
+            cd /var/www/html/Prometheus
+            
+            echo "📥 Pulling latest code..."
+            git pull origin main
+            
+            echo "📦 Installing dependencies..."
+            npm install
+            npm audit fix || exit 0
+            
+            echo "📂 Removing old build..."
+            rm -rf .output dist .nuxt
 
-                echo "🛠 Generating static site..."
-                npm run generate
-                
-                echo "🚀 Restarting static server with PM2..."
-                pm2 delete Prometheus || true
-                pm2 start "npx serve -s /var/www/html/Prometheus/dist -l tcp://0.0.0.0:3000 --no-clipboard" --name Prometheus
+            echo "🛠 Generating static site..."
+            npm run generate
+            
+            echo "🚀 Restarting static server with PM2..."
+            pm2 delete Prometheus || true
+            pm2 start "npx serve -s /var/www/html/Prometheus/dist -l tcp://0.0.0.0:3000 --no-clipboard" --name Prometheus
 
-                pm2 save
-              '
+            pm2 save
+          '
