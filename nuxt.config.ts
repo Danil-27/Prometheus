@@ -30,17 +30,11 @@ export default defineNuxtConfig({
     'nuxt-intersection-observer',
     'nuxt-swiper'
   ],
+
   runtimeConfig: {
-    hostname:
-      process.env.NUXT_PUBLIC_SITE_URL || 'https://prometheus-design.ru',
-    routes: ['/', '/projects'],
-    trailingSlash: false
-  },
-  image: {
-    provider: 'ipx',
-    domains: [],
-    dir: 'public',
-    format: ['webp']
+    public: {
+      siteUrl: 'https://prometheus-design.ru'
+    }
   },
 
   app: {
