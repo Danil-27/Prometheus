@@ -43,11 +43,15 @@ jobs:
                 npm install
                 npm audit fix || exit 0
                 
+                echo "📂 Removing old build..."
+                rm -rf .output
+
                 echo "🛠 Generating static site..."
                 npm run generate
                 
                 echo "🚀 Restarting static server with PM2..."
                 pm2 delete Prometheus || true
-                pm2 start "npx serve -s dist -l tcp://0.0.0.0:3000 --no-clipboard" --name Prometheus
+                pm2 start "npx serve -s /var/www/html/Prometheus/dist -l tcp://0.0.0.0:3000 --no-clipboard" --name Prometheus
+
                 pm2 save
               '
