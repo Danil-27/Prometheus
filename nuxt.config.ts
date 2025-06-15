@@ -32,9 +32,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      site: {
-        url: 'https://prometheus-design.ru'
-      },
+      siteUrl: 'https://prometheus-design.ru',
       sitemap: {
         include: ['/', '/projects'],
         trailingSlash: false
