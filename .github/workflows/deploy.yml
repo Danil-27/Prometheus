@@ -32,18 +32,25 @@ jobs:
             nvm use 22 || nvm install 22
 
             cd /var/www/html/Prometheus
-            
-            echo "📥 Pulling latest code..."
+
+            echo "📥 Resetting local changes..."
             git reset --hard HEAD
             git clean -fd
+
+            echo "📥 Pulling latest code..."
             git pull origin main
             
+            echo "📂 Removing old build..."
+            rm -rf node_modules .output dist .nuxt
+
             echo "📦 Installing dependencies..."
             npm install
-            npm audit fix || exit 0
-            
-            echo "📂 Removing old build..."
-            rm -rf .output
+
+
+            echo "🗂 Contents of .output/public:"
+            ls -l .output/public
+            head -20 .output/public/index.html
+            ls -la .output/public
 
             echo "🛠 Generating static site..."
             npm run generate
