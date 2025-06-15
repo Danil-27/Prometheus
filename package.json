@@ -13,6 +13,7 @@
   "dependencies": {
     "@eslint/config-inspector": "^1.0.2",
     "@nuxt/vite-builder": "^3.17.3",
+    "@nuxtjs/sitemap": "^7.4.0",
     "@unhead/vue": "^2.0.0-rc.10",
     "audit": "^0.0.6",
     "esbuild": "^0.25.1",
@@ -37,7 +38,6 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9.23.0",
     "eslint-plugin-vue": "^10.0.0",
-    "nuxt-simple-sitemap": "^4.4.1",
     "nuxt-viewport": "^2.2.0",
     "postcss": "^8.5.1",
     "prettier": "^3.5.3",

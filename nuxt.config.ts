@@ -25,19 +25,15 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@nuxt/eslint',
+    '@nuxtjs/sitemap',
     'nuxt-viewport',
     'nuxt-intersection-observer',
-    'nuxt-swiper',
-    'nuxt-simple-sitemap'
+    'nuxt-swiper'
   ],
   runtimeConfig: {
-    public: {
-      siteUrl: 'https://prometheus-design.ru',
-      sitemap: {
-        include: ['/', '/projects'],
-        trailingSlash: false
-      }
-    }
+    siteUrl: 'https://prometheus-design.ru',
+    include: ['/', '/projects'],
+    trailingSlash: false
   },
   image: {
     provider: 'ipx',
