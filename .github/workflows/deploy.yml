@@ -33,6 +33,8 @@ jobs:
                 nvm use 22 || nvm install 22
                 cd /root/Prometheus
                 echo "📥 Pulling latest code..."
+                git reset --hard HEAD
+                git clean -fd
                 git pull origin main
                 echo "📦 Installing dependencies..."
                 npm ci
