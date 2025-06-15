@@ -31,8 +31,9 @@ export default defineNuxtConfig({
     'nuxt-swiper'
   ],
   runtimeConfig: {
-    siteUrl: 'https://prometheus-design.ru',
-    include: ['/', '/projects'],
+    hostname:
+      process.env.NUXT_PUBLIC_SITE_URL || 'https://prometheus-design.ru',
+    routes: ['/', '/projects'],
     trailingSlash: false
   },
   image: {
