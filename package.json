@@ -37,6 +37,7 @@
     "autoprefixer": "^10.4.20",
     "eslint": "^9.23.0",
     "eslint-plugin-vue": "^10.0.0",
+    "nuxt-simple-sitemap": "^4.4.1",
     "nuxt-viewport": "^2.2.0",
     "postcss": "^8.5.1",
     "prettier": "^3.5.3",

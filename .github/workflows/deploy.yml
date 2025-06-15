@@ -35,7 +35,9 @@ jobs:
                 echo "📥 Pulling latest code..."
                 git pull origin main
                 echo "📦 Installing dependencies..."
-                npm ci
+                npm install
+                echo "🔧 Fixing vulnerabilities..."
+                npm audit fix || true
                 echo "🛠 Generating static site..."
                 npm run generate
                 echo "🚀 Restarting static server with PM2..."

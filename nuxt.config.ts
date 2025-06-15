@@ -27,9 +27,20 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-viewport',
     'nuxt-intersection-observer',
-    'nuxt-swiper'
+    'nuxt-swiper',
+    'nuxt-simple-sitemap'
   ],
-
+  runtimeConfig: {
+    public: {
+      site: {
+        url: 'https://prometheus-design.ru'
+      },
+      sitemap: {
+        include: ['/', '/projects'],
+        trailingSlash: false
+      }
+    }
+  },
   image: {
     provider: 'ipx',
     domains: [],
@@ -49,6 +60,7 @@ export default defineNuxtConfig({
         {
           charset: 'utf-8'
         },
+        { name: 'robots', content: 'index, follow' },
         {
           name: 'viewport',
           content: 'width=device-width, initial-scale=1'
