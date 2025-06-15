@@ -30,8 +30,9 @@
         <p class="max-md:mt-[4px]">Будни, с 09:00 до 21:00</p>
       </div>
     </div>
-    <div class="flex justify-center lg:my-[50px] xl:my-[50px] xxl:my-[100px]">
-      <p class="text-center font-jetExtraB uppercase max-lg:mt-[20px] text-[clamp(52px,16vw,100px)] sm:text-[clamp(110px,16vw,200px)] md:text-[clamp(138px,18vw,300px)] xxl:text-[clamp(286px,17vw,342px)] leading-[1]">
+    <div class=" lg:my-[50px] xl:my-[50px] xxl:my-[100px]">
+      <p class="font-jetExtraB max-w-[100vw] whitespace-nowrap break-normal text-center uppercase max-lg:mt-[20px]  text-[clamp(50px,16vw,90px)] xs:text-[clamp(70px,16vw,90px)] sm:text-[100px] md:text-[130px] lg:text-[clamp(170px,17vw,220px)] xl:text-[220px] xxl:text-[clamp(220px,17vw,340px)] leading-[1]">
+        <!--   text-[clamp(52px,16vw,100px)] sm:text-[clamp(110px,16vw,200px)] md:text-[clamp(138px,18vw,300px)] xxl:text-[clamp(286px,17vw,342px)] -->
         Прометей
       </p>
     </div>
