@@ -31,9 +31,21 @@ export default defineNuxtConfig({
     'nuxt-swiper'
   ],
 
+  sitemap: {
+    xsl: false
+  },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://prometheus-design.ru'
+  },
   runtimeConfig: {
     public: {
-      siteUrl: 'https://prometheus-design.ru'
+      siteUrl:
+        process.env.NUXT_PUBLIC_SITE_URL || 'https://prometheus-design.ru'
+    }
+  },
+  nitro: {
+    prerender: {
+      ignore: ['/__sitemap__/style.xsl']
     }
   },
 
