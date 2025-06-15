@@ -37,7 +37,7 @@ jobs:
                 git clean -fd
                 git pull origin main
                 echo "📦 Installing dependencies..."
-                npm ci
+                npm install
                 npm audit fix
                 echo "🛠 Generating static site..."
                 npm run generate
