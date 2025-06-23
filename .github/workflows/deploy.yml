@@ -47,7 +47,6 @@ jobs:
             npm install
 
             echo "😎 update bild..."
-            npm outdated
             npm update
             
             echo "🛠 Generating static site..."
