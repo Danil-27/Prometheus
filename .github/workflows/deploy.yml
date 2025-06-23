@@ -46,9 +46,6 @@ jobs:
             echo "📦 Installing dependencies..."
             npm install
 
-            echo "😎 update bild..."
-            npm update
-            
             echo "🛠 Generating static site..."
             npm run generate
             
