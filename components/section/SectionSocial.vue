@@ -1,5 +1,5 @@
 <template>
-  <section id="social" class="custom-container section-margin-top section-scroll-mt">
+  <section id="social" class="custom-container section-margin-top">
     <h2 class="font-jetBold text-heading mb-[60px]">«Свяжитесь с нами»</h2>
     <div class="flex flex-col lg:flex-row xxl:max-w-[1400px] mt-[240px] xs:mt-[270px] min-[580px]:mt-[320px] lg:mt-[100px] xxl:mx-auto bg-[url('@/assets/svg/social/bg-social-block.svg')] bg-[position:right,center]  bg-no-repeat bg-white lg:pr-[50px] p-[20px] xs:p-[30px] lg:py-[45px] rounded-base ">
       <div class="lg:w-6/12 relative">

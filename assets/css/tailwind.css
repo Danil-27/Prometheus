@@ -43,9 +43,6 @@ body {
   .section-padding-y {
     @apply py-[80px] lg:py-[100px] xl:py-[120px] xxl:py-[140px];
   }
-  .section-scroll-mt {
-    @apply scroll-mt-[20px] lg:scroll-mt-[120px];
-  }
 }
 
 @layer components {
