@@ -1,10 +1,10 @@
 // input
 import inputBackground from '~/assets/images/input/img-input.png';
 // card
-import projectOne from '~/assets/images/cards/project-1.jpg';
-import projectTwo from '~/assets/images/cards/project-2.jpg';
-import projectThree from '~/assets/images/cards/project-3.jpg';
-import projectFour from '~/assets/images/cards/project-4.jpg';
+import elegant from '~/assets/images/cards/elegant.jpg';
+import cliff from '~/assets/images/cards/cliff.jpg';
+import elegantSecond from '~/assets/images/cards/elegant_second.jpg';
+import sanfitino from '~/assets/images/cards/sanfitino.jpg';
 
 // Achievement
 
@@ -32,25 +32,25 @@ interface Card {
 export const cards: Card[] = [
   {
     id: 1,
-    src: projectOne,
+    src: elegant,
     alt: 'Элегант',
     content: 'ЖК\n"Элегант"'
   },
   {
     id: 2,
-    src: projectTwo,
+    src: cliff,
     alt: 'Утес',
     content: 'ЖК\n"Утес"'
   },
   {
     id: 3,
-    src: projectThree,
+    src: elegantSecond,
     alt: 'Элегант',
     content: 'ЖК\n"Элегант"'
   },
   {
     id: 4,
-    src: projectFour,
+    src: sanfitino,
     alt: 'SUNFITINO',
     content: 'Комплекс\n“SUNFITINO”'
   }
