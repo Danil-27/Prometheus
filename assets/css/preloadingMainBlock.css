@@ -1,0 +1,41 @@
+.obverse {
+  @apply w-full max-w-full px-4 mx-auto mt-[20px];
+}
+
+@media screen and (min-width: 768px) {
+  .obverse {
+    @apply px-5;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .obverse {
+    @apply max-w-[1200px] px-0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .obverse {
+    @apply max-w-[1600px];
+  }
+}
+
+.obverse__wrapper {
+  @apply relative text-white rounded-base min-h-[25rem] lg:min-h-[540px] xxl:min-h-[700px] overflow-hidden;
+}
+
+.obverse__nuxt-img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.obverse__bg {
+  @apply absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.69)_0%,rgba(255,255,255,0)_100%)] bg-[rgba(0,0,0,0.36)] px-[1rem] py-[3.75rem] md:px-[2rem] md:py-[2.75rem] lg:pl-[58px] lg:pt-[130px] xl:pb-[9.375rem];
+}
+
+.obverse__heading {
+  @apply font-jetExtraB text-[2.5rem] xs:text-[4rem] sm:text-[5.6rem] xl:text-[120px] xxl:text-[10rem] leading-[1];
+}
+
+.obverse__text {
+  @apply font-intertLight text-[20px] xs:text-[22px] md:text-[24px] mt-[20px] lg:text-[40px] xxl:text-[60px] leading-[102%];
+}

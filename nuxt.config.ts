@@ -1,4 +1,5 @@
 import svgLoader from 'vite-svg-loader';
+import tailwindcss from 'tailwindcss';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -14,8 +15,13 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   vite: {
-    plugins: [svgLoader()]
+    plugins: [svgLoader()],
+    css: {
+      postcss: {}
+    }
   },
+
+  css: ['~/assets/css/tailwind.css'],
 
   plugins: ['~/plugins/v-mask.client.ts'],
 
@@ -169,14 +175,6 @@ export default defineNuxtConfig({
           href: '/site.webmanifest'
         }
       ]
-    }
-  },
-
-  css: ['~/assets/scss/app.scss'],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
     }
   }
 });
