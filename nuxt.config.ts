@@ -151,12 +151,6 @@ export default defineNuxtConfig({
       ],
 
       link: [
-        {
-          rel: 'preload',
-          href: '/_nuxt/assets/css/preloadingMainBlock.css',
-          as: 'style'
-        },
-
         { rel: 'icon', href: '/favicon.ico' },
         {
           rel: 'icon',
