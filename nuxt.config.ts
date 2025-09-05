@@ -1,7 +1,6 @@
 import svgLoader from 'vite-svg-loader';
 import tailwindcss from 'tailwindcss';
 
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
@@ -152,6 +151,12 @@ export default defineNuxtConfig({
       ],
 
       link: [
+        {
+          rel: 'preload',
+          href: '/_nuxt/assets/css/preloadingMainBlock.css',
+          as: 'style'
+        },
+
         { rel: 'icon', href: '/favicon.ico' },
         {
           rel: 'icon',
