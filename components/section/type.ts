@@ -1,10 +1,10 @@
 // input
 import inputBackground from '~/assets/images/input/img-input.png';
 // card
-import elegant from '~/assets/images/cards/elegant.jpg';
-import cliff from '~/assets/images/cards/cliff.jpg';
-import elegantSecond from '~/assets/images/cards/elegant_second.jpg';
-import sanfitino from '~/assets/images/cards/sanfitino.jpg';
+import elegant from '~/assets/images/cards/elegant.webp';
+import cliff from '~/assets/images/cards/cliff.webp';
+import elegantSecond from '~/assets/images/cards/elegant_second.webp';
+import sanfitino from '~/assets/images/cards/sanfitino.webp';
 
 // Achievement
 
