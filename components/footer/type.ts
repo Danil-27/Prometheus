@@ -1,3 +1,3 @@
-import rule from '~/assets/images/footer/ruler.png';
+import rule from '~/assets/images/footer/ruler.webp';
 
 export const rulePicture: string = rule;
