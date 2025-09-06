@@ -1,46 +1,46 @@
 // Block 1
 import elegantXLOne from '~/assets/images/page_progect/desctop/elegant/detailed_Large1.webp';
-import elegantMDOne from '~/assets/images/page_progect/laptop/elegant/detailed_Medium1.png';
+import elegantMDOne from '~/assets/images/page_progect/laptop/elegant/detailed_Medium1.webp';
 import elegantXSOne from '~/assets/images/page_progect/mobile/elegant/detailed_Small1.png';
 import elegantXLTwo from '~/assets/images/page_progect/desctop/elegant/detailed_Large2.webp';
-import elegantMDTwo from '~/assets/images/page_progect/laptop/elegant/detailed_Medium2.png';
+import elegantMDTwo from '~/assets/images/page_progect/laptop/elegant/detailed_Medium2.webp';
 import elegantXSTwo from '~/assets/images/page_progect/mobile/elegant/detailed_Small2.png';
 import elegantXLThree from '~/assets/images/page_progect/desctop/elegant/detailed_Large3.webp';
-import elegantMDThree from '~/assets/images/page_progect/laptop/elegant/detailed_Medium3.png';
+import elegantMDThree from '~/assets/images/page_progect/laptop/elegant/detailed_Medium3.webp';
 import elegantXSThree from '~/assets/images/page_progect/mobile/elegant/detailed_Small3.png';
 // block 2
 import cliffXLOne from '~/assets/images/page_progect/desctop/cliff/detailed_Large1.webp';
-import cliffMDOne from '~/assets/images/page_progect/laptop/cliff/detailed_Medium1.png';
+import cliffMDOne from '~/assets/images/page_progect/laptop/cliff/detailed_Medium1.webp';
 import cliffXSOne from '~/assets/images/page_progect/mobile/cliff/detailed_Small1.png';
 import cliffXLTwo from '~/assets/images/page_progect/desctop/cliff/detailed_Large2.webp';
-import cliffMDTwo from '~/assets/images/page_progect/laptop/cliff/detailed_Medium2.png';
+import cliffMDTwo from '~/assets/images/page_progect/laptop/cliff/detailed_Medium2.webp';
 import cliffXSTwo from '~/assets/images/page_progect/mobile/cliff/detailed_Small2.png';
 import cliffXLThree from '~/assets/images/page_progect/desctop/cliff/detailed_Large3.webp';
-import cliffMDThree from '~/assets/images/page_progect/laptop/cliff/detailed_Medium3.png';
+import cliffMDThree from '~/assets/images/page_progect/laptop/cliff/detailed_Medium3.webp';
 import cliffXSThree from '~/assets/images/page_progect/mobile/cliff/detailed_Small3.png';
 // block 3
 import complexElegantXLOne from '~/assets/images/page_progect/desctop/complexElegant/detailed_Large1.webp';
-import complexElegantMDOne from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium1.png';
+import complexElegantMDOne from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium1.webp';
 import complexElegantXSOne from '~/assets/images/page_progect/mobile/complexElegant/detailed_Small1.png';
 
 import complexElegantXLTwo from '~/assets/images/page_progect/desctop/complexElegant/detailed_Large2.webp';
-import complexElegantMDTwo from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium2.png';
+import complexElegantMDTwo from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium2.webp';
 import complexElegantXSTwo from '~/assets/images/page_progect/mobile/complexElegant/detailed_Small2.png';
 
 import complexElegantXLThree from '~/assets/images/page_progect/desctop/complexElegant/detailed_Large3.webp';
-import complexElegantMDThree from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium3.png';
+import complexElegantMDThree from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium3.webp';
 import complexElegantXSThree from '~/assets/images/page_progect/mobile/complexElegant/detailed_Small3.png';
 // block 4
 import synfitinoXLOne from '~/assets/images/page_progect/desctop/synfitino/detailed_Large1.webp';
-import synfitinoMDOne from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium1.png';
+import synfitinoMDOne from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium1.webp';
 import synfitinoXSOne from '~/assets/images/page_progect/mobile/synfitino/detailed_Small1.png';
 
 import synfitinoXLTwo from '~/assets/images/page_progect/desctop/synfitino/detailed_Large2.webp';
-import synfitinoMDTwo from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium2.png';
+import synfitinoMDTwo from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium2.webp';
 import synfitinoXSTwo from '~/assets/images/page_progect/mobile/synfitino/detailed_Small2.png';
 
 import synfitinoMDThree from '~/assets/images/page_progect/desctop/synfitino/detailed_Large3.webp';
-import synfitinoXLThree from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium3.png';
+import synfitinoXLThree from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium3.webp';
 import synfitinoXSThree from '~/assets/images/page_progect/mobile/synfitino/detailed_Small3.png';
 
 interface Image {
