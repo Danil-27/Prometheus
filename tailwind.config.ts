@@ -1,5 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  vite: {
+    build: {
+      cssCodeSplit: false
+    }
+  },
   content: ['./src/**/*.{html,js}'],
   theme: {
     fontSize: {
