@@ -17,6 +17,10 @@ export default defineNuxtConfig({
     plugins: [svgLoader()],
     css: {
       postcss: {}
+    },
+
+    build: {
+      cssCodeSplit: false
     }
   },
 
