@@ -13,12 +13,20 @@
         специальным предложением
       </p>
 
-      <BtnSecondary onclick="location.href='#social'" :is-check-secondary-offer="checkSecondaryBtn" class="flex items-center mx-auto lg:mx-0 mt-[35px] md:mt-[46px] px-9 py-3 xxl:mt-[60px]" @click="toggleSecondary()">
+      <BtnSecondary onclick="location.href='#social'"
+        :is-check-secondary-offer="checkSecondaryBtn"
+        class="flex items-center mx-auto lg:mx-0 mt-[35px] md:mt-[46px] px-9 py-3 xxl:mt-[60px]"
+        @click="toggleSecondary()">
         <template #text>Заказать</template>
       </BtnSecondary>
     </div>
     <div class="lg:w-4/12 ">
-      <img width="400" height="500" class="h-[400px] lg:h-auto" src="@/assets/images/offer/furniture.webp" alt="furniture" />
+      <img class="object-cover"
+        width="400"
+        height="500"
+        src="@/assets/images/offer/furniture.webp"
+        alt="furniture"
+        loading="lazy" />
     </div>
   </section>
 </template>
