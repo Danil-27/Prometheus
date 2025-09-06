@@ -44,8 +44,7 @@ module.exports = {
       jetExtraB: ['JetExtraBold', 'sans-serif'],
       InterBold: ['InterBold', 'sans-serif'],
       interReg: ['InterRegular', 'sans-serif'],
-      intertLight: ['InterLight', 'sans-serif'],
-      sora: ['Sora', 'sans-serif']
+      intertLight: ['InterLight', 'sans-serif']
     },
     extend: {
       spacing: {

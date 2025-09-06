@@ -24,6 +24,13 @@ export default defineNuxtConfig({
     }
   },
 
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    viewer: false
+  },
+
   css: ['~/assets/css/tailwind.css'],
 
   plugins: ['~/plugins/v-mask.client.ts'],
