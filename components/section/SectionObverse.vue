@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import obverse from '/images/obverse/obverse.jpg'
+import obverse from '/images/obverse/obverse.webp'
 
 const img = useImage()
 

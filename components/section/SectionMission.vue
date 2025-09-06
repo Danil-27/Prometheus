@@ -41,5 +41,5 @@
 <script setup lang="ts">
 import MissionIcon from '@/assets/svg/mission/mission.svg';
 import missionArrow from '@/assets/svg/mission/arrow-mission.svg';
-import apartment from '/images/mission/apartment.jpg'
+import apartment from '/images/mission/apartment.webp';
 </script>
