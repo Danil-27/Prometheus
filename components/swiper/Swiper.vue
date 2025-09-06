@@ -1,14 +1,26 @@
 <template>
-  <Swiper :modules="[Pagination, Navigation]" :pagination="{
-    clickable: true,
-    dynamicBullets: true,
-    dynamicMainBullets: 5
-  }" :navigation="{
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }" :loop="true" :slidesPerView="1" :spaceBetween="10" :loopAdditionalSlides="1" class="my-swiper rounded-[20px]">
-    <SwiperSlide v-for="(img, index) in images" :key="index" class="bg-bgPlugImg aspect-[7/5] lg:aspect-[8/6]">
-      <img :src="img.src" :alt="img.alt" class="w-full h-full object-cover swiper-lazy" />
+  <Swiper :modules="[Pagination, Navigation]"
+    :pagination="{
+      clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 5
+    }"
+    :navigation="{
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }"
+    :loop="true"
+    :slidesPerView="1"
+    :spaceBetween="10"
+    :loopAdditionalSlides="1"
+    class="my-swiper rounded-[20px]">
+    <SwiperSlide v-for="(img, index) in images"
+      :key="index"
+      class="bg-bgPlugImg aspect-[7/5] lg:aspect-[8/6]">
+      <img loading="lazy"
+        :src="img.src"
+        :alt="img.alt"
+        class="w-full h-full object-cover swiper-lazy" />
     </SwiperSlide>
 
     <div class="swiper-button-prev"></div>
