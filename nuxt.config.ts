@@ -162,6 +162,27 @@ export default defineNuxtConfig({
       ],
 
       link: [
+        {
+          rel: 'preload',
+          as: 'font',
+          href: '/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2',
+          type: 'font/woff2',
+          crossorigin: 'anonymous'
+        },
+        {
+          rel: 'preload',
+          as: 'font',
+          href: '/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2',
+          type: 'font/woff2',
+          crossorigin: 'anonymous'
+        },
+        {
+          rel: 'preload',
+          as: 'font',
+          href: '/fonts/Inter/InterDisplay-Light.woff2',
+          type: 'font/woff2',
+          crossorigin: 'anonymous'
+        },
         { rel: 'icon', href: '/favicon.ico' },
         {
           rel: 'icon',
