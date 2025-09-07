@@ -14,13 +14,31 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   vite: {
-    plugins: [svgLoader()],
+    plugins: [
+      svgLoader(),
+      tailwindcss(),
+      ...(process.env.NODE_ENV === 'production'
+        ? [
+            require('cssnano')({
+              preset: [
+                'default',
+                {
+                  discardComments: { removeAll: true },
+                  normalizeWhitespace: true,
+                  colormin: true
+                }
+              ]
+            })
+          ]
+        : [])
+    ],
+
     css: {
       postcss: {}
     },
 
     build: {
-      cssCodeSplit: false
+      cssCodeSplit: true
     }
   },
 

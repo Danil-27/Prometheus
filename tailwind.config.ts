@@ -64,5 +64,12 @@ module.exports = {
       image: '0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2)',
       buttom: ' 0px 0px 10px 1px rgba(241, 218, 208, 0.9)'
     }
+  },
+  corePlugins: {
+    float: false,
+    clear: false,
+    skew: false,
+    caretColor: false,
+    fontVariantNumeric: false
   }
 };
