@@ -51,8 +51,6 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/tailwind.css'],
 
-  plugins: ['~/plugins/v-mask.client.ts'],
-
   typescript: {
     tsConfig: {
       compilerOptions: {
