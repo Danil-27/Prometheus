@@ -26,8 +26,7 @@
     "unhead": "^2.0.0-rc.10",
     "vite-svg-loader": "^5.1.0",
     "vue": "^3.5.11",
-    "vue-router": "latest",
-    "vue-the-mask": "^0.11.1"
+    "vue-router": "latest"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.2.0",
