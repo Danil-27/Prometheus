@@ -9,13 +9,13 @@ export default defineNuxtConfig({
       ignore: ['/__sitemap__/style.xsl']
     }
   },
-  compatibilityDate: '2024-04-03',
 
   devtools: { enabled: false },
 
   vite: {
     plugins: [
       svgLoader(),
+
       tailwindcss(),
       ...(process.env.NODE_ENV === 'production'
         ? [
@@ -38,7 +38,8 @@ export default defineNuxtConfig({
     },
 
     build: {
-      cssCodeSplit: true
+      cssCodeSplit: true,
+      target: 'esnext'
     }
   },
 
