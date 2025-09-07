@@ -1,0 +1,43 @@
+:root {
+  --white: #ffffff;
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-25: rgba(255, 255, 255, 0.25);
+  --black: #000000;
+  --black-40: rgba(0, 0, 0, 0.4);
+  --Carbonic: #151515;
+  --Onyx: #2e2e2e;
+  --anthracite: #2e2e2ec9;
+  --grey: #e4e3e9;
+  --grayLight: #f2f2f2;
+  --greySilver: #d6d6d6;
+  --yellow: #fadda5;
+  --green: #c7d6b5;
+  --springGreen: #05d67b;
+  --crimson: #ff0033;
+  --mistyrose: #ffe5eb;
+  --dimGray: #696969;
+  --bg-modal: #d2cbc7;
+  --bg-plug-img: rgba(198, 197, 201, 0.4);
+}
+
+@theme {
+  --color-white: var(--white);
+  --color-white-80: var(--white-80);
+  --color-white-25: var(--white-25);
+  --color-black: var(--black);
+  --color-black-40: var(--black-40);
+  --color-carbonic: var(--Carbonic);
+  --color-onyx: var(--Onyx);
+  --color-anthracite: var(--anthracite);
+  --color-grey: var(--grey);
+  --color-yellow: var(--yellow);
+  --color-green: var(--green);
+  --color-springGreen: var(--springGreen);
+  --color-crimson: var(--crimson);
+  --color-mistyrose: var(--mistyrose);
+  --color-grayLight: var(--grayLight);
+  --color-greenSilver: var(--greySilver);
+  --color-dimGray: var(--dimGray);
+  --color-bgModal: var(--bg-modal);
+  --color-bgPlugImg: var(--bg-plug-img);
+}

@@ -16,7 +16,7 @@
         <p class="font-jetExtraB text-[2.5rem] xs:text-[4rem] sm:text-[5.6rem] xl:text-[120px] xxl:text-[10rem] leading-[1]">
           Прометей
         </p>
-        <div class="font-intertLight text-[20px] xs:text-[22px] md:text-[24px] mt-[20px] lg:text-[40px] xxl:text-[60px] leading-[102%]">
+        <div class="font-interLight text-[20px] xs:text-[22px] md:text-[24px] mt-[20px] lg:text-[40px] xxl:text-[60px] leading-[102%]">
           <p>Несем свет</p>
           <p>Создаем эстетику</p>
           <p>Вдыхаем уют</p>

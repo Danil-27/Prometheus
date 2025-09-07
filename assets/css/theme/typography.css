@@ -1,0 +1,91 @@
+/* CSS переменные для шрифтов */
+:root {
+  --font-jet-regular: 'JetRegular', monospace;
+  --font-jet-bold: 'JetBold', monospace;
+  --font-jet-extra-bold: 'JetExtraBold', monospace;
+  --font-inter-bold: 'InterBold', sans-serif;
+  --font-inter-regular: 'InterRegular', sans-serif;
+  --font-inter-light: 'InterLight', sans-serif;
+}
+
+/* Определения шрифтов JetBrains Mono */
+@font-face {
+  font-family: 'JetRegular';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Regular.woff') format('woff'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetBold';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Bold.woff') format('woff'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'JetExtraBold';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.woff') format('woff'),
+    url('/fonts/JetBrainsMono/JetBrainsMono-ExtraBold.ttf') format('truetype');
+}
+
+/* Определения шрифтов Inter */
+@font-face {
+  font-family: 'InterBold';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('/fonts/Inter/Inter-Bold.woff2') format('woff2'),
+    url('/fonts/Inter/Inter-Bold.woff') format('woff'),
+    url('/fonts/Inter/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('/fonts/Inter/Inter-Regular.woff2') format('woff2'),
+    url('/fonts/Inter/Inter-Regular.woff') format('woff'),
+    url('/fonts/Inter/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'InterLight';
+  font-style: normal;
+  font-display: swap;
+  src:
+    url('/fonts/Inter/InterDisplay-Light.woff2') format('woff2'),
+    url('/fonts/Inter/InterDisplay-Light.otf') format('opentype'),
+    url('/fonts/Inter/InterDisplay-Light.ttf') format('truetype');
+}
+
+/* Конфигурация Tailwind шрифтов */
+@theme {
+  /* Семейства шрифтов */
+  --font-jetReg: var(--font-jet-regular);
+  --font-jetBold: var(--font-jet-bold);
+  --font-jetExtraB: var(--font-jet-extra-bold);
+  --font-interBold: var(--font-inter-bold);
+  --font-interReg: var(--font-inter-regular);
+  --font-interLight: var(--font-inter-light);
+
+  /* Размеры шрифтов */
+  --text-xs: 1.5rem; /* 24px */
+  --text-sm: 1.875rem; /* 30px */
+  --text-lg: 6.25rem; /* 100px */
+
+  /* Скругления */
+  --radius-xs: 30px;
+  --radius-base: 50px;
+}

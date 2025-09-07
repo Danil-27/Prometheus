@@ -1,0 +1,157 @@
+.text-heading {
+  text-align: center;
+  font-size: 40px;
+  line-height: 100%;
+
+  @media (width >= 480px) {
+    & {
+      font-size: 60px;
+    }
+  }
+
+  @media (width >= 992px) {
+    & {
+      font-size: 80px;
+      text-align: start;
+    }
+  }
+
+  @media (width >= 1920px) {
+    & {
+      font-size: 100px;
+    }
+  }
+}
+
+.text-ptice {
+  font-size: 16px;
+
+  @media (width >= 880px) {
+    & {
+      font-size: 18px;
+    }
+  }
+
+  @media (width >= 992px) {
+    & {
+      font-size: 18px;
+    }
+  }
+
+  @media (width >= 1920px) {
+    & {
+      font-size: 24px;
+    }
+  }
+}
+
+.text-primary {
+  font-size: 1.125rem;
+
+  @media (width >= 1920px) {
+    & {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.section-margin-top {
+  margin-top: 80px;
+
+  @media (width >= 992px) {
+    & {
+      margin-top: 100px;
+    }
+  }
+
+  @media (width >= 1280px) {
+    & {
+      margin-top: 120px;
+    }
+  }
+
+  @media (width >= 1920px) {
+    & {
+      margin-top: 140px;
+    }
+  }
+}
+
+.section-margin-top-question {
+  margin-top: 80px;
+
+  @media (width >= 992px) {
+    & {
+      margin-top: 140px;
+    }
+  }
+
+  @media (width >= 1280px) {
+    & {
+      margin-top: 200px;
+    }
+  }
+
+  @media (width >= 1920px) {
+    & {
+      margin-top: 140px;
+    }
+  }
+}
+
+.section-padding-y {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (width >= 992px) {
+    & {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+  }
+
+  @media (width >= 1280px) {
+    & {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+
+  @media (width >= 1920px) {
+    & {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+  }
+}
+
+.card {
+  border-radius: var(--radius-lg); /* Используем CSS переменную */
+  padding: var(--spacing-6); /* Используем CSS переменную */
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 6px;
+  width: 6px;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: black;
+  margin-right: 8px;
+}
+
+@media (width >= 768px) {
+  .dot {
+    height: 8px;
+    width: 8px;
+  }
+}
+
+@media (width >= 320px) {
+  .dot {
+    margin-right: 20px;
+  }
+}

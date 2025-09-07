@@ -61,3 +61,12 @@
     url('/fonts/Inter/InterDisplay-Light.otf') format('opentype'),
     url('/fonts/Inter/InterDisplay-Light.ttf') format('truetype');
 }
+
+@theme {
+  --font-jetReg: [ 'JetRegular', 'sans-serif'];
+  --font-jetBold: [ 'JetBold', 'sans-serif'];
+  --font-jetExtra-b: [ 'JetExtraBold', 'sans-serif'];
+  --font-interBold: [ 'InterBold', 'sans-serif'];
+  --font-interReg: [ 'InterRegular', 'sans-serif'];
+  --font-interLight: [ 'InterLight', 'sans-serif'];
+}

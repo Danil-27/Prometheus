@@ -1,7 +1,7 @@
 <template>
   <section class="mt-[24px]">
     <div class="w-10/12 h-[3px] my-[10px] md:mb-[20px] bg-gradient-to-r from-black to-transparent"></div>
-    <h2 class="font-jetBold text-[26px] md:text-[40px] mb-[20px]">{{ header[num].headerProject }}</h2>
+    <h2 class="font-jetBold text-[26px] md:text-[40px] mb-[20px]">{{ header[num]?.headerProject || '' }}</h2>
 
     <div class="bg-bgPlugImg rounded-[40px] w-full aspect-[16/9] lg:aspect-[10/4.8] mt-[20px]">
       <picture>

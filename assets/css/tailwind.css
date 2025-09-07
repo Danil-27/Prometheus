@@ -1,89 +1,21 @@
-@import 'all.css';
+/* 1. Tailwind */
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* 2. Тема - цвета */
+@import './theme/colors.css';
 
-/* general */
+/* 3. Тема - типография */
+@import './theme/typography.css';
 
-html,
-body {
-  @apply bg-grey;
-  height: 100%;
-  scroll-behavior: smooth;
-  font-family: 'JetRegular';
-}
+/* 4. Тема - тени */
+@import './theme/shadows.css';
 
-/* tailwind */
+/* 5. Тема - layout */
+@import './theme/layout.css';
 
-@layer base {
-  button {
-    @apply rounded-base;
-  }
+/* 6. Базовые стили */
+@import './base/globals.css';
 
-  .text-heading {
-    @apply text-[40px] xs:text-[60px] lg:text-[80px] max-lg:text-center xxl:text-[100px] leading-[100%];
-  }
-  .text-ptice {
-    @apply text-[16px] min-[880px]:text-[18px]  lg:text-[18px] xxl:text-[24px];
-  }
+@import './base/helpers.css';
 
-  .text-primary {
-    @apply text-[1.125rem] xxl:text-[1.5rem];
-  }
-
-  .section-margin-top {
-    @apply mt-[80px] lg:mt-[100px] xl:mt-[120px] xxl:mt-[140px];
-  }
-
-  .section-margin-top-question {
-    @apply mt-[80px] lg:mt-[140px] xl:mt-[200px] xxl:mt-[140px];
-  }
-
-  .section-padding-y {
-    @apply py-[80px] lg:py-[100px] xl:py-[120px] xxl:py-[140px];
-  }
-}
-
-@layer components {
-  .card {
-    border-radius: theme('borderRadius.lg');
-    padding: theme('spacing.6');
-  }
-
-  .dot {
-    @apply absolute top-[50%] translate-y-[-50%] left-0 h-[6px] w-[6px]  md:h-[8px] md:w-[8px]   inline-block rounded-[100%]  bg-black  mr-[8px] xs:mr-[20px];
-  }
-}
-
-/* container */
-
-.custom-container {
-  width: 100%;
-  max-width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .custom-container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .custom-container {
-    max-width: 1200px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .custom-container {
-    max-width: 1600px;
-  }
-}
+@import './base/decor.css';

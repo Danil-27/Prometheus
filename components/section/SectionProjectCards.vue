@@ -3,7 +3,9 @@
     <div class="custom-container lg:flex flex-wrap gap-y-10 lg:gap-10 justify-center items-center lg:justify-between">
       <h2 class="font-jetBold text-heading">Наши проекты</h2>
       <nuxt-link to="/projects">
-        <BtnSecondary :isCheckSecondaryProject="checkSecondaryBtn" class="flex items-center gap-[70px] px-7 py-3 max-lg:mx-auto max-lg:mt-[30px]" @click="toggleSecondary()">
+        <BtnSecondary :isCheckSecondaryProject="checkSecondaryBtn"
+          class="flex items-center gap-[70px] px-7 py-3 max-lg:mx-auto max-lg:mt-[30px]"
+          @click="toggleSecondary()">
           <template #text>Смотреть все</template>
           <template #icon>
             <IconBtn />
@@ -12,18 +14,28 @@
       </nuxt-link>
     </div>
     <article class="custom-container flex justify-center flex-wrap lg:flex-nowrap gap-[1rem] xxl:gap-5 mt-[60px] lg:h-[460px] xxl:h-[600px]">
-      <div v-for="(card, index) in cards" :key="card.id" class="relative w-full min-h-[350px] sm:w-[calc(50%-20px)] p-[16px] md:pb-[36px] xxl:px-[25px] md:pt-[25px] rounded-base overflow-hidden  xl:transition-all duration-300" :class="{
-        'lg:w-[100%]': isHover[index],
-        'lg:w-[50%]': !isHover[index]
-      }" @mouseover=" handleMouseOver(index)" @mouseleave="handleMouseLeave">
+      <div v-for="(card, index) in cards"
+        :key="card.id"
+        class="relative w-full min-h-[350px] sm:w-[calc(50%-20px)] p-[16px] md:pb-[36px] xxl:px-[25px] md:pt-[25px] rounded-base overflow-hidden  xl:transition-all duration-300"
+        :class="{
+          'lg:w-[100%]': isHover[index],
+          'lg:w-[50%]': !isHover[index]
+        }"
+        @mouseover=" handleMouseOver(index)"
+        @mouseleave="handleMouseLeave">
 
-        <img :src="card.src" :alt="card.alt" class="absolute top-0 left-0 w-full h-full object-cover" loading="lazy" />
+        <img :src="card.src"
+          :alt="card.alt"
+          class="absolute top-0 left-0 w-full h-full object-cover"
+          loading="lazy" />
 
         <div class=" absolute inset-0 bg-black-40">
         </div>
         <div class="relative h-full flex flex-col justify-between text-white">
           <nuxt-link :to="`/projects#${idLinkProject[index]}`">
-            <BtnArrow aria-label="Изучить проект" :is-hover="isHover[index]" :index="index">
+            <BtnArrow aria-label="Изучить проект"
+              :is-hover="isHover[index] ?? false"
+              :index="index">
               <span class="sr-only">
                 Изучить проект
               </span>
@@ -34,7 +46,9 @@
               {{ card.content }}
             </p>
             <nuxt-link :to="`/projects#${idLinkProject[index]}`">
-              <BtnBase class="w-full flex items-center justify-between py-[11px] px-[20px] xxl:py-[15px] mt-[30px]" :isCheckBaseProject="checkBaseBtn[index]" @click="toggleBase(index)">
+              <BtnBase class="w-full flex items-center justify-between py-[11px] px-[20px] xxl:py-[15px] mt-[30px]"
+                :isCheckBaseProject="checkBaseBtn[index]"
+                @click="toggleBase(index)">
                 <template #text>
                   <div>Изучить</div>
                 </template>

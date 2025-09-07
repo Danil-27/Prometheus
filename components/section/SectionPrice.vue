@@ -2,7 +2,19 @@
   <section id="price"
     class="custom-container">
     <h2 class="font-jetBold text-heading">Наши услуги</h2>
-    <div class="grid gap-5 grid-rows-[repeat(4,300px)] sm:grid-rows-[repeat(2,300px)] lg:grid-rows-[repeat(2,300px)] sm:grid-cols-[repeat(2,1fr)] lg:grid-cols-[repeat(4,1fr)] xl:grid-cols-[460px,1fr,1fr,1fr] xl:grid-rows-[260px,260px] xxl:grid-cols-[630px,1fr,1fr,300px] mt-[64px] xxl:grid-rows-[340px,340px]">
+    <div class="
+            grid gap-5 
+            grid-rows-[repeat(4,300px)] 
+            sm:grid-rows-[repeat(2,300px)] 
+            sm:grid-cols-[repeat(2,1fr)] 
+            lg:grid-cols-[repeat(4,1fr)] 
+            lg:grid-rows-[repeat(2,300px)] 
+            xl:grid-cols-[460px_1fr_1fr_1fr] 
+            xl:grid-rows-[260px_260px] 
+            xxl:grid-cols-[630px_1fr_1fr_300px] 
+            xxl:grid-rows-[340px_340px] 
+            mt-[64px]">
+
       <div class="relative lg:col-span-2 xl:col-span-2 xl:order-4 flex flex-col justify-between rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] bg-cover bg-center xxl:bg-[-10px] bg-no-repeat bg-[url('~/assets/images/price/corner.webp')]">
         <div class="max-w-[210px] lg:max-w-[290px] xl:max-w-[300px] xxl:max-w-[380px]">
           <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">Тариф базовый</h3>

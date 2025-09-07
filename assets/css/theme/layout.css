@@ -1,0 +1,21 @@
+/* Отступы */
+@theme {
+  --spacing-8xl: 96rem;
+  --spacing-9xl: 128rem;
+}
+
+/* Брейкпоинты */
+@theme {
+  --breakpoint-xxs: 320px;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1920px;
+}
+
+/* Отключаем контейнер */
+@theme {
+  --container: false;
+}

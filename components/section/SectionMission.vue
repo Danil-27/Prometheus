@@ -1,7 +1,7 @@
 <template>
   <section id="about"
     class="relative section-margin-top">
-    <div class="custom-container z-[1] grid grid-cols-1 grid-rows-[auto,300px,auto,auto] min-[505px]:grid-cols-2 min-[505px]:grid-rows-[auto,400px,auto] lg:grid-cols-[40%_1fr_1fr] lg:grid-rows-1 gap-[0.75rem] xxl:gap-[1.125rem]">
+    <div class="custom-container z-[1] grid grid-cols-1 grid-rows-[auto_300px_auto_auto] min-[505px]:grid-cols-2 min-[505px]:grid-rows-[auto_400px_auto] lg:grid-cols-[40%_1fr_1fr] lg:grid-rows-1 gap-[0.75rem] xxl:gap-[1.125rem]">
 
       <div class="relative bg-cover bg-no-repeat p-[30px] rounded-base min-[505px]:col-span-2 md:bg-[100%] max-md:bg-white md:pr-[110px] md:bg-[url('@/assets/svg/mission/background-md.svg')] lg:order-2 lg:bg-[url('@/assets/svg/mission/background-lg.svg')] xl:bg-[url('@/assets/svg/mission/background.svg')] xxl:p-[30px_60px_60px_60px]">
         <missionArrow class="max-md:hidden absolute w-[95px] h-[95px] xl:w-[90px] xl:h-[90px] xxl:w-[125px] xxl:h-[125px] bottom-[0px] right-[0px] lg:bottom-[-6px] lg:right-[-6px] xl:bottom-[0px] xl:right-[0px] xxl:bottom-[-10px] xxl:right-[-0px]" />

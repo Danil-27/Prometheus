@@ -1,8 +1,18 @@
+import tailwindcss from '@tailwindcss/vite';
 import svgLoader from 'vite-svg-loader';
-import tailwindcss from 'tailwindcss';
 
 export default defineNuxtConfig({
   ssr: true,
+
+  modules: [
+    '@nuxt/image',
+    '@nuxt/eslint',
+    '@nuxtjs/sitemap',
+    'nuxt-viewport',
+    'nuxt-intersection-observer',
+    'nuxt-swiper'
+  ],
+
   nitro: {
     preset: 'static',
     prerender: {
@@ -13,41 +23,12 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   vite: {
-    plugins: [
-      svgLoader(),
-
-      tailwindcss(),
-      ...(process.env.NODE_ENV === 'production'
-        ? [
-            require('cssnano')({
-              preset: [
-                'default',
-                {
-                  discardComments: { removeAll: true },
-                  normalizeWhitespace: true,
-                  colormin: true
-                }
-              ]
-            })
-          ]
-        : [])
-    ],
-
-    css: {
-      postcss: {}
-    },
+    plugins: [tailwindcss(), svgLoader()],
 
     build: {
       cssCodeSplit: true,
       target: 'esnext'
     }
-  },
-
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tailwind.config.js',
-    exposeConfig: false,
-    viewer: false
   },
 
   css: ['~/assets/css/tailwind.css'],
@@ -60,16 +41,11 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: [
-    '@pinia/nuxt',
-    '@nuxtjs/tailwindcss',
-    '@nuxt/image',
-    '@nuxt/eslint',
-    '@nuxtjs/sitemap',
-    'nuxt-viewport',
-    'nuxt-intersection-observer',
-    'nuxt-swiper'
-  ],
+  future: {
+    compatibilityVersion: 4
+  },
+
+  compatibilityDate: '2025-09-07',
 
   sitemap: {
     xsl: false
