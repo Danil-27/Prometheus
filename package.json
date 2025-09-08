@@ -17,6 +17,7 @@
     "@unhead/vue": "^2.0.14",
     "audit": "^0.0.6",
     "esbuild": "^0.25.9",
+    "ipx": "^3.1.1",
     "npm": "^11.6.0",
     "nuxt": "^4.1.1",
     "nuxt-intersection-observer": "^1.0.1",
