@@ -11,10 +11,17 @@
           media="(min-width: 640px)" />
         <img :src="img[num]?.XS"
           class="mx-auto rounded-[40px] w-full  h-full lg:h-auto object-cover "
-          loading="lazy" />
+          :loading="num == 0 ? 'eager' : 'lazy'"
+          :fetchpriority="num == 0 ? 'high' : null" />
       </picture>
     </div>
-    <p class="text-[14px] xs:text-[20px] lg:text-[24px] mt-[40px] md:mt-[50px] xxl:mt-[100px]">
+    <p class="
+          text-[14px]
+          xs:text-[20px]
+          lg:text-[24px]
+          mt-[40px]
+          md:mt-[50px]
+          xxl:mt-[100px]">
       Подробнее о проекте
       <br />
     </p>
