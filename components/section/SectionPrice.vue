@@ -1,5 +1,6 @@
 <template>
-  <section id="price"
+  <section ref="block"
+    id="price"
     class="custom-container">
     <h2 class="font-jetBold text-heading">Наши услуги</h2>
     <div class="
@@ -199,6 +200,10 @@ const isOpenModal = ref(false);
 const numOpneContent = ref(1);
 const checkSecondaryBtn = ref([false, false, false, false]);
 
+const visible = ref(false)
+const block = ref<HTMLElement | null>(null)
+
+
 function checkContent(indexElem: number) {
   checkSecondaryBtn.value[indexElem] = true;
   sessionStorage.setItem('checkSecondaryPrice', JSON.stringify(checkSecondaryBtn.value));
@@ -212,6 +217,14 @@ function handleModalMessage(value: boolean) {
 
 onMounted(() => {
   useStorageCheckContent('checkSecondaryPrice', checkSecondaryBtn);
+
+  const observer = new IntersectionObserver((entries) => {
+    const entry = entries[0]
+    if (entry && entry.isIntersecting) {
+      visible.value = true
+      observer.disconnect()
+    }
+  })
 });
 </script>
 
