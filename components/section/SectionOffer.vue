@@ -21,17 +21,26 @@
       </BtnSecondary>
     </div>
     <div class="lg:w-4/12 ">
-      <img class="object-cover"
-        width="400"
-        height="500"
-        src="@/assets/images/offer/furniture.webp"
-        alt="furniture"
-        loading="lazy" />
+
+      <picture>
+        <source :srcset="furnitureMD"
+          media="(max-width: 767px)" />
+        <source :srcset="furniture"
+          media="(min-width: 768px)" />
+        <img class=" object-cover "
+          :src="furniture"
+          alt="furniture"
+          loading="lazy" />
+      </picture>
+
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import furniture from '@/assets/images/offer/furniture.webp';
+import furnitureMD from '@/assets/images/offer/furniture-md.webp';
+
 const checkSecondaryBtn = ref<boolean>(false);
 
 function toggleSecondary() {
