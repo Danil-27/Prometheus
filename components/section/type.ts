@@ -6,6 +6,11 @@ import cliff from '~/assets/images/cards/cliff.webp';
 import elegantSecond from '~/assets/images/cards/elegant_second.webp';
 import sanfitino from '~/assets/images/cards/sanfitino.webp';
 
+import elegantMD from '~/assets/images/cards/md/elegant.webp';
+import cliffMD from '~/assets/images/cards/md/cliff.webp';
+import elegantSecondMD from '~/assets/images/cards/md/elegant_second.webp';
+import sanfitinoMD from '~/assets/images/cards/md/sanfitino.webp';
+
 // Achievement
 
 interface Achievement {
@@ -25,6 +30,7 @@ export const achievements: Achievement[] = [
 interface Card {
   id: number;
   src: string;
+  srcMD: string;
   alt: string;
   content: string;
 }
@@ -33,24 +39,28 @@ export const cards: Card[] = [
   {
     id: 1,
     src: elegant,
+    srcMD: elegantMD,
     alt: 'Элегант',
     content: 'ЖК\n"Элегант"'
   },
   {
     id: 2,
     src: cliff,
+    srcMD: cliffMD,
     alt: 'Утес',
     content: 'ЖК\n"Утес"'
   },
   {
     id: 3,
     src: elegantSecond,
+    srcMD: elegantSecondMD,
     alt: 'Элегант',
     content: 'ЖК\n"Элегант"'
   },
   {
     id: 4,
     src: sanfitino,
+    srcMD: sanfitinoMD,
     alt: 'SUNFITINO',
     content: 'Комплекс\n“SUNFITINO”'
   }

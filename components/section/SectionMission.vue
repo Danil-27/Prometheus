@@ -16,11 +16,18 @@
       </div>
 
       <div class="w-full xs:w-[90%] lg:w-full justify-self-center content-center min-[505px]:col-span-2 lg:col-span-1 lg:row-span-2 lg:order-1 rounded-base overflow-hidden">
-        <NuxtImg class="w-full h-full object-cover rounded-base"
-          :src="apartment"
-          alt="Квартира"
-          format="webp"
-          quality="80" />
+
+        <picture>
+          <source :srcset="apartmentMD"
+            media="(max-width: 767px)" />
+          <source :srcset="apartment"
+            media="(min-width: 768px)" />
+          <img class="w-full h-full object-cover rounded-base"
+            :src="apartment"
+            alt="Квартира"
+            loading="lazy" />
+        </picture>
+
       </div>
 
       <div class="text-center bg-white rounded-base p-[15px] md:py-[20px] md:px-[16px] xxl:p-[30px] lg:order-3">
@@ -42,4 +49,5 @@
 import MissionIcon from '@/assets/svg/mission/mission.svg';
 import missionArrow from '@/assets/svg/mission/arrow-mission.svg';
 import apartment from '/images/mission/apartment.webp';
+import apartmentMD from '/images/mission/apartment-md.webp';
 </script>

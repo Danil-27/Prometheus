@@ -24,10 +24,16 @@
         @mouseover=" handleMouseOver(index)"
         @mouseleave="handleMouseLeave">
 
-        <img :src="card.src"
-          :alt="card.alt"
-          class="absolute top-0 left-0 w-full h-full object-cover"
-          loading="lazy" />
+        <picture>
+          <source :srcset="card.srcMD"
+            media="(max-width: 767px)" />
+          <source :srcset="card.src"
+            media="(min-width: 768px)" />
+          <img class="absolute top-0 left-0 w-full h-full object-cover"
+            :src="card.src"
+            :alt="card.alt"
+            loading="lazy" />
+        </picture>
 
         <div class=" absolute inset-0 bg-black-40">
         </div>
