@@ -22,20 +22,24 @@
     </div>
     <div class="lg:w-4/12 ">
 
-      <NuxtImg src="/images/offer/furniture.webp"
-        sizes="(max-width: 767px) 400px, (min-width: 768px) 665px"
-        densities="1x 2x"
-        class="object-cover"
-        alt="furniture"
-        format="webp"
-        quality="70"
-        loading="lazy" />
+      <picture>
+        <source :srcset="furnitureMD"
+          media="(max-width: 767px)" />
+        <source :srcset="furniture"
+          media="(min-width: 768px)" />
+        <img class=" object-cover "
+          :src="furniture"
+          alt="furniture"
+          loading="lazy" />
+      </picture>
 
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import furniture from '@/assets/images/offer/furniture.webp';
+import furnitureMD from '@/assets/images/offer/furniture-md.webp';
 
 const checkSecondaryBtn = ref<boolean>(false);
 
