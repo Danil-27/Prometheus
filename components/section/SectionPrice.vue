@@ -17,10 +17,15 @@
 
       <div class="relative lg:col-span-2 xl:col-span-2 xl:order-4 flex flex-col justify-between rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] bg-cover bg-center xxl:bg-[-10px] bg-no-repeat bg-[url('~/assets/images/price/corner.webp')]">
         <div class="max-w-[210px] lg:max-w-[290px] xl:max-w-[300px] xxl:max-w-[380px]">
-          <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">Тариф базовый</h3>
+          <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">
+            Тариф базовый</h3>
           <p class="text-ptice font-interReg">
-            <span class="xxl:block">Дизайн-проект с основными&nbsp;</span>
-            <span class="xxl:block">чертежами без визуализации</span>
+            <span class="xxl:block">
+              Дизайн-проект с основными&nbsp;
+            </span>
+            <span class="xxl:block">
+              чертежами без визуализации
+            </span>
             1200руб.м²
           </p>
         </div>
@@ -37,17 +42,27 @@
         </BtnBase>
       </div>
 
-      <div class="lg:col-span-2 xl:col-span-2 xl:order-2 flex flex-col justify-between rounded-[30px] md:rounded-base p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] bg-cover bg-center bg-no-repeat bg-[url('~/assets/images/price/sofa.webp')]">
-        <div>
-          <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">Тариф Стандартный</h3>
+      <div class="relative lg:col-span-2 xl:col-span-2 xl:order-2 flex flex-col justify-between rounded-[30px] md:rounded-base p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] ">
+
+        <img class="absolute w-full h-full top-0 left-0 object-cover z-[0] rounded-[30px] md:rounded-base"
+          :src="sofa"
+          alt="sofa"
+          loading="lazy">
+
+        <div class="relative z-[1]">
+          <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">
+            Тариф Стандартный
+          </h3>
           <p class="text-ptice font-interReg">
             Дизайн проект
-            <span class="max-md:block">с основными чертежами и</span>
+            <span class="max-md:block">
+              с основными чертежами и
+            </span>
             визуализацией 2200руб.м²
           </p>
         </div>
 
-        <BtnBase class="max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
+        <BtnBase class="relative z-[1] max-w-[250px] inline-flex gap-[40px] xxl:gap-[50px] items-center justify-between ml-auto py-[12px] px-[20px]"
           :isCheckBasePrice="checkSecondaryBtn[1]"
           @click="checkContent(1)">
           <template #text>
@@ -193,6 +208,7 @@
 
 <script setup lang="ts">
 import IconCard from '@/assets/svg/arrow/arrow-card.svg';
+import sofa from '@/assets/images/price/sofa.webp'
 import { useStorageCheckContent } from '~/composables/useStorageCheckContent';
 
 const isOpenModal = ref(false);
