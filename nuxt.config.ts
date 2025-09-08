@@ -25,6 +25,9 @@ export default defineNuxtConfig({
     plugins: [tailwindcss(), svgLoader()],
 
     build: {
+      rollupOptions: {
+        treeshake: true
+      },
       cssCodeSplit: true,
       target: 'esnext',
       minify: 'esbuild'
