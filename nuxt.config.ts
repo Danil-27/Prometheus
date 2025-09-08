@@ -2,6 +2,7 @@ import tailwindcss from '@tailwindcss/vite';
 import svgLoader from 'vite-svg-loader';
 
 export default defineNuxtConfig({
+  devtools: { enabled: false },
   ssr: true,
 
   modules: [
@@ -20,14 +21,18 @@ export default defineNuxtConfig({
     }
   },
 
-  devtools: { enabled: false },
-
   vite: {
     plugins: [tailwindcss(), svgLoader()],
 
     build: {
       cssCodeSplit: true,
-      target: 'esnext'
+      target: 'esnext',
+      minify: 'esbuild'
+    },
+    optimizeDeps: {
+      esbuildOptions: {
+        target: 'es2022'
+      }
     }
   },
 
@@ -36,16 +41,17 @@ export default defineNuxtConfig({
   typescript: {
     tsConfig: {
       compilerOptions: {
-        module: 'ESNext'
+        target: 'ES2022',
+        module: 'ESNext',
+        lib: ['ES2022', 'DOM', 'DOM.Iterable']
       }
     }
   },
 
+  compatibilityDate: '2025-09-07',
   future: {
     compatibilityVersion: 4
   },
-
-  compatibilityDate: '2025-09-07',
 
   sitemap: {
     xsl: false
