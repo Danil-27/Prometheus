@@ -18,7 +18,9 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       ignore: ['/__sitemap__/style.xsl']
-    }
+    },
+    minify: true,
+    compressPublicAssets: true
   },
 
   vite: {
@@ -26,16 +28,32 @@ export default defineNuxtConfig({
 
     build: {
       rollupOptions: {
-        treeshake: true
+        treeshake: true,
+        output: {
+          manualChunks: {
+            vendor: ['vue', 'nuxt'],
+            swiper: ['swiper'],
+            utils: ['@nuxt/image', '@nuxtjs/sitemap']
+          }
+        }
       },
       cssCodeSplit: true,
       target: 'esnext',
-      minify: 'esbuild'
+      minify: 'esbuild',
+      chunkSizeWarningLimit: 1000,
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true
+        }
+      }
     },
     optimizeDeps: {
       esbuildOptions: {
         target: 'es2022'
-      }
+      },
+      include: ['vue', 'nuxt'],
+      exclude: ['@nuxtjs/sitemap']
     }
   },
 
@@ -72,7 +90,26 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: 'ipx'
+    provider: 'ipx',
+    quality: 80,
+    format: ['webp', 'avif'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536
+    }
+  },
+
+  experimental: {
+    payloadExtraction: false,
+    viewTransition: true
+  },
+
+  build: {
+    analyze: false
   },
 
   app: {
