@@ -6,9 +6,7 @@ export default defineNuxtConfig({
   ssr: true,
 
   modules: [
-    '@nuxt/image',
     '@nuxt/eslint',
-    '@nuxtjs/sitemap',
     'nuxt-viewport',
     'nuxt-intersection-observer',
     'nuxt-swiper'
@@ -20,40 +18,11 @@ export default defineNuxtConfig({
       ignore: ['/__sitemap__/style.xsl']
     },
     minify: true,
-    compressPublicAssets: true
-  },
-
-  vite: {
-    plugins: [tailwindcss(), svgLoader()],
-
-    build: {
-      rollupOptions: {
-        treeshake: true,
-        output: {
-          manualChunks: {
-            vendor: ['vue', 'nuxt'],
-            swiper: ['swiper'],
-            utils: ['@nuxt/image', '@nuxtjs/sitemap']
-          }
-        }
-      },
-      cssCodeSplit: true,
-      target: 'esnext',
-      minify: 'esbuild',
-      chunkSizeWarningLimit: 1000,
-      terserOptions: {
-        compress: {
-          drop_console: true,
-          drop_debugger: true
-        }
+    compressPublicAssets: true,
+    esbuild: {
+      options: {
+        target: 'esnext'
       }
-    },
-    optimizeDeps: {
-      esbuildOptions: {
-        target: 'es2022'
-      },
-      include: ['vue', 'nuxt'],
-      exclude: ['@nuxtjs/sitemap']
     }
   },
 
@@ -69,37 +38,22 @@ export default defineNuxtConfig({
     }
   },
 
+  vite: {
+    plugins: [tailwindcss(), svgLoader()],
+    build: {
+      target: 'esnext'
+    }
+  },
+
   compatibilityDate: '2025-09-07',
   future: {
     compatibilityVersion: 4
-  },
-
-  sitemap: {
-    xsl: false
-  },
-
-  site: {
-    url: process.env.NUXT_PUBLIC_SITE_URL || 'https://prometheus-design.ru'
   },
 
   runtimeConfig: {
     public: {
       siteUrl:
         process.env.NUXT_PUBLIC_SITE_URL || 'https://prometheus-design.ru'
-    }
-  },
-
-  image: {
-    provider: 'ipx',
-    quality: 80,
-    format: ['webp', 'avif'],
-    screens: {
-      xs: 320,
-      sm: 640,
-      md: 768,
-      lg: 1024,
-      xl: 1280,
-      xxl: 1536
     }
   },
 

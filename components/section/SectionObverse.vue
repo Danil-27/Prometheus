@@ -27,18 +27,6 @@
 </template>
 
 <script setup lang="ts">
-import obverse from '/images/obverse/obverse.webp'
-
-const img = useImage()
-
-const imageSrc = img(obverse, {
-  width: 1200,
-  format: 'webp',
-  quality: 80
-})
-
-const imageSrcset = [
-  img(obverse, { width: 1200, format: 'webp', quality: 80 }) + ' 1200w',
-  img(obverse, { width: 2400, format: 'webp', quality: 80 }) + ' 2400w'
-].join(', ')
+const imageSrc = '/images/obverse/obverse.webp'
+const imageSrcset = '/images/obverse/obverse.webp 1200w'
 </script>
