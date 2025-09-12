@@ -2,14 +2,18 @@
   <section class="custom-container mt-[20px]">
     <div class="relative text-white rounded-base min-h-[25rem] lg:min-h-[540px] xxl:min-h-[700px] overflow-hidden">
 
-      <img class="absolute inset-0 w-full h-full object-cover"
-        fetchpriority="high"
-        loading="eager"
-        :src="imageSrc"
-        :srcset="imageSrcset"
-        sizes="(max-width: 640px) 380px, (max-width: 992px) 768px, 1200px"
-        width="1200"
-        alt="Прометей Несем свет, создаем эстетику, вдыхаем уют">
+      <picture>
+        <source media="(min-width: 992px)"
+          type="image/webp"
+          srcset="/images/obverse/obverseXL.webp" />
+
+        <img class="absolute inset-0 w-full h-full object-cover"
+          src="/images/obverse/obverse.webp"
+          alt="Прометей Несем свет, создаем эстетику, вдыхаем уют"
+          width="1200"
+          loading="eager"
+          fetchpriority="high">
+      </picture>
 
       <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.69)_0%,rgba(255,255,255,0)_100%)] bg-[rgba(0,0,0,0.36)] px-[1rem] py-[3.75rem] md:px-[2rem] md:py-[2.75rem] lg:pl-[58px] lg:pt-[130px] xl:pb-[9.375rem] rounded-base">
 
@@ -27,6 +31,6 @@
 </template>
 
 <script setup lang="ts">
-const imageSrc = '/images/obverse/obverse.webp'
-const imageSrcset = '/images/obverse/obverse.webp 1200w'
+const imageSrcset = '/images/obverse/obverse.webp 992w'
+const imageSrc = '/images/obverse/obverseXL.webp '
 </script>

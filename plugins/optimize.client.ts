@@ -1,20 +1,6 @@
 export default defineNuxtPlugin(() => {
   // Предзагрузка критических ресурсов
   if (process.client) {
-    // Предзагрузка критических изображений
-    const criticalImages = [
-      '/images/obverse/obverse.webp',
-      '/images/mission/apartment.webp'
-    ];
-
-    criticalImages.forEach((src) => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = src;
-      document.head.appendChild(link);
-    });
-
     // Отложенная загрузка некритических скриптов
     const loadNonCriticalScripts = () => {
       // Загружаем дополнительные скрипты после загрузки основного контента

@@ -24,8 +24,7 @@
             media="(min-width: 768px)" />
           <img class="w-full h-full object-cover rounded-base"
             :src="apartment"
-            alt="Квартира"
-            loading="lazy" />
+            alt="Квартира" />
         </picture>
 
       </div>
