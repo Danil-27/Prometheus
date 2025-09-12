@@ -13,10 +13,8 @@
         специальным предложением
       </p>
 
-      <BtnSecondary onclick="location.href='#social'"
-        :is-check-secondary-offer="checkSecondaryBtn"
-        class="flex items-center mx-auto lg:mx-0 mt-[35px] md:mt-[46px] px-9 py-3 xxl:mt-[60px]"
-        @click="toggleSecondary()">
+      <BtnSecondary class="flex items-center mx-auto lg:mx-0 mt-[35px] md:mt-[46px] px-9 py-3 xxl:mt-[60px]"
+        @click="scrollSocial()">
         <template #text>Заказать</template>
       </BtnSecondary>
     </div>
@@ -41,16 +39,26 @@
 import furniture from '@/assets/images/offer/furniture.webp';
 import furnitureMD from '@/assets/images/offer/furniture-md.webp';
 
-const checkSecondaryBtn = ref<boolean>(false);
 
-function toggleSecondary() {
-  checkSecondaryBtn.value = true;
-  sessionStorage.setItem('checkSecondaryOffer', JSON.stringify(checkSecondaryBtn.value));
-}
+function scrollSocial() {
+  const elScroll = document.getElementById('social');
+  const width = window.innerWidth;
+  let y: number;
 
-onMounted(() => {
-  useStorageCheckContent('checkSecondaryOffer', checkSecondaryBtn);
-});
+  function scrollHight(num: number) {
+    if (!elScroll) return;
+    y = elScroll.getBoundingClientRect().top + window.scrollY - num;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  if (width >= 992) {
+    scrollHight(120)
+  } else {
+    scrollHight(80)
+  }
+};
+
+
 </script>
 
 <style scoped lang="scss"></style>
