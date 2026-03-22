@@ -1,6 +1,6 @@
 <template>
   <div
-    class="header-mobile fixed bottom-0 left-1/2 -translate-x-1/2 min-w-[96vw] sm:min-w-[80vw] md:min-w-[70vw] h-[70px] bg-white z-10 rounded-t-base px-[18px] py-[10px]"
+    class="header-mobile fixed bottom-[-724px] left-1/2 -translate-x-1/2 min-w-[100%] sm:min-w-[80vw] md:min-w-[70vw] h-[800px] bg-white z-10 rounded-t-base px-[18px] py-[10px]"
     style="padding-bottom: env(safe-area-inset-bottom, 0)"
   >
     <div>
@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-  import { linksMobile } from './type';
+import { linksMobile } from './type';
 </script>
 
 <style scoped lang="scss"></style>
