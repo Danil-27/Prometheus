@@ -1,31 +1,30 @@
 // One
 import elegantXL from '~/assets/images/page_progect/desctop/elegant/description_Large.webp';
 import elegantMD from '~/assets/images/page_progect/laptop/elegant/description_Medium.webp';
-import elegantXS from '~/assets/images/page_progect/mobile/elegant/description_Small.webp';
+
 // two
 import cliffXL from '~/assets/images/page_progect/desctop/cliff/description_Large.webp';
 import cliffMD from '~/assets/images/page_progect/laptop/cliff/description_Medium.webp';
-import cliffXS from '~/assets/images/page_progect/laptop/cliff/description_Medium.webp';
+
 // three
 import complexElegantXL from '~/assets/images/page_progect/desctop/complexElegant/description_Large.webp';
 import complexElegantMD from '~/assets/images/page_progect/laptop/complexElegant/description_Medium.webp';
-import complexElegantXS from '~/assets/images/page_progect/mobile/complexElegant/description_Small.webp';
+
 // four
 import synfitinoXL from '~/assets/images/page_progect/desctop/synfitino/description_Large.webp';
 import synfitinoMD from '~/assets/images/page_progect/laptop/synfitino/description_Medium.webp';
-import synfitinoXS from '~/assets/images/page_progect/mobile/synfitino/description_Small.webp';
+
 
 interface Image {
   XL: string;
   MD: string;
-  XS: string;
 }
 
 export const imagesDescription: Image[] = [
-  { XL: elegantXL, MD: elegantMD, XS: elegantXS },
-  { XL: cliffXL, MD: cliffMD, XS: cliffXS },
-  { XL: complexElegantXL, MD: complexElegantMD, XS: complexElegantXS },
-  { XL: synfitinoXL, MD: synfitinoMD, XS: synfitinoXS }
+  { XL: elegantXL, MD: elegantMD },
+  { XL: cliffXL, MD: cliffMD },
+  { XL: complexElegantXL, MD: complexElegantMD },
+  { XL: synfitinoXL, MD: synfitinoMD }
 ];
 
 interface Content {

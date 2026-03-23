@@ -1,33 +1,31 @@
 // elegant
 import elegantXL from '~/assets/images/page_progect/desctop/elegant/about_Large.webp';
 import elegantMD from '~/assets/images/page_progect/laptop/elegant/about_Medium.webp';
-import elegantXS from '~/assets/images/page_progect/mobile/elegant/about_Small.webp';
+
 // cliff
 import cliffXL from '~/assets/images/page_progect/desctop/cliff/about_Large.webp';
 import cliffMD from '~/assets/images/page_progect/laptop/cliff/about_Medium.webp';
-import cliffXS from '~/assets/images/page_progect/mobile/cliff/about_Small.webp';
+
 // complexElegant
 import complexElegantXL from '~/assets/images/page_progect/desctop/complexElegant/about_Large.webp';
 import complexElegantMD from '~/assets/images/page_progect/laptop/complexElegant/about_Medium.webp';
-import complexElegantXS from '~/assets/images/page_progect/mobile/complexElegant/about_Small.webp';
+
 // synfitino
 import synfitinoXL from '~/assets/images/page_progect/desctop/synfitino/about_Large.webp';
 import synfitinoMD from '~/assets/images/page_progect/laptop/synfitino/about_Medium.webp';
-import synfitinoXS from '~/assets/images/page_progect/mobile/synfitino/about_Small.webp';
 
 import type Header from '~/components/header/Header.vue';
 
 interface Image {
   XL: string;
   MD: string;
-  XS: string;
 }
 
 export const imagesAbout: Image[] = [
-  { XL: elegantXL, MD: elegantMD, XS: elegantXS },
-  { XL: cliffXL, MD: cliffMD, XS: cliffXS },
-  { XL: complexElegantXL, MD: complexElegantMD, XS: complexElegantXS },
-  { XL: synfitinoXL, MD: synfitinoMD, XS: synfitinoXS }
+  { XL: elegantXL, MD: elegantMD },
+  { XL: cliffXL, MD: cliffMD },
+  { XL: complexElegantXL, MD: complexElegantMD },
+  { XL: synfitinoXL, MD: synfitinoMD }
 ];
 
 interface Header {

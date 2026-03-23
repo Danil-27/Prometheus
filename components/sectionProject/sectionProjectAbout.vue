@@ -7,9 +7,7 @@
       <picture>
         <source :srcset="img[num]?.XL"
           media="(min-width: 1024px)" />
-        <source :srcset="img[num]?.MD"
-          media="(min-width: 640px)" />
-        <img :src="img[num]?.XS"
+        <img :src="img[num]?.MD"
           class="mx-auto rounded-[40px] w-full  h-full lg:h-auto object-cover "
           :loading="num == 0 ? 'eager' : 'lazy'"
           :fetchpriority="num == 0 ? 'high' : null" />
@@ -47,7 +45,7 @@
 
 defineProps<{
   num: number
-  img: { XS: string; MD: string; XL: string }[]
+  img: { MD: string; XL: string }[]
   contents: { title: string; text: string }[][]
   header: { headerProject: string }[]
 }>()

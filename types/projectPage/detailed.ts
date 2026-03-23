@@ -1,86 +1,78 @@
 // Block 1
 import elegantXLOne from '~/assets/images/page_progect/desctop/elegant/detailed_Large1.webp';
 import elegantMDOne from '~/assets/images/page_progect/laptop/elegant/detailed_Medium1.webp';
-import elegantXSOne from '~/assets/images/page_progect/mobile/elegant/detailed_Small1.webp';
+
 import elegantXLTwo from '~/assets/images/page_progect/desctop/elegant/detailed_Large2.webp';
 import elegantMDTwo from '~/assets/images/page_progect/laptop/elegant/detailed_Medium2.webp';
-import elegantXSTwo from '~/assets/images/page_progect/mobile/elegant/detailed_Small2.webp';
+
 import elegantXLThree from '~/assets/images/page_progect/desctop/elegant/detailed_Large3.webp';
 import elegantMDThree from '~/assets/images/page_progect/laptop/elegant/detailed_Medium3.webp';
-import elegantXSThree from '~/assets/images/page_progect/mobile/elegant/detailed_Small3.webp';
+
 // block 2
 import cliffXLOne from '~/assets/images/page_progect/desctop/cliff/detailed_Large1.webp';
 import cliffMDOne from '~/assets/images/page_progect/laptop/cliff/detailed_Medium1.webp';
-import cliffXSOne from '~/assets/images/page_progect/mobile/cliff/detailed_Small1.webp';
+
 import cliffXLTwo from '~/assets/images/page_progect/desctop/cliff/detailed_Large2.webp';
 import cliffMDTwo from '~/assets/images/page_progect/laptop/cliff/detailed_Medium2.webp';
-import cliffXSTwo from '~/assets/images/page_progect/mobile/cliff/detailed_Small2.webp';
+
 import cliffXLThree from '~/assets/images/page_progect/desctop/cliff/detailed_Large3.webp';
 import cliffMDThree from '~/assets/images/page_progect/laptop/cliff/detailed_Medium3.webp';
-import cliffXSThree from '~/assets/images/page_progect/mobile/cliff/detailed_Small3.webp';
+
 // block 3
 import complexElegantXLOne from '~/assets/images/page_progect/desctop/complexElegant/detailed_Large1.webp';
 import complexElegantMDOne from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium1.webp';
-import complexElegantXSOne from '~/assets/images/page_progect/mobile/complexElegant/detailed_Small1.webp';
 
 import complexElegantXLTwo from '~/assets/images/page_progect/desctop/complexElegant/detailed_Large2.webp';
 import complexElegantMDTwo from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium2.webp';
-import complexElegantXSTwo from '~/assets/images/page_progect/mobile/complexElegant/detailed_Small2.webp';
 
 import complexElegantXLThree from '~/assets/images/page_progect/desctop/complexElegant/detailed_Large3.webp';
 import complexElegantMDThree from '~/assets/images/page_progect/laptop/complexElegant/detailed_Medium3.webp';
-import complexElegantXSThree from '~/assets/images/page_progect/mobile/complexElegant/detailed_Small3.webp';
+
 // block 4
 import synfitinoXLOne from '~/assets/images/page_progect/desctop/synfitino/detailed_Large1.webp';
 import synfitinoMDOne from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium1.webp';
-import synfitinoXSOne from '~/assets/images/page_progect/mobile/synfitino/detailed_Small1.webp';
 
 import synfitinoXLTwo from '~/assets/images/page_progect/desctop/synfitino/detailed_Large2.webp';
 import synfitinoMDTwo from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium2.webp';
-import synfitinoXSTwo from '~/assets/images/page_progect/mobile/synfitino/detailed_Small2.webp';
 
 import synfitinoMDThree from '~/assets/images/page_progect/desctop/synfitino/detailed_Large3.webp';
 import synfitinoXLThree from '~/assets/images/page_progect/laptop/synfitino/detailed_Medium3.webp';
-import synfitinoXSThree from '~/assets/images/page_progect/mobile/synfitino/detailed_Small3.webp';
+
 
 interface Image {
   XL: string;
   MD: string;
-  XS: string;
 }
 
 export const imagesDetailed: Image[][] = [
   [
-    { XL: elegantXLOne, MD: elegantMDOne, XS: elegantXSOne },
-    { XL: elegantXLTwo, MD: elegantMDTwo, XS: elegantXSTwo },
-    { XL: elegantXLThree, MD: elegantMDThree, XS: elegantXSThree }
+    { XL: elegantXLOne, MD: elegantMDOne },
+    { XL: elegantXLTwo, MD: elegantMDTwo },
+    { XL: elegantXLThree, MD: elegantMDThree }
   ],
   [
-    { XL: cliffXLOne, MD: cliffMDOne, XS: cliffXSOne },
-    { XL: cliffXLTwo, MD: cliffMDTwo, XS: cliffXSTwo },
-    { XL: cliffXLThree, MD: cliffMDThree, XS: cliffXSThree }
+    { XL: cliffXLOne, MD: cliffMDOne },
+    { XL: cliffXLTwo, MD: cliffMDTwo },
+    { XL: cliffXLThree, MD: cliffMDThree }
   ],
   [
     {
       XL: complexElegantXLOne,
-      MD: complexElegantMDOne,
-      XS: complexElegantXSOne
+      MD: complexElegantMDOne
     },
     {
       XL: complexElegantXLTwo,
-      MD: complexElegantMDTwo,
-      XS: complexElegantXSTwo
+      MD: complexElegantMDTwo
     },
     {
       XL: complexElegantXLThree,
-      MD: complexElegantMDThree,
-      XS: complexElegantXSThree
+      MD: complexElegantMDThree
     }
   ],
   [
-    { XL: synfitinoXLOne, MD: synfitinoMDOne, XS: synfitinoXSOne },
-    { XL: synfitinoXLTwo, MD: synfitinoMDTwo, XS: synfitinoXSTwo },
-    { XL: synfitinoXLThree, MD: synfitinoMDThree, XS: synfitinoXSThree }
+    { XL: synfitinoXLOne, MD: synfitinoMDOne },
+    { XL: synfitinoXLTwo, MD: synfitinoMDTwo },
+    { XL: synfitinoXLThree, MD: synfitinoMDThree }
   ]
 ];
 
