@@ -18,10 +18,6 @@
       <div class="w-full xs:w-[90%] lg:w-full justify-self-center content-center min-[505px]:col-span-2 lg:col-span-1 lg:row-span-2 lg:order-1 rounded-base overflow-hidden">
 
         <picture>
-          <source :srcset="apartmentMD"
-            media="(max-width: 767px)" />
-          <source :srcset="apartment"
-            media="(min-width: 768px)" />
           <img class="w-full h-full object-cover rounded-base"
             :src="apartment"
             alt="Квартира" />
@@ -48,5 +44,4 @@
 import MissionIcon from '@/assets/svg/mission/mission.svg';
 import missionArrow from '@/assets/svg/mission/arrow-mission.svg';
 import apartment from '/images/mission/apartment.webp';
-import apartmentMD from '/images/mission/apartment-md.webp';
 </script>

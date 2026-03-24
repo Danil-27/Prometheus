@@ -15,7 +15,7 @@
             xxl:grid-rows-[340px_340px] 
             mt-[64px]">
 
-      <div class="relative lg:col-span-2 xl:col-span-2 xl:order-4 flex flex-col justify-between rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] bg-cover bg-center xxl:bg-[-10px] bg-no-repeat bg-[url('~/assets/images/price/corner.webp')]">
+      <div class="relative lg:col-span-2 xl:col-span-2 xl:order-4 flex flex-col justify-between rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] lg:pl-[30px] lg:pr-[20px] lg:py-[20px] xxl:p-[30px] bg-cover bg-center xxl:bg-[-10px] bg-no-repeat bg-[url('~/assets/images/price/armchair.webp')]">
         <div class="max-w-[210px] lg:max-w-[290px] xl:max-w-[300px] xxl:max-w-[380px]">
           <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">
             Тариф базовый</h3>
@@ -74,7 +74,22 @@
         </BtnBase>
       </div>
 
-      <div class="lg:col-span-3 xl:row-span-2 xl:col-span-1 xl:order-1 flex flex-col justify-between xl:flex-col-reverse rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] md:p-[30px] xl:pb-[0px] xl:pl-[0px] bg-no-repeat bg-cover bg-center bg-[url('~/assets/images/price/home_xxs.webp'),url('~/assets/images/price/background.webp')] xs:bg-[url('~/assets/images/price/home_xs.webp'),url('~/assets/images/price/background.webp')] sm:bg-[url('~/assets/images/price/home_xxs.webp'),url('~/assets/images/price/background.webp')] min-[790px]:bg-[url('~/assets/images/price/home_md.webp'),url('~/assets/images/price/background.webp')] lg:bg-[url('~/assets/images/price/home_lg.webp'),url('~/assets/images/price/background.webp')] xl:bg-[url('~/assets/images/price/home_xl.webp')] xxl:bg-[url('~/assets/images/price/home_xxl.webp')]">
+      <div class="lg:col-span-3 xl:row-span-2 xl:col-span-1 xl:order-1 flex flex-col justify-between xl:flex-col-reverse rounded-[30px] md:rounded-base text-[30px] p-[15px] xs:p-[20px] md:p-[30px] xl:pb-[0px] xl:pl-[0px] 
+      bg-no-repeat 
+      bg-cover 
+      bg-[url('~/assets/images/price/home_xxs.webp'),url('~/assets/images/price/background.webp')] 
+      min-[390px]:bg-[url('~/assets/images/price/home_xs.webp'),url('~/assets/images/price/background.webp')] 
+      min-[480px]:bg-[url('~/assets/images/price/home_480px.webp'),url('~/assets/images/price/background.webp')] 
+      min-[550px]:bg-[url('~/assets/images/price/home_550px.webp'),url('~/assets/images/price/background.webp')] 
+      sm:bg-[url('~/assets/images/price/home_640px.webp'),url('~/assets/images/price/background.webp')] 
+      min-[700px]:bg-[url('~/assets/images/price/home_xxs.webp'),url('~/assets/images/price/background.webp')] 
+      min-[800px]:bg-[url('~/assets/images/price/home_800px.webp'),url('~/assets/images/price/background.webp')] 
+      lg:bg-[url('~/assets/images/price/home_992px.webp'),url('~/assets/images/price/background.webp')] 
+      min-[1080px]:bg-[url('~/assets/images/price/home_1080px.webp'),url('~/assets/images/price/background.webp')] 
+      min-[1160px]:bg-[url('~/assets/images/price/home_1160px.webp'),url('~/assets/images/price/background.webp')] 
+      xl:bg-[url('~/assets/images/price/home_xl.webp')] 
+      xxl:bg-[url('~/assets/images/price/home_xxl.webp')] 
+      ">
         <div class="max-w-[220px] min-[880px]:max-w-[250px] lg:max-w-[340px] xl:max-w-[515px]">
           <h3 class="uppercase font-jetBold text-[21px] xxl:text-[30px]">Тариф полный</h3>
           <p class="text-ptice max-lg:max-w-[310px] font-interReg mt-[8px]">
